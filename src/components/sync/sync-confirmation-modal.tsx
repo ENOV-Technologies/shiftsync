@@ -161,20 +161,20 @@ export function SyncConfirmationModal({
   return (
     <>
       <Dialog open={open} onOpenChange={onClose}>
-        <DialogContent className="sm:max-w-lg">
+        <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="text-xl font-bold">Confirm Synchronization</DialogTitle>
-            <DialogDescription>
+            <DialogTitle className="text-lg sm:text-xl font-bold">Confirm Synchronization</DialogTitle>
+            <DialogDescription className="text-xs sm:text-sm">
               Review the changes and select the calendar to sync to
             </DialogDescription>
           </DialogHeader>
 
-          <div className="space-y-4 py-4">
+          <div className="space-y-4 py-2 sm:py-4">
             {/* Calendar Selection Section */}
             <div className="space-y-3">
               <div className="flex items-center justify-between">
-                <label className="text-sm font-semibold flex items-center gap-2">
-                  <Calendar className="w-4 h-4" />
+                <label className="text-xs sm:text-sm font-semibold flex items-center gap-2">
+                  <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
                   Target Calendar
                 </label>
                 <Button
@@ -182,30 +182,30 @@ export function SyncConfirmationModal({
                   size="sm"
                   onClick={fetchCalendars}
                   disabled={calendarsLoading}
-                  className="h-8 px-2"
+                  className="h-7 sm:h-8 px-2"
                 >
-                  <RefreshCw className={`w-4 h-4 ${calendarsLoading ? 'animate-spin' : ''}`} />
+                  <RefreshCw className={`w-3 h-3 sm:w-4 sm:h-4 ${calendarsLoading ? 'animate-spin' : ''}`} />
                 </Button>
               </div>
 
               {calendarsError && (
                 <Alert variant="destructive">
-                  <AlertDescription className="flex items-center justify-between">
+                  <AlertDescription className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs sm:text-sm">
                     <span>{calendarsError}</span>
-                    <Button variant="outline" size="sm" onClick={fetchCalendars}>
+                    <Button variant="outline" size="sm" onClick={fetchCalendars} className="w-full sm:w-auto">
                       Retry
                     </Button>
                   </AlertDescription>
                 </Alert>
               )}
 
-              <div className="flex gap-2">
+              <div className="flex flex-col sm:flex-row gap-2">
                 <Select
                   value={selectedCalendarId || undefined}
                   onValueChange={handleSelectCalendar}
                   disabled={calendarsLoading || calendars.length === 0}
                 >
-                  <SelectTrigger className="flex-1 h-11">
+                  <SelectTrigger className="flex-1 h-10 sm:h-11 text-xs sm:text-sm">
                     <SelectValue
                       placeholder={calendarsLoading ? 'Loading calendars...' : 'Select a calendar'}
                     />
@@ -220,7 +220,7 @@ export function SyncConfirmationModal({
                               style={{ backgroundColor: calendar.backgroundColor }}
                             />
                           )}
-                          <span className="truncate">{calendar.summary}</span>
+                          <span className="truncate text-xs sm:text-sm">{calendar.summary}</span>
                           {calendar.primary && (
                             <span className="text-xs text-muted-foreground">(Primary)</span>
                           )}
@@ -234,25 +234,26 @@ export function SyncConfirmationModal({
                   variant="outline"
                   onClick={() => setShowCreateDialog(true)}
                   disabled={calendarsLoading}
-                  className="h-11 px-3"
+                  className="h-10 sm:h-11 px-3 w-full sm:w-auto"
                   title="Create new calendar"
                 >
-                  <Plus className="w-4 h-4" />
+                  <Plus className="w-3 h-3 sm:w-4 sm:h-4" />
+                  <span className="sm:hidden ml-2">Create Calendar</span>
                 </Button>
               </div>
 
               {/* Selected calendar preview */}
               {selectedCalendar && (
                 <div className="bg-slate-50 rounded-lg p-3 border border-slate-200">
-                  <div className="flex items-center gap-3">
+                  <div className="flex items-center gap-2 sm:gap-3">
                     {selectedCalendar.backgroundColor && (
                       <div
-                        className="w-8 h-8 rounded-lg shadow-sm flex-shrink-0"
+                        className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg shadow-sm flex-shrink-0"
                         style={{ backgroundColor: selectedCalendar.backgroundColor }}
                       />
                     )}
-                    <div className="min-w-0">
-                      <p className="font-semibold text-sm truncate">{selectedCalendar.summary}</p>
+                    <div className="min-w-0 flex-1">
+                      <p className="font-semibold text-xs sm:text-sm truncate">{selectedCalendar.summary}</p>
                       <p className="text-xs text-muted-foreground">
                         {selectedCalendar.primary ? 'Primary Calendar' : 'Secondary Calendar'}
                       </p>
@@ -264,7 +265,7 @@ export function SyncConfirmationModal({
               {!selectedCalendarId && !calendarsLoading && calendars.length > 0 && (
                 <Alert className="bg-amber-50 border-amber-200">
                   <AlertTriangle className="w-4 h-4 text-amber-600" />
-                  <AlertDescription className="text-sm text-amber-900">
+                  <AlertDescription className="text-xs sm:text-sm text-amber-900">
                     Please select a calendar to continue
                   </AlertDescription>
                 </Alert>
@@ -272,42 +273,42 @@ export function SyncConfirmationModal({
             </div>
 
             {/* Summary Cards */}
-            <div className="grid grid-cols-3 gap-3">
-              <div className="bg-green-50 rounded-lg p-4 border border-green-200">
-                <div className="flex items-center justify-center mb-2">
-                  <div className="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center">
-                    <PlusCircle className="w-5 h-5 text-green-600" />
+            <div className="grid grid-cols-3 gap-2 sm:gap-3">
+              <div className="bg-green-50 rounded-lg p-3 sm:p-4 border border-green-200">
+                <div className="flex items-center justify-center mb-1 sm:mb-2">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-green-100 flex items-center justify-center">
+                    <PlusCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />
                   </div>
                 </div>
-                <p className="text-2xl font-bold text-center text-green-900">{summary.create}</p>
+                <p className="text-xl sm:text-2xl font-bold text-center text-green-900">{summary.create}</p>
                 <p className="text-xs text-center text-green-700 font-medium mt-1">Create</p>
               </div>
 
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                <div className="flex items-center justify-center mb-2">
-                  <div className="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center">
-                    <Edit3 className="w-5 h-5 text-blue-600" />
+              <div className="bg-blue-50 rounded-lg p-3 sm:p-4 border border-blue-200">
+                <div className="flex items-center justify-center mb-1 sm:mb-2">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-blue-100 flex items-center justify-center">
+                    <Edit3 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
                   </div>
                 </div>
-                <p className="text-2xl font-bold text-center text-blue-900">{summary.update}</p>
+                <p className="text-xl sm:text-2xl font-bold text-center text-blue-900">{summary.update}</p>
                 <p className="text-xs text-center text-blue-700 font-medium mt-1">Update</p>
               </div>
 
-              <div className="bg-red-50 rounded-lg p-4 border border-red-200">
-                <div className="flex items-center justify-center mb-2">
-                  <div className="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center">
-                    <Trash2 className="w-5 h-5 text-red-600" />
+              <div className="bg-red-50 rounded-lg p-3 sm:p-4 border border-red-200">
+                <div className="flex items-center justify-center mb-1 sm:mb-2">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-full bg-red-100 flex items-center justify-center">
+                    <Trash2 className="w-4 h-4 sm:w-5 sm:h-5 text-red-600" />
                   </div>
                 </div>
-                <p className="text-2xl font-bold text-center text-red-900">{summary.delete}</p>
+                <p className="text-xl sm:text-2xl font-bold text-center text-red-900">{summary.delete}</p>
                 <p className="text-xs text-center text-red-700 font-medium mt-1">Delete</p>
               </div>
             </div>
 
             {/* Non-Destructive Sync Info */}
             <Alert className="bg-blue-50 border-blue-200">
-              <Info className="w-4 h-4 text-blue-600" />
-              <AlertDescription className="text-sm text-blue-900">
+              <Info className="w-4 h-4 text-blue-600 flex-shrink-0" />
+              <AlertDescription className="text-xs sm:text-sm text-blue-900">
                 <span className="font-semibold">Non-destructive sync:</span> Only shift-related events
                 will be modified. Your other calendar events remain untouched.
               </AlertDescription>
@@ -316,8 +317,8 @@ export function SyncConfirmationModal({
             {/* Warning for deletions */}
             {summary.delete > 0 && (
               <Alert variant="destructive" className="bg-amber-50 border-amber-300">
-                <AlertTriangle className="w-4 h-4 text-amber-600" />
-                <AlertDescription className="text-sm text-amber-900">
+                <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0" />
+                <AlertDescription className="text-xs sm:text-sm text-amber-900">
                   {summary.delete} shift event{summary.delete !== 1 ? 's' : ''} will be removed from
                   your calendar.
                 </AlertDescription>
@@ -325,10 +326,10 @@ export function SyncConfirmationModal({
             )}
 
             {/* Total Changes Summary */}
-            <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border border-slate-200">
               <div className="flex items-center justify-between">
-                <span className="font-semibold text-slate-900">Total Changes</span>
-                <span className="text-2xl font-bold text-slate-900">{totalChanges}</span>
+                <span className="font-semibold text-xs sm:text-sm text-slate-900">Total Changes</span>
+                <span className="text-xl sm:text-2xl font-bold text-slate-900">{totalChanges}</span>
               </div>
             </div>
           </div>
@@ -338,18 +339,18 @@ export function SyncConfirmationModal({
               variant="outline"
               onClick={onClose}
               disabled={loading}
-              className="w-full sm:w-auto"
+              className="w-full sm:w-auto text-xs sm:text-sm"
             >
               Cancel
             </Button>
             <Button
               onClick={handleConfirm}
               disabled={!canSync}
-              className="w-full sm:w-auto font-semibold"
+              className="w-full sm:w-auto font-semibold text-xs sm:text-sm"
             >
               {loading ? (
                 <span className="flex items-center gap-2">
-                  <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                  <div className="w-3 h-3 sm:w-4 sm:h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
                   Syncing...
                 </span>
               ) : (

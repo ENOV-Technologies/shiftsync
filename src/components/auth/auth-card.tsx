@@ -20,25 +20,25 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
   };
 
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 p-4">
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 p-3 sm:p-4">
       <Card className="w-full max-w-md shadow-2xl border-0">
-        <CardHeader className="text-center space-y-2 pb-6">
-          <div className="mx-auto w-16 h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-2 shadow-lg">
-            <Shield className="w-8 h-8 text-white" />
+        <CardHeader className="text-center space-y-2 pb-4 sm:pb-6 p-4 sm:p-6">
+          <div className="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-2 shadow-lg">
+            <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
           </div>
-          <CardTitle className="text-2xl font-bold tracking-tight">Excel Shift Sync</CardTitle>
-          <CardDescription className="text-base">
+          <CardTitle className="text-xl sm:text-2xl font-bold tracking-tight">Excel Shift Sync</CardTitle>
+          <CardDescription className="text-sm sm:text-base">
             Securely sync your work schedule to Google Calendar
           </CardDescription>
         </CardHeader>
 
-        <CardContent className="space-y-6">
+        <CardContent className="space-y-4 sm:space-y-6 p-4 sm:p-6">
           {/* OAuth Scopes Disclosure */}
-          <div className="bg-slate-50 rounded-xl p-4 border border-slate-200">
-            <div className="flex items-start gap-3 mb-3">
-              <Eye className="w-5 h-5 text-slate-600 mt-0.5" />
+          <div className="bg-slate-50 rounded-xl p-3 sm:p-4 border border-slate-200">
+            <div className="flex items-start gap-2 sm:gap-3 mb-2 sm:mb-3">
+              <Eye className="w-4 h-4 sm:w-5 sm:h-5 text-slate-600 mt-0.5 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-sm text-slate-900 mb-1">
+                <h4 className="font-semibold text-xs sm:text-sm text-slate-900 mb-1">
                   Access Permissions
                 </h4>
                 <p className="text-xs text-slate-600 leading-relaxed">
@@ -46,24 +46,24 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
                 </p>
               </div>
             </div>
-            <ul className="space-y-2 ml-8">
+            <ul className="space-y-1.5 sm:space-y-2 ml-6 sm:ml-8">
               <li className="text-xs text-slate-700 flex items-start gap-2">
-                <span className="text-blue-500 mt-0.5">•</span>
+                <span className="text-blue-500 mt-0.5 flex-shrink-0">•</span>
                 <span>View and manage your Google Calendar events</span>
               </li>
               <li className="text-xs text-slate-700 flex items-start gap-2">
-                <span className="text-blue-500 mt-0.5">•</span>
+                <span className="text-blue-500 mt-0.5 flex-shrink-0">•</span>
                 <span>Access your basic profile information</span>
               </li>
             </ul>
           </div>
 
           {/* GDPR Consent */}
-          <div className="bg-blue-50 rounded-xl p-4 border border-blue-200">
-            <div className="flex items-start gap-3 mb-3">
-              <Lock className="w-5 h-5 text-blue-600 mt-0.5" />
+          <div className="bg-blue-50 rounded-xl p-3 sm:p-4 border border-blue-200">
+            <div className="flex items-start gap-2 sm:gap-3 mb-2 sm:mb-3">
+              <Lock className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
               <div>
-                <h4 className="font-semibold text-sm text-blue-900 mb-1">
+                <h4 className="font-semibold text-xs sm:text-sm text-blue-900 mb-1">
                   GDPR Compliance & Privacy
                 </h4>
                 <p className="text-xs text-blue-800 leading-relaxed">
@@ -71,7 +71,7 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
                 </p>
               </div>
             </div>
-            <div className="ml-8 space-y-2 text-xs text-blue-800">
+            <div className="ml-6 sm:ml-8 space-y-1.5 sm:space-y-2 text-xs text-blue-800">
               <p>✓ Your data is processed securely</p>
               <p>✓ No data is stored on external servers</p>
               <p>✓ You can revoke access at any time</p>
@@ -79,7 +79,7 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
           </div>
 
           {/* Consent Checkbox */}
-          <div className="flex items-start space-x-3 pt-2">
+          <div className="flex items-start space-x-2 sm:space-x-3 pt-2">
             <Checkbox
               id="gdpr-consent"
               checked={gdprConsent}
@@ -89,7 +89,7 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
             <div className="space-y-1 flex-1">
               <Label
                 htmlFor="gdpr-consent"
-                className="text-sm font-medium leading-relaxed cursor-pointer"
+                className="text-xs sm:text-sm font-medium leading-relaxed cursor-pointer"
               >
                 I consent to the processing of my data
               </Label>
@@ -104,12 +104,12 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
           <Button
             onClick={handleSignIn}
             disabled={!gdprConsent || loading}
-            className="w-full h-12 text-base font-semibold shadow-lg hover:shadow-xl transition-all"
+            className="w-full h-10 sm:h-12 text-sm sm:text-base font-semibold shadow-lg hover:shadow-xl transition-all"
             size="lg"
           >
             {loading ? (
               <span className="flex items-center gap-2">
-                <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                <div className="w-3 h-3 sm:w-4 sm:h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
                 Connecting...
               </span>
             ) : (
@@ -117,7 +117,7 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
             )}
           </Button>
 
-          <p className="text-xs text-center text-muted-foreground px-4">
+          <p className="text-xs text-center text-muted-foreground px-2 sm:px-4">
             Your authentication is handled securely by Google. We never see your password.
           </p>
         </CardContent>

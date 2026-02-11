@@ -65,26 +65,26 @@ export function CalendarSelector({ accessToken, selectedCalendar, onSelectCalend
 
   return (
     <Card className="border-0 shadow-lg">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <Calendar className="w-5 h-5" />
+      <CardHeader className="p-4 sm:p-6">
+        <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+          <Calendar className="w-4 h-4 sm:w-5 sm:h-5" />
           Select Calendar
         </CardTitle>
-        <CardDescription>
+        <CardDescription className="text-sm">
           Choose which calendar to sync your shifts to
         </CardDescription>
       </CardHeader>
 
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-4 p-4 sm:p-6">
         {!accessToken && (
           <Alert>
-            <AlertDescription>Sign in to load calendars.</AlertDescription>
+            <AlertDescription className="text-xs sm:text-sm">Sign in to load calendars.</AlertDescription>
           </Alert>
         )}
 
         {accessToken && error && (
           <Alert variant="destructive">
-            <AlertDescription>{error}</AlertDescription>
+            <AlertDescription className="text-xs sm:text-sm">{error}</AlertDescription>
           </Alert>
         )}
 
@@ -96,7 +96,7 @@ export function CalendarSelector({ accessToken, selectedCalendar, onSelectCalend
           }}
           disabled={loading || calendars.length === 0 || !accessToken}
         >
-          <SelectTrigger className="w-full h-12">
+          <SelectTrigger className="w-full h-10 sm:h-12">
             <SelectValue placeholder={!accessToken ? 'Sign in to load calendars' : loading ? 'Loading calendars...' : 'Select a calendar'} />
           </SelectTrigger>
           <SelectContent>
@@ -105,11 +105,11 @@ export function CalendarSelector({ accessToken, selectedCalendar, onSelectCalend
                 <div className="flex items-center gap-2">
                   {calendar.backgroundColor && (
                     <div
-                      className="w-3 h-3 rounded-full"
+                      className="w-3 h-3 rounded-full flex-shrink-0"
                       style={{ backgroundColor: calendar.backgroundColor }}
                     />
                   )}
-                  <span>{calendar.summary}</span>
+                  <span className="text-xs sm:text-sm truncate">{calendar.summary}</span>
                   {calendar.primary && (
                     <span className="text-xs text-muted-foreground">(Primary)</span>
                   )}
@@ -120,16 +120,16 @@ export function CalendarSelector({ accessToken, selectedCalendar, onSelectCalend
         </Select>
 
         {selectedCalendarData && (
-          <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
-            <div className="flex items-center gap-3">
+          <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border border-slate-200">
+            <div className="flex items-center gap-2 sm:gap-3">
               {selectedCalendarData.backgroundColor && (
                 <div
-                  className="w-10 h-10 rounded-lg shadow-sm"
+                  className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg shadow-sm flex-shrink-0"
                   style={{ backgroundColor: selectedCalendarData.backgroundColor }}
                 />
               )}
-              <div>
-                <p className="font-semibold text-sm">{selectedCalendarData.summary}</p>
+              <div className="min-w-0 flex-1">
+                <p className="font-semibold text-xs sm:text-sm truncate">{selectedCalendarData.summary}</p>
                 <p className="text-xs text-muted-foreground">
                   {selectedCalendarData.primary ? 'Primary Calendar' : 'Secondary Calendar'}
                 </p>

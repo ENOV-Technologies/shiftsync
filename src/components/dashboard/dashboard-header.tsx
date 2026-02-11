@@ -10,30 +10,30 @@ interface DashboardHeaderProps {
 export function DashboardHeader({ email, onLogout }: DashboardHeaderProps) {
   return (
     <Card className="border-0 shadow-lg bg-gradient-to-br from-blue-50 to-slate-50">
-      <CardHeader>
-        <div className="flex items-center justify-between">
-          <div className="flex items-center gap-4">
-            <div className="w-12 h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
-              <User className="w-6 h-6 text-white" />
+      <CardHeader className="p-4 sm:p-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:justify-between">
+          <div className="flex items-center gap-3 sm:gap-4 min-w-0 flex-1">
+            <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg flex-shrink-0">
+              <User className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
-            <div>
-              <CardTitle className="text-lg">Welcome back!</CardTitle>
-              <CardDescription className="text-base">{email}</CardDescription>
+            <div className="min-w-0 flex-1">
+              <CardTitle className="text-base sm:text-lg">Welcome back!</CardTitle>
+              <CardDescription className="text-sm sm:text-base truncate">{email}</CardDescription>
             </div>
           </div>
 
-          <div className="flex items-center gap-2">
-            <Button variant="outline" size="sm" className="gap-2">
-              <History className="w-4 h-4" />
-              History
+          <div className="flex items-center gap-2 w-full sm:w-auto">
+            <Button variant="outline" size="sm" className="gap-1 sm:gap-2 flex-1 sm:flex-initial">
+              <History className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="hidden xs:inline">History</span>
             </Button>
-            <Button variant="outline" size="sm" className="gap-2">
-              <Settings className="w-4 h-4" />
-              Settings
+            <Button variant="outline" size="sm" className="gap-1 sm:gap-2 flex-1 sm:flex-initial">
+              <Settings className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="hidden xs:inline">Settings</span>
             </Button>
-            <Button variant="outline" size="sm" onClick={onLogout} className="gap-2">
-              <LogOut className="w-4 h-4" />
-              Logout
+            <Button variant="outline" size="sm" onClick={onLogout} className="gap-1 sm:gap-2 flex-1 sm:flex-initial">
+              <LogOut className="w-3 h-3 sm:w-4 sm:h-4" />
+              <span className="hidden xs:inline">Logout</span>
             </Button>
           </div>
         </div>

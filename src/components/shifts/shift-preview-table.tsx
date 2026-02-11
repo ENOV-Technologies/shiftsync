@@ -40,43 +40,45 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
   
   return (
     <Card className="border-0 shadow-lg">
-      <CardHeader>
-        <div className="flex items-start justify-between">
-          <div>
-            <CardTitle className="flex items-center gap-2">
-              <CalendarCheck className="w-5 h-5" />
-              Shift Preview
+      <CardHeader className="p-4 sm:p-6">
+        <div className="flex flex-col sm:flex-row items-start sm:items-start justify-between gap-3">
+          <div className="flex-1 min-w-0">
+            <CardTitle className="flex flex-col sm:flex-row items-start sm:items-center gap-2">
+              <span className="flex items-center gap-2">
+                <CalendarCheck className="w-4 h-4 sm:w-5 sm:h-5" />
+                Shift Preview
+              </span>
               {employeeName && (
-                <Badge variant="outline" className="ml-2 font-normal">
+                <Badge variant="outline" className="font-normal">
                   {employeeName}
                 </Badge>
               )}
             </CardTitle>
-            <CardDescription>
+            <CardDescription className="mt-1">
               Review your schedule before syncing ({shifts.length} shifts found)
             </CardDescription>
           </div>
-          <Badge variant="secondary" className="text-sm font-semibold px-3 py-1">
+          <Badge variant="secondary" className="text-sm font-semibold px-3 py-1 self-start sm:self-auto">
             {shifts.length} {shifts.length === 1 ? 'Shift' : 'Shifts'}
           </Badge>
         </div>
       </CardHeader>
 
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-4 p-4 sm:p-6">
         <div className="rounded-xl border border-slate-200 overflow-hidden">
-          <div className="max-h-[400px] overflow-y-auto">
+          <div className="max-h-[400px] overflow-y-auto overflow-x-auto">
             <Table>
               <TableHeader className="bg-slate-50 sticky top-0">
                 <TableRow>
-                  <TableHead className="font-semibold">Date</TableHead>
-                  <TableHead className="font-semibold">Day</TableHead>
-                  <TableHead className="font-semibold">Start</TableHead>
-                  <TableHead className="font-semibold">End</TableHead>
-                  <TableHead className="font-semibold">Type</TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Date</TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Day</TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Start</TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">End</TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Type</TableHead>
                   {hasExtendedInfo && (
                     <>
-                      <TableHead className="font-semibold">LOB</TableHead>
-                      <TableHead className="font-semibold">Location</TableHead>
+                      <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">LOB</TableHead>
+                      <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Location</TableHead>
                     </>
                   )}
                   {onEdit && <TableHead className="font-semibold w-16"></TableHead>}
@@ -85,20 +87,20 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
               <TableBody>
                 {shifts.map((shift) => (
                   <TableRow key={shift.id} className="hover:bg-slate-50 transition-colors">
-                    <TableCell className="whitespace-nowrap font-medium">
+                    <TableCell className="whitespace-nowrap font-medium text-xs sm:text-sm">
                       {format(new Date(shift.date), 'dd/MM/yyyy')}
                     </TableCell>
-                    <TableCell className="whitespace-nowrap text-muted-foreground">
+                    <TableCell className="whitespace-nowrap text-muted-foreground text-xs sm:text-sm">
                       {getDayName(new Date(shift.date))}
                     </TableCell>
-                    <TableCell className="whitespace-nowrap">
+                    <TableCell className="whitespace-nowrap text-xs sm:text-sm">
                       {shift.shiftType === 'off' ? (
                         <span className="text-muted-foreground">—</span>
                       ) : (
                         shift.startTime
                       )}
                     </TableCell>
-                    <TableCell className="whitespace-nowrap">
+                    <TableCell className="whitespace-nowrap text-xs sm:text-sm">
                       {shift.shiftType === 'off' ? (
                         <span className="text-muted-foreground">—</span>
                       ) : (
@@ -108,17 +110,17 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
                     <TableCell>
                       <Badge
                         variant="outline"
-                        className={`${shiftTypeColors[shift.shiftType]} font-semibold`}
+                        className={`${shiftTypeColors[shift.shiftType]} font-semibold text-xs`}
                       >
                         {shiftTypeLabels[shift.shiftType]}
                       </Badge>
                     </TableCell>
                     {hasExtendedInfo && (
                       <>
-                        <TableCell className="text-sm text-muted-foreground">
+                        <TableCell className="text-xs sm:text-sm text-muted-foreground">
                           {shift.lob || '—'}
                         </TableCell>
-                        <TableCell className="text-sm text-muted-foreground">
+                        <TableCell className="text-xs sm:text-sm text-muted-foreground">
                           {shift.location || '—'}
                         </TableCell>
                       </>
@@ -143,9 +145,9 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
         </div>
 
         {/* Shift Type Legend */}
-        <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+        <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border border-slate-200">
           <p className="text-xs font-semibold text-slate-700 mb-3">Shift Types</p>
-          <div className="grid grid-cols-2 sm:grid-cols-5 gap-2">
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
             {Object.entries(shiftTypeColors).map(([type, colors]) => (
               <div key={type} className="flex items-center gap-2">
                 <Badge variant="outline" className={`${colors} text-xs`}>
@@ -156,7 +158,7 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
           </div>
         </div>
 
-        <Button onClick={onConfirm} className="w-full h-12 text-base font-semibold shadow-lg">
+        <Button onClick={onConfirm} className="w-full h-10 sm:h-12 text-sm sm:text-base font-semibold shadow-lg">
           Continue to Sync
         </Button>
       </CardContent>

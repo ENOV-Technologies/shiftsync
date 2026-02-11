@@ -1,0 +1,90 @@
+import React from "react";
+
+const Footer: React.FC = () => {
+  return (
+    <footer className="mt-10 shadow-md bg-white/70 backdrop-blur-sm">
+      <div className="max-w-5xl mx-auto px-6 py-6">
+        <div className="grid gap-8 md:grid-cols-3">
+          {/* Brand */}
+          <div>
+            <h3 className="text-lg font-bold text-slate-900 mb-3">ShiftSync</h3>
+            <p className="text-sm text-slate-600 leading-relaxed">
+              ShiftSync helps you synchronize work schedules from Excel to
+              Google Calendar, securely and efficiently.
+            </p>
+          </div>
+
+          {/* Legal */}
+          <div>
+            <h4 className="text-sm font-semibold text-slate-900 mb-4 uppercase tracking-wide">
+              Legal
+            </h4>
+            <ul className="space-y-1 text-sm">
+              <li>
+                <a
+                  href="/privacy"
+                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/terms"
+                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                >
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/cookies"
+                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                >
+                  Cookie Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="/gdpr"
+                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                >
+                  GDPR & Data Protection
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          {/* Contact / Compliance */}
+          <div>
+            <h4 className="text-sm font-semibold text-slate-900 mb-4 uppercase tracking-wide">
+              Contact & Compliance
+            </h4>
+            <ul className="space-y-1 text-sm">
+              <li>
+                <a
+                  href="mailto:support@autisync.com"
+                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                >
+                  support@autisync.com
+                </a>
+              </li>
+              <li className="text-slate-500">EU GDPR compliant</li>
+            </ul>
+          </div>
+        </div>
+
+        {/* Bottom bar */}
+        <div className="mt-12 pt-6 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
+          <span>
+            © {new Date().getFullYear()} Autisync. All rights reserved.
+          </span>
+
+          <span>Built by Autisync.</span>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

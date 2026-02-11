@@ -141,21 +141,21 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
 
   return (
     <Card className="border-0 shadow-lg">
-      <CardHeader>
-        <CardTitle className="flex items-center gap-2">
-          <FileSpreadsheet className="w-5 h-5" />
+      <CardHeader className="p-4 sm:p-6">
+        <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
+          <FileSpreadsheet className="w-4 h-4 sm:w-5 sm:h-5" />
           Upload Schedule
         </CardTitle>
-        <CardDescription>
+        <CardDescription className="text-sm">
           Upload your Excel shift schedule file (.xlsx or .xls)
         </CardDescription>
       </CardHeader>
 
-      <CardContent className="space-y-4">
+      <CardContent className="space-y-4 p-4 sm:p-6">
         {disabled && (
           <Alert>
             <AlertCircle className="w-4 h-4" />
-            <AlertDescription>
+            <AlertDescription className="text-xs sm:text-sm">
               Please select a calendar first before uploading your schedule.
             </AlertDescription>
           </Alert>
@@ -164,7 +164,7 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
         {error && (
           <Alert variant="destructive">
             <AlertCircle className="w-4 h-4" />
-            <AlertDescription>{error}</AlertDescription>
+            <AlertDescription className="text-xs sm:text-sm">{error}</AlertDescription>
           </Alert>
         )}
 
@@ -174,7 +174,7 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
             onDragLeave={handleDragLeave}
             onDrop={handleDrop}
             className={`
-              relative border-2 border-dashed rounded-xl p-8 transition-all
+              relative border-2 border-dashed rounded-xl p-6 sm:p-8 transition-all
               ${isDragging
                 ? 'border-primary bg-primary/5 scale-[1.02]'
                 : 'border-slate-300 bg-slate-50 hover:border-primary/50 hover:bg-slate-100'
@@ -190,15 +190,15 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
               className="absolute inset-0 w-full h-full opacity-0 cursor-pointer disabled:cursor-not-allowed"
               id="file-upload"
             />
-            <div className="flex flex-col items-center gap-4 text-center">
-              <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center">
-                <Upload className="w-8 h-8 text-primary" />
+            <div className="flex flex-col items-center gap-3 sm:gap-4 text-center">
+              <div className="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-primary/10 flex items-center justify-center">
+                <Upload className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
               </div>
               <div>
-                <p className="font-semibold text-slate-900 mb-1">
+                <p className="font-semibold text-sm sm:text-base text-slate-900 mb-1">
                   {isDragging ? 'Drop file here' : 'Drag & drop your Excel file'}
                 </p>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   or click to browse
                 </p>
               </div>
@@ -211,14 +211,14 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
           </div>
         ) : (
           <div className="space-y-4">
-            <div className="bg-slate-50 rounded-lg p-4 border border-slate-200">
+            <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border border-slate-200">
               <div className="flex items-start justify-between gap-3">
-                <div className="flex items-start gap-3 flex-1">
-                  <div className="w-10 h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
-                    <FileSpreadsheet className="w-5 h-5 text-green-600" />
+                <div className="flex items-start gap-2 sm:gap-3 flex-1 min-w-0">
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg bg-green-100 flex items-center justify-center flex-shrink-0">
+                    <FileSpreadsheet className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-sm truncate">{file.name}</p>
+                    <p className="font-semibold text-xs sm:text-sm truncate">{file.name}</p>
                     <p className="text-xs text-muted-foreground">
                       {(file.size / 1024).toFixed(2)} KB
                     </p>
@@ -229,7 +229,7 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
                     variant="ghost"
                     size="sm"
                     onClick={handleRemoveFile}
-                    className="flex-shrink-0"
+                    className="flex-shrink-0 h-8 w-8 p-0"
                   >
                     <X className="w-4 h-4" />
                   </Button>
@@ -247,7 +247,7 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
               )}
 
               {success && !showEmployeeSelector && (
-                <div className="mt-4 flex items-center gap-2 text-sm text-green-600">
+                <div className="mt-4 flex items-center gap-2 text-xs sm:text-sm text-green-600">
                   <CheckCircle2 className="w-4 h-4" />
                   <span className="font-semibold">File processed successfully!</span>
                 </div>
@@ -256,10 +256,10 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
 
             {/* Employee Selector */}
             {showEmployeeSelector && (
-              <div className="bg-blue-50 rounded-lg p-4 border border-blue-200 space-y-3">
+              <div className="bg-blue-50 rounded-lg p-3 sm:p-4 border border-blue-200 space-y-3">
                 <div className="flex items-center gap-2 text-blue-800">
                   <Users className="w-4 h-4" />
-                  <span className="font-semibold text-sm">
+                  <span className="font-semibold text-xs sm:text-sm">
                     Multiple employees found ({parsedResult.employees.length})
                   </span>
                 </div>
@@ -267,14 +267,14 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
                   Select the employee whose schedule you want to sync:
                 </p>
                 <Select onValueChange={handleEmployeeSelect}>
-                  <SelectTrigger className="bg-white">
+                  <SelectTrigger className="bg-white h-10 sm:h-auto">
                     <SelectValue placeholder="Select an employee..." />
                   </SelectTrigger>
                   <SelectContent>
                     {parsedResult.employees.map((employee) => (
                       <SelectItem key={employee.employeeId} value={employee.employeeId}>
                         <div className="flex flex-col">
-                          <span className="font-medium">{employee.employeeName}</span>
+                          <span className="font-medium text-xs sm:text-sm">{employee.employeeName}</span>
                           {employee.lob && (
                             <span className="text-xs text-muted-foreground">
                               {employee.lob} • {employee.shifts.length} shifts
@@ -291,7 +291,7 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
             <Button
               onClick={handleRemoveFile}
               variant="outline"
-              className="w-full"
+              className="w-full h-10 sm:h-auto text-sm sm:text-base"
               disabled={uploading}
             >
               Upload Different File
