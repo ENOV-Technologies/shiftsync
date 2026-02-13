@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
+import { Analytics } from "@vercel/analytics/react";
 import Home from "./components/home";
 import Terms from "./components/terms";
 import Privacy from "./components/privacy";
@@ -19,6 +20,7 @@ function App() {
           <Route path="/cookies" element={<Cookies />} />
         </Routes>
         <Toaster position="top-right" richColors />
+        <Analytics />
       </>
     </Suspense>
   );
