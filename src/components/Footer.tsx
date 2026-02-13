@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
   return (
@@ -21,33 +22,33 @@ const Footer: React.FC = () => {
             </h4>
             <ul className="space-y-1 text-sm">
               <li>
-                <a
-                  href="/privacy"
-                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                <Link
+                  to="/privacy"
+                  className="text-slate-600 hover:text-autisync-gold transition-colors"
                 >
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a
-                  href="/terms"
-                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                <Link
+                  to="/terms"
+                  className="text-slate-600 hover:text-autisync-gold transition-colors"
                 >
                   Terms of Service
-                </a>
+                </Link>
               </li>
               <li>
                 <a
                   href="/cookies"
-                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                  className="text-slate-600 hover:text-autisync-gold transition-colors"
                 >
                   Cookie Policy
                 </a>
               </li>
               <li>
                 <a
-                  href="/gdpr"
-                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                  href="/datadeletion"
+                  className="text-slate-600 hover:text-autisync-gold transition-colors"
                 >
                   GDPR & Data Protection
                 </a>
@@ -64,7 +65,7 @@ const Footer: React.FC = () => {
               <li>
                 <a
                   href="mailto:support@autisync.com"
-                  className="text-slate-600 hover:text-pink-600 transition-colors"
+                  className="text-slate-600 hover:text-autisync-gold transition-colors"
                 >
                   support@autisync.com
                 </a>
