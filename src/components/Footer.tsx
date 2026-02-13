@@ -84,7 +84,9 @@ const Footer: React.FC = () => {
           <span>
             © {new Date().getFullYear()} Autisync. All rights reserved.
           </span>
-          <span>Version Beta 1.0</span>
+          <span className="text-xs text-autisync-gold/70">
+            Version Beta 1.0
+          </span>
           <span>Built by Autisync.</span>
         </div>
       </div>
