@@ -121,7 +121,22 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
                 <p className="text-xs text-muted-foreground leading-relaxed">
                   By checking this box, you agree to our data processing
                   practices and acknowledge that you understand how your data
-                  will be used.
+                  will be used.{" "}
+                  <span>
+                    <a
+                      className="hover:text-autisync-gold underline"
+                      href="/privacy"
+                    >
+                      Privacy Policy
+                    </a>{" "}
+                    and{" "}
+                    <a
+                      href="/terms"
+                      className="hover:text-autisync-gold underline"
+                    >
+                      Terms of Service
+                    </a>
+                  </span>
                 </p>
               </div>
             </div>

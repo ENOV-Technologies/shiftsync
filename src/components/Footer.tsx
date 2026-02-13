@@ -74,6 +74,15 @@ const Footer: React.FC = () => {
                   support@autisync.com
                 </a>
               </li>
+              <li>
+                <a
+                  href="https://tally.so/r/1A7YOO"
+                  className="text-slate-600 hover:text-autisync-gold transition-colors"
+                  target="_blank"
+                >
+                  Bug Reports
+                </a>
+              </li>
               <li className="text-slate-500">EU GDPR compliant</li>
             </ul>
           </div>
