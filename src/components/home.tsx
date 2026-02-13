@@ -316,6 +316,7 @@ function Home() {
         />
       </div>
       {hasCategory("analytics") && <SpeedInsights />}
+      <SpeedInsights />
       <Footer />
     </div>
   );
