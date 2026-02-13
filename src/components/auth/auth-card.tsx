@@ -1,10 +1,17 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Checkbox } from '@/components/ui/checkbox';
-import { Label } from '@/components/ui/label';
-import { Shield, Lock, Eye } from 'lucide-react';
-import { useState } from 'react';
-import Footer from '@/components/Footer';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { Checkbox } from "@/components/ui/checkbox";
+import { Label } from "@/components/ui/label";
+import { Shield, Lock, Eye } from "lucide-react";
+import { useState } from "react";
+import Footer from "@/components/Footer";
+import { Link } from "react-router-dom";
 
 interface AuthCardProps {
   onSignIn: (gdprConsent: boolean) => void;
@@ -25,10 +32,25 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
       <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-50 to-slate-100 p-3 sm:p-4">
         <Card className="w-full max-w-md shadow-2xl border-0">
           <CardHeader className="text-center space-y-2 pb-4 sm:pb-6 p-4 sm:p-6">
-            <div className="mx-auto w-12 h-12 sm:w-16 sm:h-16 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-2 shadow-lg">
-              <Shield className="w-6 h-6 sm:w-8 sm:h-8 text-white" />
+            <div className="flex justify-center mb-6">
+              <Link
+                to="/"
+                aria-label="ShiftSync home"
+                className="flex items-center gap-2 focus:outline-none focus-visible:ring-2 focus-visible:ring-autisync-gold rounded-md"
+              >
+                <img
+                  src="/logo.png"
+                  alt="ShiftSync logo"
+                  width={480}
+                  height={480}
+                  className="h-16 w-auto"
+                  loading="eager"
+                  decoding="async"
+                />
+                <span className="sr-only">ShiftSync</span>
+              </Link>
             </div>
-            <CardTitle className="text-xl sm:text-2xl font-bold tracking-tight">Excel Shift Sync</CardTitle>
+
             <CardDescription className="text-sm sm:text-base">
               Securely sync your work schedule to Google Calendar
             </CardDescription>
@@ -69,7 +91,8 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
                     GDPR Compliance & Privacy
                   </h4>
                   <p className="text-xs text-blue-800 leading-relaxed">
-                    Your data privacy is our priority. We comply with EU data protection regulations.
+                    Your data privacy is our priority. We comply with EU data
+                    protection regulations.
                   </p>
                 </div>
               </div>
@@ -96,8 +119,9 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
                   I consent to the processing of my data
                 </Label>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  By checking this box, you agree to our data processing practices and acknowledge
-                  that you understand how your data will be used.
+                  By checking this box, you agree to our data processing
+                  practices and acknowledge that you understand how your data
+                  will be used.
                 </p>
               </div>
             </div>
@@ -115,12 +139,13 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
                   Connecting...
                 </span>
               ) : (
-                'Sign in with Google'
+                "Sign in with Google"
               )}
             </Button>
 
             <p className="text-xs text-center text-muted-foreground px-2 sm:px-4">
-              Your authentication is handled securely by Google. We never see your password.
+              Your authentication is handled securely by Google. We never see
+              your password.
             </p>
           </CardContent>
         </Card>

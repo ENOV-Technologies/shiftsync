@@ -1,6 +1,12 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { LogOut, Settings, History, User } from 'lucide-react';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import { LogOut, Settings, History, User } from "lucide-react";
 
 interface DashboardHeaderProps {
   email: string;
@@ -17,21 +23,38 @@ export function DashboardHeader({ email, onLogout }: DashboardHeaderProps) {
               <User className="w-5 h-5 sm:w-6 sm:h-6 text-white" />
             </div>
             <div className="min-w-0 flex-1">
-              <CardTitle className="text-base sm:text-lg">Welcome back!</CardTitle>
-              <CardDescription className="text-sm sm:text-base truncate">{email}</CardDescription>
+              <CardTitle className="text-base sm:text-lg">
+                Welcome back!
+              </CardTitle>
+              <CardDescription className="text-sm sm:text-base truncate">
+                {email}
+              </CardDescription>
             </div>
           </div>
 
           <div className="flex items-center gap-2 w-full sm:w-auto">
-            <Button variant="outline" size="sm" className="gap-1 sm:gap-2 flex-1 sm:flex-initial">
+            <Button
+              variant="outline"
+              size="sm"
+              className="gap-1 sm:gap-2 flex-1 sm:flex-initial"
+            >
               <History className="w-3 h-3 sm:w-4 sm:h-4" />
               <span className="hidden xs:inline">History</span>
             </Button>
-            <Button variant="outline" size="sm" className="gap-1 sm:gap-2 flex-1 sm:flex-initial">
+            <Button
+              variant="outline"
+              size="sm"
+              className="gap-1 sm:gap-2 flex-1 sm:flex-initial"
+            >
               <Settings className="w-3 h-3 sm:w-4 sm:h-4" />
               <span className="hidden xs:inline">Settings</span>
             </Button>
-            <Button variant="outline" size="sm" onClick={onLogout} className="gap-1 sm:gap-2 flex-1 sm:flex-initial">
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={onLogout}
+              className="gap-1 sm:gap-2 flex-1 sm:flex-initial"
+            >
               <LogOut className="w-3 h-3 sm:w-4 sm:h-4" />
               <span className="hidden xs:inline">Logout</span>
             </Button>
