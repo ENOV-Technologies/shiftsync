@@ -22,14 +22,14 @@ const DataDeletion = () => {
 
           <Card className="shadow-2xl border-0">
             <CardHeader className="space-y-2 p-6 sm:p-8">
-              <div class="mb-6">
-                <div class="inline-block px-4 py-2 bg-autisync-black text-autisync-gold rounded-full text-sm font-medium mb-6">
+              <div className="mb-6">
+                <div className="inline-block px-4 py-2 bg-autisync-black text-autisync-gold rounded-full text-sm font-medium mb-6">
                   Last Updated: February 11, 2026
                 </div>
-                <h1 class="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
                   Delete Your Data
                 </h1>
-                <p class="text-xl text-slate-600 leading-relaxed">
+                <p className="text-xl text-slate-600 leading-relaxed">
                   You have the right to delete all your personal data from
                   <strong> ShiftSync</strong> at any time. This page explains
                   how to exercise your right to erasure under GDPR (Article 17).

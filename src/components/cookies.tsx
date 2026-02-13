@@ -4,6 +4,10 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import { useNavigate } from "react-router-dom";
 import Footer from "@/components/Footer";
+import {
+  POLICY_LAST_UPDATED,
+  cookieCategories,
+} from "@/lib/cookies/cookiePolicyConfig";
 
 const Cookies = () => {
   const navigate = useNavigate();
@@ -23,14 +27,14 @@ const Cookies = () => {
 
           <Card className="shadow-2xl border-0">
             <CardHeader className="space-y-2 p-6 sm:p-8">
-              <div class="mb-6">
-                <div class="inline-block px-4 py-2 bg-autisync-black text-autisync-gold rounded-full text-sm font-medium mb-6">
-                  Last Updated: February 11, 2026
+              <div className="mb-6">
+                <div className="inline-block px-4 py-2 bg-autisync-black text-autisync-gold rounded-full text-sm font-medium mb-6">
+                  Last Updated: {POLICY_LAST_UPDATED}
                 </div>
-                <h1 class="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
                   Cookie Policy
                 </h1>
-                <p class="text-xl text-slate-600 leading-relaxed">
+                <p className="text-xl text-slate-600 leading-relaxed">
                   This Cookie Policy explains how <strong>ShiftSync</strong>{" "}
                   uses cookies and similar technologies. We believe in
                   transparency and minimal data collection.
@@ -47,8 +51,8 @@ const Cookies = () => {
                 <p className="leading-relaxed">
                   <strong>ShiftSync uses minimal cookies.</strong> We only use
                   essential cookies required for authentication, security, and
-                  basic preferences. We do <strong>not</strong> use advertising,
-                  analytics, or tracking cookies.
+                  basic preferences. We do <strong>not</strong> use by default
+                  advertising, analytics, or tracking cookies.
                 </p>
               </section>
 

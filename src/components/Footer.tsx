@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CookiePreferencesLink from "@/components/cookies/CookiePreferencesLink";
 
 const Footer: React.FC = () => {
   return (
@@ -52,6 +53,9 @@ const Footer: React.FC = () => {
                 >
                   GDPR & Data Protection
                 </a>
+              </li>
+              <li>
+                <CookiePreferencesLink />
               </li>
             </ul>
           </div>

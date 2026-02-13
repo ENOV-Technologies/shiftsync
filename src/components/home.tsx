@@ -13,6 +13,9 @@ import { getErrorMessage } from "@/lib/getErrorMessage";
 import { toast } from "sonner";
 import Footer from "../components/Footer";
 
+import { useConsent } from "@/lib/cookies/ConsentContext";
+import { SpeedInsights } from "@vercel/speed-insights/react";
+
 const STORAGE_KEYS = {
   ACCESS_TOKEN: "google_access_token",
   USER_EMAIL: "google_user_email",
@@ -21,6 +24,7 @@ const STORAGE_KEYS = {
 type AppStep = "auth" | "upload" | "preview" | "confirm" | "success";
 
 function Home() {
+  const { hasCategory } = useConsent();
   // Authentication state
   const [accessToken, setAccessToken] = useState<string | null>(null);
   const [userEmail, setUserEmail] = useState<string>("");
@@ -311,6 +315,7 @@ function Home() {
           calendarName={calendarName}
         />
       </div>
+      {hasCategory("analytics") && <SpeedInsights />}
       <Footer />
     </div>
   );

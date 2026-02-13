@@ -23,126 +23,126 @@ const Terms = () => {
 
           <Card className="shadow-2xl border-0">
             <CardContent className="p-6 sm:p-8 space-y-6 text-slate-700">
-              <main class="max-w-4xl mx-auto px-6 py-16">
-                <div class="mb-16">
-                  <div class="inline-block px-4 py-2 bg-autisync-gold/10 text-autisync-gold rounded-full text-sm font-medium mb-6">
+              <main className="max-w-4xl mx-auto px-6 py-16">
+                <div className="mb-16">
+                  <div className="inline-block px-4 py-2 bg-autisync-gold/10 text-autisync-gold rounded-full text-sm font-medium mb-6">
                     Last Updated: February 11, 2026
                   </div>
-                  <h1 class="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
+                  <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
                     Terms of Service
                   </h1>
-                  <p class="text-xl text-slate-600 leading-relaxed">
+                  <p className="text-xl text-slate-600 leading-relaxed">
                     These Terms of Service govern your use of ShiftSync. By
                     accessing or using our service, you agree to be bound by
                     these terms. Please read them carefully.
                   </p>
                 </div>
 
-                <div class="bg-white rounded-2xl border border-slate-200 p-8 mb-12 shadow-sm">
-                  <h2 class="text-2xl font-bold text-slate-900 mb-6">
+                <div className="bg-white rounded-2xl border border-slate-200 p-8 mb-12 shadow-sm">
+                  <h2 className="text-2xl font-bold text-slate-900 mb-6">
                     Table of Contents
                   </h2>
-                  <nav class="grid md:grid-cols-2 gap-4">
+                  <nav className="grid md:grid-cols-2 gap-4">
                     <a
                       href="#acceptance"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       1. Acceptance of Terms
                     </a>
                     <a
                       href="#description"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       2. Service Description
                     </a>
                     <a
                       href="#eligibility"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       3. Eligibility
                     </a>
                     <a
                       href="#account"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       4. Account & Authentication
                     </a>
                     <a
                       href="#usage"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       5. Acceptable Use
                     </a>
                     <a
                       href="#intellectual-property"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       6. Intellectual Property
                     </a>
                     <a
                       href="#user-content"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       7. User Content
                     </a>
                     <a
                       href="#disclaimers"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       8. Disclaimers
                     </a>
                     <a
                       href="#limitation"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       9. Limitation of Liability
                     </a>
                     <a
                       href="#indemnification"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       10. Indemnification
                     </a>
                     <a
                       href="#termination"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       11. Termination
                     </a>
                     <a
                       href="#governing-law"
-                      class="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
+                      className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
-                      <span class="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
+                      <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
                       12. Governing Law
                     </a>
                   </nav>
                 </div>
 
-                <div class="space-y-12">
-                  <section id="acceptance" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                <div className="space-y-12">
+                  <section id="acceptance" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         1. Acceptance of Terms
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <p>
                           By accessing or using ShiftSync (the "Service"),
                           available at{" "}
                           <a
                             href="https://shiftsync.autisync.com"
-                            class="text-autisync-gold/70 hover:text-autisync-gold underline"
+                            className="text-autisync-gold/70 hover:text-autisync-gold underline"
                           >
                             shiftsync.autisync.com
                           </a>
@@ -155,11 +155,11 @@ const Terms = () => {
                           between you ("User" or "you") and Autisync ("Company",
                           "we", "us", or "our"), the operator of ShiftSync.
                         </p>
-                        <div class="bg-autisync-gold/10 border-l-4 border-autisync-gold/70 p-6 rounded-r-xl">
-                          <p class="font-semibold text-autisync-gold mb-2">
+                        <div className="bg-autisync-gold/10 border-l-4 border-autisync-gold/70 p-6 rounded-r-xl">
+                          <p className="font-semibold text-autisync-gold mb-2">
                             Important Notice
                           </p>
-                          <p class="text-sm text-slate-800">
+                          <p className="text-sm text-slate-800">
                             We reserve the right to update or modify these Terms
                             at any time. Continued use of the Service after
                             changes constitutes acceptance of the modified
@@ -171,21 +171,21 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="description" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="description" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         2. Service Description
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <p>
                           ShiftSync is a web-based application that enables
                           users to:
                         </p>
-                        <div class="grid md:grid-cols-2 gap-4 my-6">
-                          <div class="bg-white border border-autisync-gold/20 rounded-xl p-5">
-                            <div class="w-12 h-12 bg-autisync-gold/10 rounded-lg flex items-center justify-center mb-3">
+                        <div className="grid md:grid-cols-2 gap-4 my-6">
+                          <div className="bg-white border border-autisync-gold/20 rounded-xl p-5">
+                            <div className="w-12 h-12 bg-autisync-gold/10 rounded-lg flex items-center justify-center mb-3">
                               <svg
-                                class="w-6 h-6 text-autisync-gold"
+                                className="w-6 h-6 text-autisync-gold"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -198,17 +198,17 @@ const Terms = () => {
                                 ></path>
                               </svg>
                             </div>
-                            <h3 class="font-bold text-slate-900 mb-2">
+                            <h3 className="font-bold text-slate-900 mb-2">
                               Upload Schedules
                             </h3>
-                            <p class="text-sm text-slate-600">
+                            <p className="text-sm text-slate-600">
                               Upload work schedules in Excel (.xlsx) format
                             </p>
                           </div>
-                          <div class="bg-white border border-autisync-gold/20 rounded-xl p-5">
-                            <div class="w-12 h-12 bg-autisync-gold/10 rounded-lg flex items-center justify-center mb-3">
+                          <div className="bg-white border border-autisync-gold/20 rounded-xl p-5">
+                            <div className="w-12 h-12 bg-autisync-gold/10 rounded-lg flex items-center justify-center mb-3">
                               <svg
-                                class="w-6 h-6 text-autisync-gold"
+                                className="w-6 h-6 text-autisync-gold"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -221,18 +221,18 @@ const Terms = () => {
                                 ></path>
                               </svg>
                             </div>
-                            <h3 class="font-bold text-slate-900 mb-2">
+                            <h3 className="font-bold text-slate-900 mb-2">
                               Automatic Sync
                             </h3>
-                            <p class="text-sm text-slate-600">
+                            <p className="text-sm text-slate-600">
                               Synchronize shifts to Google Calendar
                               automatically
                             </p>
                           </div>
-                          <div class="bg-white border border-autisync-gold/20 rounded-xl p-5">
-                            <div class="w-12 h-12 bg-autisync-gold/10 rounded-lg flex items-center justify-center mb-3">
+                          <div className="bg-white border border-autisync-gold/20 rounded-xl p-5">
+                            <div className="w-12 h-12 bg-autisync-gold/10 rounded-lg flex items-center justify-center mb-3">
                               <svg
-                                class="w-6 h-6 text-autisync-gold"
+                                className="w-6 h-6 text-autisync-gold"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -245,17 +245,17 @@ const Terms = () => {
                                 ></path>
                               </svg>
                             </div>
-                            <h3 class="font-bold text-slate-900 mb-2">
+                            <h3 className="font-bold text-slate-900 mb-2">
                               Manage Preferences
                             </h3>
-                            <p class="text-sm text-slate-600">
+                            <p className="text-sm text-slate-600">
                               Configure calendar selection and timezone settings
                             </p>
                           </div>
-                          <div class="bg-white border border-autisync-gold/20 rounded-xl p-5">
-                            <div class="w-12 h-12 bg-autisync-gold/10 rounded-lg flex items-center justify-center mb-3">
+                          <div className="bg-white border border-autisync-gold/20 rounded-xl p-5">
+                            <div className="w-12 h-12 bg-autisync-gold/10 rounded-lg flex items-center justify-center mb-3">
                               <svg
-                                class="w-6 h-6 text-autisync-gold"
+                                className="w-6 h-6 text-autisync-gold"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -274,10 +274,10 @@ const Terms = () => {
                                 ></path>
                               </svg>
                             </div>
-                            <h3 class="font-bold text-slate-900 mb-2">
+                            <h3 className="font-bold text-slate-900 mb-2">
                               Preview Changes
                             </h3>
-                            <p class="text-sm text-slate-600">
+                            <p className="text-sm text-slate-600">
                               Review all shifts before syncing to calendar
                             </p>
                           </div>
@@ -287,11 +287,11 @@ const Terms = () => {
                           Google Calendar API and requires users to authenticate
                           using Google OAuth 2.0.
                         </p>
-                        <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
-                          <p class="font-semibold text-amber-900 mb-2">
+                        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
+                          <p className="font-semibold text-amber-900 mb-2">
                             Service Availability
                           </p>
-                          <p class="text-sm text-amber-800">
+                          <p className="text-sm text-amber-800">
                             We strive to maintain 99.9% uptime, but we do not
                             guarantee uninterrupted access. The Service may be
                             temporarily unavailable for maintenance, updates, or
@@ -302,18 +302,18 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="eligibility" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="eligibility" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         3. Eligibility
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <p>To use ShiftSync, you must:</p>
-                        <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
-                          <ul class="space-y-3 list-none pl-0">
-                            <li class="flex items-start gap-3">
+                        <div className="bg-white border border-slate-200 rounded-xl p-6 my-6">
+                          <ul className="space-y-3 list-none pl-0">
+                            <li className="flex items-start gap-3">
                               <svg
-                                class="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
+                                className="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -330,9 +330,9 @@ const Terms = () => {
                                 age of majority in your jurisdiction
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
+                            <li className="flex items-start gap-3">
                               <svg
-                                class="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
+                                className="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -349,9 +349,9 @@ const Terms = () => {
                                 agreement
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
+                            <li className="flex items-start gap-3">
                               <svg
-                                class="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
+                                className="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -368,9 +368,9 @@ const Terms = () => {
                                 with access to Google Calendar
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
+                            <li className="flex items-start gap-3">
                               <svg
-                                class="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
+                                className="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -387,9 +387,9 @@ const Terms = () => {
                                 applicable laws
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
+                            <li className="flex items-start gap-3">
                               <svg
-                                class="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
+                                className="w-5 h-5 text-autisync-gold flex-shrink-0 mt-0.5"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -418,13 +418,13 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="account" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="account" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         4. Account and Authentication
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           4.1 Google OAuth Authentication
                         </h3>
                         <p>
@@ -434,27 +434,27 @@ const Terms = () => {
                           synchronizing work shifts.
                         </p>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           4.2 Account Security
                         </h3>
                         <p>You are responsible for:</p>
-                        <ul class="space-y-2 list-none pl-0 my-4">
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                        <ul className="space-y-2 list-none pl-0 my-4">
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Maintaining the security of your Google account
                               credentials
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               All activities that occur under your authenticated
                               session
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Notifying us immediately of any unauthorized
                               access or security breach
@@ -462,7 +462,7 @@ const Terms = () => {
                           </li>
                         </ul>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           4.3 Account Termination by User
                         </h3>
                         <p>
@@ -473,17 +473,17 @@ const Terms = () => {
                           your data in accordance with our Privacy Policy.
                         </p>
 
-                        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
-                          <p class="font-semibold text-blue-900 mb-2">
+                        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
+                          <p className="font-semibold text-blue-900 mb-2">
                             Revoking Access
                           </p>
-                          <p class="text-sm text-blue-800">
+                          <p className="text-sm text-blue-800">
                             You can revoke ShiftSync's access to your Google
                             Calendar at any time through your Google Account
                             settings at{" "}
                             <a
                               href="https://myaccount.google.com/permissions"
-                              class="underline"
+                              className="underline"
                             >
                               myaccount.google.com/permissions
                             </a>
@@ -494,40 +494,40 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="usage" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="usage" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         5. Acceptable Use Policy
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <p>When using ShiftSync, you agree to:</p>
 
-                        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-6">
-                          <h3 class="text-lg font-bold text-emerald-900 mb-3">
+                        <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-6">
+                          <h3 className="text-lg font-bold text-emerald-900 mb-3">
                             ✓ Permitted Uses
                           </h3>
-                          <ul class="space-y-2 list-none pl-0">
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
+                          <ul className="space-y-2 list-none pl-0">
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Use the Service only for lawful purposes
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Upload only your own work schedules or schedules
                                 you are authorized to manage
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Comply with all applicable laws and regulations
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Respect the intellectual property rights of
                                 others
@@ -536,66 +536,68 @@ const Terms = () => {
                           </ul>
                         </div>
 
-                        <div class="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
-                          <h3 class="text-lg font-bold text-red-900 mb-3">
+                        <div className="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
+                          <h3 className="text-lg font-bold text-red-900 mb-3">
                             ✗ Prohibited Activities
                           </h3>
-                          <p class="text-sm text-red-800 mb-3">You must NOT:</p>
-                          <ul class="space-y-2 list-none pl-0">
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                          <p className="text-sm text-red-800 mb-3">
+                            You must NOT:
+                          </p>
+                          <ul className="space-y-2 list-none pl-0">
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Attempt to reverse engineer, decompile, or
                                 disassemble the Service
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Use automated systems (bots, scrapers) to access
                                 the Service
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Upload malicious code, viruses, or harmful
                                 content
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Interfere with or disrupt the Service or its
                                 servers
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Attempt to gain unauthorized access to any part
                                 of the Service
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Use the Service to transmit spam or unsolicited
                                 messages
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Violate any applicable laws or regulations
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>Impersonate any person or entity</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Sell, rent, or commercialize access to the
                                 Service
@@ -604,11 +606,11 @@ const Terms = () => {
                           </ul>
                         </div>
 
-                        <div class="bg-slate-100 border border-slate-300 rounded-xl p-6">
-                          <p class="font-semibold text-slate-900 mb-2">
+                        <div className="bg-slate-100 border border-slate-300 rounded-xl p-6">
+                          <p className="font-semibold text-slate-900 mb-2">
                             Enforcement
                           </p>
-                          <p class="text-sm text-slate-700">
+                          <p className="text-sm text-slate-700">
                             We reserve the right to investigate and take
                             appropriate legal action against anyone who violates
                             this Acceptable Use Policy, including suspending or
@@ -619,13 +621,13 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="intellectual-property" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="intellectual-property" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         6. Intellectual Property Rights
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           6.1 Our Intellectual Property
                         </h3>
                         <p>
@@ -636,7 +638,7 @@ const Terms = () => {
                           other intellectual property laws.
                         </p>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           6.2 Limited License
                         </h3>
                         <p>
@@ -646,34 +648,34 @@ const Terms = () => {
                           subject to these Terms.
                         </p>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           6.3 Restrictions
                         </h3>
                         <p>You may not:</p>
-                        <ul class="space-y-2 list-none pl-0 my-4">
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                        <ul className="space-y-2 list-none pl-0 my-4">
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Copy, modify, or create derivative works of the
                               Service
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Reproduce, distribute, or publicly display any
                               part of the Service
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Remove or alter any copyright, trademark, or
                               proprietary notices
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Use our trademarks or branding without written
                               permission
@@ -684,13 +686,13 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="user-content" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="user-content" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         7. User Content and Data
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           7.1 Your Content Ownership
                         </h3>
                         <p>
@@ -699,7 +701,7 @@ const Terms = () => {
                           any ownership over your content.
                         </p>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           7.2 License to Process Your Content
                         </h3>
                         <p>
@@ -709,38 +711,38 @@ const Terms = () => {
                           solely for the purpose of providing the Service.
                         </p>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           7.3 Content Responsibility
                         </h3>
                         <p>You are solely responsible for:</p>
-                        <ul class="space-y-2 list-none pl-0 my-4">
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                        <ul className="space-y-2 list-none pl-0 my-4">
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               The accuracy and legality of the content you
                               upload
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Ensuring you have the right to upload and sync the
                               schedule data
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Maintaining backups of your original Excel files
                             </span>
                           </li>
                         </ul>
 
-                        <div class="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl my-6">
-                          <p class="font-semibold text-amber-900 mb-2">
+                        <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl my-6">
+                          <p className="font-semibold text-amber-900 mb-2">
                             Data Processing
                           </p>
-                          <p class="text-sm text-amber-800">
+                          <p className="text-sm text-amber-800">
                             Uploaded Excel files are processed in memory and not
                             permanently stored on our servers. Only sync
                             metadata (last sync time, preferences) is retained.
@@ -751,49 +753,49 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="disclaimers" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="disclaimers" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         8. Disclaimers and Warranties
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-                        <div class="bg-slate-100 border-2 border-slate-300 rounded-xl p-8 my-6">
-                          <h3 class="text-xl font-bold text-slate-900 mb-4">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                        <div className="bg-slate-100 border-2 border-slate-300 rounded-xl p-8 my-6">
+                          <h3 className="text-xl font-bold text-slate-900 mb-4">
                             "AS IS" SERVICE
                           </h3>
-                          <p class="text-slate-700 uppercase font-semibold mb-4">
+                          <p className="text-slate-700 uppercase font-semibold mb-4">
                             SHIFTSYNC IS PROVIDED ON AN "AS IS" AND "AS
                             AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND,
                             EITHER EXPRESS OR IMPLIED.
                           </p>
-                          <p class="text-sm text-slate-700">
+                          <p className="text-sm text-slate-700">
                             To the fullest extent permitted by law, we disclaim
                             all warranties, including but not limited to:
                           </p>
-                          <ul class="space-y-2 list-none pl-0 mt-4">
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
+                          <ul className="space-y-2 list-none pl-0 mt-4">
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Implied warranties of merchantability, fitness
                                 for a particular purpose, and non-infringement
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Warranties that the Service will be
                                 uninterrupted, error-free, or secure
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Warranties regarding the accuracy, reliability,
                                 or completeness of results
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Warranties that defects will be corrected
                               </span>
@@ -801,30 +803,30 @@ const Terms = () => {
                           </ul>
                         </div>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           Third-Party Services
                         </h3>
                         <p>
                           ShiftSync integrates with Google Calendar, a
                           third-party service. We are not responsible for:
                         </p>
-                        <ul class="space-y-2 list-none pl-0 my-4">
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                        <ul className="space-y-2 list-none pl-0 my-4">
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Google's policies, terms of service, or privacy
                               practices
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Availability, functionality, or changes to the
                               Google Calendar API
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Any issues arising from your use of Google
                               services
@@ -832,11 +834,11 @@ const Terms = () => {
                           </li>
                         </ul>
 
-                        <div class="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-6">
-                          <p class="font-semibold text-red-900 mb-2">
+                        <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-6">
+                          <p className="font-semibold text-red-900 mb-2">
                             No Professional Advice
                           </p>
-                          <p class="text-sm text-red-800">
+                          <p className="text-sm text-red-800">
                             ShiftSync is a productivity tool and does not
                             provide professional, legal, or employment advice.
                             You are responsible for ensuring compliance with
@@ -847,55 +849,55 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="limitation" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="limitation" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         9. Limitation of Liability
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-                        <div class="bg-red-100 border-2 border-red-300 rounded-xl p-8 my-6">
-                          <p class="text-red-900 uppercase font-bold mb-4">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                        <div className="bg-red-100 border-2 border-red-300 rounded-xl p-8 my-6">
+                          <p className="text-red-900 uppercase font-bold mb-4">
                             TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
                           </p>
-                          <p class="text-sm text-red-900">
+                          <p className="text-sm text-red-900">
                             Autisync and its officers, directors, employees,
                             agents, and affiliates shall not be liable for any
                             indirect, incidental, special, consequential, or
                             punitive damages, including but not limited to:
                           </p>
-                          <ul class="space-y-2 list-none pl-0 mt-4">
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                          <ul className="space-y-2 list-none pl-0 mt-4">
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Loss of profits, revenue, data, or use
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Business interruption or lost opportunities
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>Personal injury or emotional distress</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Errors or inaccuracies in schedule
                                 synchronization
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Unauthorized access to or alteration of your
                                 data
                               </span>
                             </li>
                           </ul>
-                          <p class="text-sm text-red-900 mt-4">
+                          <p className="text-sm text-red-900 mt-4">
                             This limitation applies regardless of the legal
                             theory (contract, tort, negligence, strict
                             liability, or otherwise) and even if we have been
@@ -903,7 +905,7 @@ const Terms = () => {
                           </p>
                         </div>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           Maximum Liability Cap
                         </h3>
                         <p>
@@ -913,11 +915,11 @@ const Terms = () => {
                           greater).
                         </p>
 
-                        <div class="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
-                          <p class="font-semibold text-blue-900 mb-2">
+                        <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
+                          <p className="font-semibold text-blue-900 mb-2">
                             Jurisdictional Variations
                           </p>
-                          <p class="text-sm text-blue-800">
+                          <p className="text-sm text-blue-800">
                             Some jurisdictions do not allow the exclusion or
                             limitation of certain damages. In such
                             jurisdictions, our liability is limited to the
@@ -928,12 +930,12 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="indemnification" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="indemnification" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         10. Indemnification
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <p>
                           You agree to indemnify, defend, and hold harmless
                           Autisync, its officers, directors, employees, agents,
@@ -942,28 +944,28 @@ const Terms = () => {
                           including reasonable attorneys' fees, arising from or
                           related to:
                         </p>
-                        <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
-                          <ul class="space-y-3 list-none pl-0">
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                        <div className="bg-white border border-slate-200 rounded-xl p-6 my-6">
+                          <ul className="space-y-3 list-none pl-0">
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                               <span>Your use or misuse of the Service</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                               <span>Your violation of these Terms</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Your violation of any rights of a third party
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                               <span>Content you upload to the Service</span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Your breach of any applicable laws or
                                 regulations
@@ -980,39 +982,39 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="termination" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="termination" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         11. Termination and Suspension
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           11.1 Termination by You
                         </h3>
                         <p>
                           You may terminate your use of ShiftSync at any time
                           by:
                         </p>
-                        <ul class="space-y-2 list-none pl-0 my-4">
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                        <ul className="space-y-2 list-none pl-0 my-4">
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Disconnecting your Google account from the Service
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Deleting your account through account settings
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>Ceasing all use of the Service</span>
                           </li>
                         </ul>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           11.2 Termination by Us
                         </h3>
                         <p>
@@ -1020,70 +1022,70 @@ const Terms = () => {
                           access to ShiftSync at any time, with or without
                           notice, for any reason, including but not limited to:
                         </p>
-                        <div class="bg-white border border-slate-200 rounded-xl p-6 my-6">
-                          <ul class="space-y-3 list-none pl-0">
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                        <div className="bg-white border border-slate-200 rounded-xl p-6 my-6">
+                          <ul className="space-y-3 list-none pl-0">
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Violation of these Terms or Acceptable Use
                                 Policy
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Suspected fraudulent, abusive, or illegal
                                 activity
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Extended periods of inactivity (90+ days)
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
                                 Requests from law enforcement or regulatory
                                 authorities
                               </span>
                             </li>
-                            <li class="flex items-start gap-3">
-                              <span class="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>Discontinuation of the Service</span>
                             </li>
                           </ul>
                         </div>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           11.3 Effect of Termination
                         </h3>
                         <p>Upon termination:</p>
-                        <ul class="space-y-2 list-none pl-0 my-4">
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                        <ul className="space-y-2 list-none pl-0 my-4">
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Your right to access and use the Service
                               immediately ceases
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               We will delete your account data in accordance
                               with our Privacy Policy
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Previously synced calendar events will remain in
                               your Google Calendar
                             </span>
                           </li>
-                          <li class="flex items-start gap-3">
-                            <span class="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
                               Sections of these Terms that by their nature
                               should survive will continue to apply
@@ -1094,13 +1096,13 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section id="governing-law" class="scroll-mt-24">
-                    <div class="accent-border pl-6">
-                      <h2 class="text-3xl font-bold text-slate-900 mb-4">
+                  <section id="governing-law" className="scroll-mt-24">
+                    <div className="accent-border pl-6">
+                      <h2 className="text-3xl font-bold text-slate-900 mb-4">
                         12. Governing Law and Dispute Resolution
                       </h2>
-                      <div class="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                      <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           12.1 Governing Law
                         </h3>
                         <p>
@@ -1109,7 +1111,7 @@ const Terms = () => {
                           its conflict of law provisions.
                         </p>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           12.2 Jurisdiction
                         </h3>
                         <p>
@@ -1120,7 +1122,7 @@ const Terms = () => {
                           jurisdiction of such courts.
                         </p>
 
-                        <h3 class="text-xl font-bold text-slate-900 mt-6">
+                        <h3 className="text-xl font-bold text-slate-900 mt-6">
                           12.3 EU User Rights
                         </h3>
                         <p>
@@ -1131,16 +1133,16 @@ const Terms = () => {
                           consumer under EU law.
                         </p>
 
-                        <div class="bg-autisync-gold/10 border-l-4 border-autisync-gold/70 p-6 rounded-r-xl my-6">
-                          <p class="font-semibold text-autisync-gold mb-2">
+                        <div className="bg-autisync-gold/10 border-l-4 border-autisync-gold/70 p-6 rounded-r-xl my-6">
+                          <p className="font-semibold text-autisync-gold mb-2">
                             Dispute Resolution Process
                           </p>
-                          <p class="text-sm text-autisync-black/90">
+                          <p className="text-sm text-autisync-black/90">
                             Before initiating any legal proceedings, we
                             encourage you to contact us at{" "}
                             <a
                               href="mailto:support@autisync.com"
-                              class="underline"
+                              className="underline"
                             >
                               support@autisync.com
                             </a>{" "}
@@ -1153,18 +1155,18 @@ const Terms = () => {
                     </div>
                   </section>
 
-                  <section class="mt-16 space-y-8">
-                    <div class="bg-white border border-slate-200 rounded-2xl p-8">
-                      <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                  <section className="mt-16 space-y-8">
+                    <div className="bg-white border border-slate-200 rounded-2xl p-8">
+                      <h2 className="text-2xl font-bold text-slate-900 mb-4">
                         13. Miscellaneous Provisions
                       </h2>
 
-                      <div class="space-y-6">
+                      <div className="space-y-6">
                         <div>
-                          <h3 class="text-lg font-bold text-slate-900 mb-2">
+                          <h3 className="text-lg font-bold text-slate-900 mb-2">
                             13.1 Entire Agreement
                           </h3>
-                          <p class="text-slate-700">
+                          <p className="text-slate-700">
                             These Terms, together with our Privacy Policy and
                             Cookie Policy, constitute the entire agreement
                             between you and Autisync regarding the Service.
@@ -1172,10 +1174,10 @@ const Terms = () => {
                         </div>
 
                         <div>
-                          <h3 class="text-lg font-bold text-slate-900 mb-2">
+                          <h3 className="text-lg font-bold text-slate-900 mb-2">
                             13.2 Severability
                           </h3>
-                          <p class="text-slate-700">
+                          <p className="text-slate-700">
                             If any provision of these Terms is found to be
                             invalid or unenforceable, the remaining provisions
                             will remain in full force and effect.
@@ -1183,10 +1185,10 @@ const Terms = () => {
                         </div>
 
                         <div>
-                          <h3 class="text-lg font-bold text-slate-900 mb-2">
+                          <h3 className="text-lg font-bold text-slate-900 mb-2">
                             13.3 Waiver
                           </h3>
-                          <p class="text-slate-700">
+                          <p className="text-slate-700">
                             Our failure to enforce any right or provision of
                             these Terms will not constitute a waiver of that
                             right or provision.
@@ -1194,10 +1196,10 @@ const Terms = () => {
                         </div>
 
                         <div>
-                          <h3 class="text-lg font-bold text-slate-900 mb-2">
+                          <h3 className="text-lg font-bold text-slate-900 mb-2">
                             13.4 Assignment
                           </h3>
-                          <p class="text-slate-700">
+                          <p className="text-slate-700">
                             You may not assign or transfer these Terms without
                             our prior written consent. We may assign these Terms
                             without restriction.
@@ -1205,10 +1207,10 @@ const Terms = () => {
                         </div>
 
                         <div>
-                          <h3 class="text-lg font-bold text-slate-900 mb-2">
+                          <h3 className="text-lg font-bold text-slate-900 mb-2">
                             13.5 Force Majeure
                           </h3>
-                          <p class="text-slate-700">
+                          <p className="text-slate-700">
                             We shall not be liable for any delay or failure to
                             perform resulting from causes outside our reasonable
                             control, including but not limited to acts of God,
@@ -1218,10 +1220,10 @@ const Terms = () => {
                         </div>
 
                         <div>
-                          <h3 class="text-lg font-bold text-slate-900 mb-2">
+                          <h3 className="text-lg font-bold text-slate-900 mb-2">
                             13.6 Modifications to the Service
                           </h3>
-                          <p class="text-slate-700">
+                          <p className="text-slate-700">
                             We reserve the right to modify, suspend, or
                             discontinue any aspect of the Service at any time,
                             with or without notice. We will not be liable to you
@@ -1232,11 +1234,11 @@ const Terms = () => {
                       </div>
                     </div>
 
-                    <div class="bg-gradient-to-br from-autisync-gold/10 to-autisync-goldsoft border-2 border-autisync-gold/20 rounded-2xl p-8">
-                      <div class="flex items-start gap-6">
-                        <div class="w-16 h-16 bg-gradient-to-br from-autisync-gold/30 to-autisync-gold/90 rounded-2xl flex items-center justify-center flex-shrink-0">
+                    <div className="bg-gradient-to-br from-autisync-gold/10 to-autisync-goldsoft border-2 border-autisync-gold/20 rounded-2xl p-8">
+                      <div className="flex items-start gap-6">
+                        <div className="w-16 h-16 bg-gradient-to-br from-autisync-gold/30 to-autisync-gold/90 rounded-2xl flex items-center justify-center flex-shrink-0">
                           <svg
-                            class="w-8 h-8 text-white"
+                            className="w-8 h-8 text-white"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -1249,19 +1251,19 @@ const Terms = () => {
                             ></path>
                           </svg>
                         </div>
-                        <div class="flex-1">
-                          <h2 class="text-2xl font-bold text-slate-900 mb-4">
+                        <div className="flex-1">
+                          <h2 className="text-2xl font-bold text-slate-900 mb-4">
                             Questions About These Terms?
                           </h2>
-                          <p class="text-slate-700 mb-4">
+                          <p className="text-slate-700 mb-4">
                             If you have any questions, concerns, or need
                             clarification regarding these Terms of Service,
                             please contact us:
                           </p>
-                          <div class="space-y-2">
-                            <div class="flex items-center gap-3">
+                          <div className="space-y-2">
+                            <div className="flex items-center gap-3">
                               <svg
-                                class="w-5 h-5 text-autisync-gold"
+                                className="w-5 h-5 text-autisync-gold"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -1275,14 +1277,14 @@ const Terms = () => {
                               </svg>
                               <a
                                 href="mailto:support@autisync.com"
-                                class="text-autisync-gold/70 hover:text-autisync-gold font-semibold underline"
+                                className="text-autisync-gold/70 hover:text-autisync-gold font-semibold underline"
                               >
                                 support@autisync.com
                               </a>
                             </div>
-                            <div class="flex items-start gap-3">
+                            <div className="flex items-start gap-3">
                               <svg
-                                class="w-5 h-5 text-autisync-gold mt-0.5"
+                                className="w-5 h-5 text-autisync-gold mt-0.5"
                                 fill="none"
                                 stroke="currentColor"
                                 viewBox="0 0 24 24"
@@ -1301,10 +1303,10 @@ const Terms = () => {
                                 ></path>
                               </svg>
                               <div>
-                                <p class="text-slate-900 font-medium">
+                                <p className="text-slate-900 font-medium">
                                   Autisync
                                 </p>
-                                <p class="text-slate-700">Luanda, Angola</p>
+                                <p className="text-slate-700">Luanda, Angola</p>
                               </div>
                             </div>
                           </div>

@@ -6,6 +6,9 @@ import Terms from "./components/terms";
 import Privacy from "./components/privacy";
 import DataDeletion from "./components/datadeletion";
 import Cookies from "./components/cookies";
+import CookieBanner from "@/components/cookies/CookieBanner";
+import CookiePreferencesDialog from "@/components/cookies/CookiePreferencesDialog";
+import ConsentGatedAnalytics from "@/components/cookies/ConsentGatedAnalytics";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
           <Route path="/cookies" element={<Cookies />} />
         </Routes>
         <Toaster position="top-right" richColors />
+        <CookieBanner />
+        <CookiePreferencesDialog />
+        <ConsentGatedAnalytics />
       </>
     </Suspense>
   );
