@@ -43,7 +43,7 @@ export function VersionUpdateBanner({
             </span>{" "}
             — {message}
             <span className="text-red-700">
-              Currently limited to Randstad & Manpower Excel format
+              Currently limited to Randstad & Manpower or similar Excel format
             </span>
           </div>
           <Button
