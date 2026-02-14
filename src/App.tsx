@@ -9,11 +9,13 @@ import Cookies from "./components/cookies";
 import CookieBanner from "@/components/cookies/CookieBanner";
 import CookiePreferencesDialog from "@/components/cookies/CookiePreferencesDialog";
 import ConsentGatedAnalytics from "@/components/cookies/ConsentGatedAnalytics";
+import { VersionUpdateBanner } from "@/components/VersionUpdateBanner";
 
 function App() {
   return (
     <Suspense fallback={<p>Loading...</p>}>
       <>
+        <VersionUpdateBanner />
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/privacy" element={<Privacy />} />
