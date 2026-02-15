@@ -29,7 +29,7 @@ const Privacy = () => {
                 {/* Hero */}
                 <section className="mb-16">
                   <div className="inline-block px-4 py-2 bg-autisync-gold/10 text-autisync-gold rounded-full text-sm font-medium mb-6">
-                    Last Updated: February 11, 2026
+                    Last Updated: June 23, 2025
                   </div>
 
                   <h1 className="text-5xl md:text-6xl font-bold text-autisync-black mb-6 leading-tight">
@@ -369,10 +369,160 @@ const Privacy = () => {
                   </div>
                 </section>
 
+                <section id="google-api-compliance" className="scroll-mt-24 mb-6">
+                  <div className="accent-border pl-6">
+                    <h2 className="text-3xl font-bold text-autisync-black mb-4">
+                      5. Google API Services User Data Policy Compliance
+                    </h2>
+                    <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
+                      <p>
+                        ShiftSync's use and transfer to any other app of
+                        information received from Google APIs will adhere to the{" "}
+                        <a
+                          href="https://developers.google.com/terms/api-services-user-data-policy"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="text-autisync-gold/80 hover:text-autisync-gold underline font-medium"
+                        >
+                          Google API Services User Data Policy
+                        </a>
+                        , including the Limited Use requirements.
+                      </p>
+
+                      <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
+                        <div className="flex items-start gap-3">
+                          <svg
+                            className="w-6 h-6 text-blue-600 flex-shrink-0 mt-0.5"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              stroke-width="2"
+                              d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                            ></path>
+                          </svg>
+                          <div>
+                            <p className="font-semibold text-blue-900 mb-2">
+                              How ShiftSync Uses Google Data
+                            </p>
+                            <p className="text-sm text-blue-800">
+                              ShiftSync uses Google OAuth and Google Calendar API
+                              to create calendar events on behalf of the user. We
+                              do not store Google Calendar data on our servers.
+                              Access tokens are stored locally in the user's
+                              browser and are not shared with third parties.
+                              ShiftSync does not use Google user data for
+                              advertising.
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div className="space-y-3 my-6">
+                        <div className="bg-white border border-autisync-gold/30 rounded-xl p-6">
+                          <h3 className="text-lg font-bold text-autisync-black mb-3">
+                            Limited Use Disclosure
+                          </h3>
+                          <ul className="space-y-2 list-none pl-0">
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <span>
+                                We only request the minimum OAuth scopes necessary
+                                to provide our service (calendar events
+                                management)
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <span>
+                                We do not use Google user data to serve
+                                advertisements
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <span>
+                                We do not sell or transfer Google user data to
+                                third parties
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <span>
+                                We do not use Google user data for purposes
+                                unrelated to providing or improving ShiftSync's
+                                calendar synchronization features
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
+                              <span>
+                                Users can revoke ShiftSync's access at any time
+                                via{" "}
+                                <a
+                                  href="https://myaccount.google.com/permissions"
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="text-autisync-gold/80 hover:text-autisync-gold underline"
+                                >
+                                  Google Account Permissions
+                                </a>
+                              </span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+
+                      <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-6">
+                        <h3 className="text-lg font-bold text-autisync-black mb-3">
+                          Google OAuth Scopes Used
+                        </h3>
+                        <div className="space-y-3">
+                          <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
+                            <span className="text-autisync-black font-mono text-sm">
+                              openid
+                            </span>
+                            <span className="text-autisync-black/60 text-sm">
+                              User authentication
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
+                            <span className="text-autisync-black font-mono text-sm">
+                              email
+                            </span>
+                            <span className="text-autisync-black/60 text-sm">
+                              Display your email
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
+                            <span className="text-autisync-black font-mono text-sm">
+                              profile
+                            </span>
+                            <span className="text-autisync-black/60 text-sm">
+                              Display your name and photo
+                            </span>
+                          </div>
+                          <div className="flex justify-between items-center">
+                            <span className="text-autisync-black font-mono text-sm">
+                              calendar.events
+                            </span>
+                            <span className="text-autisync-black/60 text-sm">
+                              Create and manage shift events
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+
                 <section id="legal-basis" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      5. Legal Basis for Processing (GDPR)
+                      6. Legal Basis for Processing (GDPR)
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
@@ -426,7 +576,7 @@ const Privacy = () => {
                 <section id="data-sharing" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      6. Data Sharing and Third Parties
+                      7. Data Sharing and Third Parties
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
@@ -506,28 +656,52 @@ const Privacy = () => {
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-4">
                         <h4 className="font-bold text-autisync-black mb-3">
-                          Hosting Provider (EU-Based)
+                          Vercel Inc. (Hosting) & Cloudflare Inc. (CDN/DNS)
                         </h4>
                         <ul className="space-y-2 list-none pl-0">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Purpose:</strong> Secure hosting and data
-                              storage
+                              <strong>Purpose:</strong> Secure hosting, content
+                              delivery, and DNS management
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Data Shared:</strong> Encrypted
-                              authentication tokens, user preferences
+                              <strong>Data Shared:</strong> HTTP request metadata
+                              (IP address, user agent), encrypted authentication
+                              tokens, user preferences
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Location:</strong> European Union data
-                              centers only
+                              <strong>Location:</strong> Global edge network with
+                              GDPR-compliant data processing agreements
+                            </span>
+                          </li>
+                          <li className="flex items-start gap-3">
+                            <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
+                            <span>
+                              <strong>Privacy Policies:</strong>{" "}
+                              <a
+                                href="https://vercel.com/legal/privacy-policy"
+                                className="text-autisync-gold/80 hover:text-autisync-gold underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Vercel Privacy Policy
+                              </a>
+                              {" | "}
+                              <a
+                                href="https://www.cloudflare.com/privacypolicy/"
+                                className="text-autisync-gold/80 hover:text-autisync-gold underline"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                              >
+                                Cloudflare Privacy Policy
+                              </a>
                             </span>
                           </li>
                         </ul>
@@ -569,7 +743,7 @@ const Privacy = () => {
                 <section id="data-retention" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      7. Data Retention
+                      8. Data Retention
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
@@ -669,7 +843,7 @@ const Privacy = () => {
                 <section id="your-rights" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      8. Your Rights Under GDPR
+                      9. Your Rights Under GDPR
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
@@ -898,7 +1072,7 @@ const Privacy = () => {
                 <section id="security" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      9. Security Measures
+                      10. Security Measures
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
@@ -1110,7 +1284,7 @@ const Privacy = () => {
                 <section id="international" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      10. International Data Transfers
+                      11. International Data Transfers
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
@@ -1226,7 +1400,7 @@ const Privacy = () => {
                 <section id="cookies" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      11. Cookies and Tracking Technologies
+                      12. Cookies and Tracking Technologies
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
@@ -1317,7 +1491,7 @@ const Privacy = () => {
                 <section id="contact" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      12. Contact Information
+                      13. Contact Information
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
@@ -1464,6 +1638,7 @@ const Privacy = () => {
           </Card>
         </div>
       </div>
+      <Footer />
     </>
   );
 };

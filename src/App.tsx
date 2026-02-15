@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import { Toaster } from "@/components/ui/sonner";
 import Home from "./components/home";
+import LandingPage from "./components/landingpage";
 import Terms from "./components/terms";
 import Privacy from "./components/privacy";
 import DataDeletion from "./components/datadeletion";
@@ -17,7 +18,8 @@ function App() {
       <>
         <VersionUpdateBanner />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/home" element={<Home />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/terms" element={<Terms />} />
           <Route path="/datadeletion" element={<DataDeletion />} />
