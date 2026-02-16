@@ -4,8 +4,8 @@ import CookiePreferencesLink from "@/components/cookies/CookiePreferencesLink";
 
 const Footer: React.FC = () => {
   return (
-    <footer className="mt-10 shadow-md bg-white/70 backdrop-blur-sm">
-      <div className="max-w-5xl mx-auto px-6 py-6">
+    <footer className="mt-10 shadow-md bg-white/70 backdrop-blur-sm text-xs">
+      <div className="max-w-6xl mx-auto px-6 py-6">
         <div className="grid gap-8 md:grid-cols-3">
           {/* Brand */}
           <div>
@@ -76,6 +76,15 @@ const Footer: React.FC = () => {
               </li>
               <li>
                 <a
+                  href="https://tally.so/r/J9AjDr"
+                  className="text-slate-600 hover:text-autisync-gold transition-colors"
+                  target="_blank"
+                >
+                  Feedback
+                </a>
+              </li>
+              <li>
+                <a
                   href="https://tally.so/r/1A7YOO"
                   className="text-slate-600 hover:text-autisync-gold transition-colors"
                   target="_blank"
@@ -96,7 +105,13 @@ const Footer: React.FC = () => {
           <span className="text-xs text-autisync-gold/70">
             Version Beta 1.0
           </span>
-          <span>Built by Autisync.</span>
+          <span>
+            {" "}
+            <div className="flex items-center gap-2">
+              <span className="w-2 h-2 bg-[#B98B2F] rounded-full animate-pulse" />
+              <span className="text-[#1C1C1C]/40">All systems operational</span>
+            </div>
+          </span>
         </div>
       </div>
     </footer>
