@@ -104,7 +104,7 @@ const LandingPage = () => {
 
         <div className="hero-content">
           <div className="hero-badge">
-            <span className="badge-dot"></span>
+            <span className="badge-dot text-autisync-black"></span>
             Brevemente em Portugal
           </div>
 
