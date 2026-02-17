@@ -180,7 +180,7 @@ const Landing = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
             >
               <Link
-                to="/login"
+                to="/home"
                 className="px-5 py-2 rounded-full bg-autisync-gold text-white text-sm font-medium hover:opacity-90 transition-opacity"
               >
                 Acesso antecipado
@@ -248,7 +248,7 @@ const Landing = () => {
 
                 <motion.div variants={itemVariants}>
                   <Link
-                    to="/login"
+                    to="/home"
                     className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-autisync-gold text-white text-base font-semibold hover:opacity-90 transition-opacity shadow-lg"
                   >
                     Acesso antecipado
@@ -724,7 +724,7 @@ const Landing = () => {
                   transition={{ delay: 0.4, duration: 0.5 }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/signup"
+                  href="/home"
                   className="absolute top-6 right-6 bg-autisync-gold text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-90 transition"
                 >
                   Começar →
