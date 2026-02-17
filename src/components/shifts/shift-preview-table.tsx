@@ -64,7 +64,7 @@ export function ShiftPreviewTable({
             <CardTitle className="flex flex-col sm:flex-row items-start sm:items-center gap-2">
               <span className="flex items-center gap-2">
                 <CalendarCheck className="w-4 h-4 sm:w-5 sm:h-5" />
-                Shift Preview
+                Pré-visualização de Turno
               </span>
               {employeeName && (
                 <Badge variant="outline" className="font-normal">
@@ -81,7 +81,7 @@ export function ShiftPreviewTable({
             variant="secondary"
             className="text-sm font-semibold px-3 py-1 self-start sm:self-auto"
           >
-            {shifts.length} {shifts.length === 1 ? "Shift" : "Shifts"}
+            {shifts.length} {shifts.length === 1 ? "Shift" : "Turnos"}
           </Badge>
         </div>
       </CardHeader>
