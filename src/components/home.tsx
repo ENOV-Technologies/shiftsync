@@ -82,7 +82,7 @@ function Home() {
       } else {
         // Token is invalid/expired, clear storage
         clearSession();
-        toast.error("Session expired, please sign in again");
+        toast.error("Sessão expirada, por favor inicie sessão novamente");
       }
     } catch {
       // Network error or token invalid
@@ -117,7 +117,7 @@ function Home() {
         );
 
         if (!userInfoResponse.ok) {
-          throw new Error("Failed to fetch user info");
+          throw new Error("Falha ao obter informações do utilizador");
         }
 
         const userInfo = await userInfoResponse.json();
@@ -130,15 +130,15 @@ function Home() {
 
         setCurrentStep("upload");
         setAuthLoading(false);
-        toast.success("Successfully authenticated!");
+        toast.success("Autenticação bem-sucedida!");
       } catch (err) {
         setAuthLoading(false);
-        toast.error("Authentication failed: " + getErrorMessage(err));
+        toast.error("Falha na autenticação: " + getErrorMessage(err));
       }
     },
     onError: (error) => {
       setAuthLoading(false);
-      toast.error("Google login failed: " + getErrorMessage(error));
+      toast.error("Falha no login Google: " + getErrorMessage(error));
     },
     scope: "openid email profile https://www.googleapis.com/auth/calendar",
   });
@@ -158,7 +158,7 @@ function Home() {
     setSelectedEmployeeName(employeeName || "");
     setCurrentStep("preview");
     toast.success(
-      `${processedShifts.length} shifts loaded successfully!${employeeName ? ` (${employeeName})` : ""}`,
+      `${processedShifts.length} turnos carregados com sucesso!${employeeName ? ` (${employeeName})` : ""}`,
     );
   };
 
@@ -192,7 +192,7 @@ function Home() {
             await service.updateEvent(calendarId, shift.googleEventId, shift);
           } else {
             toast.warning(
-              `Shift on ${shift.date} skipped: no event ID for update`,
+              `Turno em ${shift.date} ignorado: sem ID de evento para atualização`,
             );
           }
         } else if (shift.status === "deleted") {
@@ -200,7 +200,7 @@ function Home() {
             await service.deleteEvent(calendarId, shift.googleEventId);
           } else {
             toast.warning(
-              `Shift on ${shift.date} skipped: no event ID for deletion`,
+              `Turno em ${shift.date} ignorado: sem ID de evento para eliminação`,
             );
           }
         }
@@ -214,9 +214,9 @@ function Home() {
 
       setShowConfirmModal(false);
       setShowSuccessModal(true);
-      toast.success("Calendar synchronized successfully!");
+      toast.success("Calendário sincronizado com sucesso!");
     } catch (err) {
-      toast.error("Failed to sync calendar: " + getErrorMessage(err));
+      toast.error("Falha ao sincronizar calendário: " + getErrorMessage(err));
     } finally {
       setSyncing(false);
     }
@@ -233,12 +233,12 @@ function Home() {
     clearSession();
     setSelectedCalendar(null);
     setShifts([]);
-    toast.info("Logged out successfully");
+    toast.info("Sessão terminada com sucesso");
   };
 
   const handleTokenExpired = () => {
     clearSession();
-    toast.error("Session expired, please sign in again");
+    toast.error("Sessão expirada, por favor inicie sessão novamente");
   };
 
   // Show loading while restoring session
@@ -247,7 +247,7 @@ function Home() {
       <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex items-center justify-center">
         <div className="text-center space-y-4">
           <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin mx-auto" />
-          <p className="text-muted-foreground">Restoring session...</p>
+          <p className="text-muted-foreground">A restaurar sessão...</p>
         </div>
       </div>
     );
@@ -271,7 +271,7 @@ function Home() {
               selectedCalendar={selectedCalendar}
               onSelectCalendar={(id, name) => {
                 setSelectedCalendar(id);
-                setCalendarName(name || "My Calendar");
+                setCalendarName(name || "O Meu Calendário");
               }}
               onTokenExpired={handleTokenExpired}
             />

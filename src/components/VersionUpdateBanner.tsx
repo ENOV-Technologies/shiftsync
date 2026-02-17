@@ -13,7 +13,7 @@ interface VersionUpdateBannerProps {
 
 export function VersionUpdateBanner({
   version = CURRENT_VERSION,
-  message = "Welcome to ShiftSync! This app helps you automatically sync your work schedules from Excel files to Google Calendar. ",
+  message = "Bem-vindo ao ShiftSync! Esta aplicação ajuda-o a sincronizar automaticamente os seus horários de trabalho de ficheiros Excel para o Google Calendar. ",
 }: VersionUpdateBannerProps) {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -39,11 +39,12 @@ export function VersionUpdateBanner({
         <AlertDescription className="flex items-start justify-between gap-4">
           <div className="flex-1 text-sm text-gray-700">
             <span className="font-semibold text-autisync-gold">
-              Version {version}
+              Versão {version}
             </span>{" "}
             — {message}
             <span className="text-red-700">
-              Currently limited to Randstad & Manpower or similar Excel format
+              Atualmente limitado a formato Excel da Randstad & Manpower ou
+              similar
             </span>
           </div>
           <Button
@@ -53,7 +54,7 @@ export function VersionUpdateBanner({
             className="h-6 w-6 p-0 hover:bg-blue-100 rounded-full flex-shrink-0"
           >
             <X className="h-4 w-4 text-gray-500" />
-            <span className="sr-only">Dismiss</span>
+            <span className="sr-only">Fechar</span>
           </Button>
         </AlertDescription>
       </Alert>

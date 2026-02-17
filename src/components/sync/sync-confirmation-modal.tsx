@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect } from "react";
 import {
   Dialog,
   DialogContent,
@@ -6,24 +6,33 @@ import {
   DialogFooter,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
 import {
   Select,
   SelectContent,
   SelectItem,
   SelectTrigger,
   SelectValue,
-} from '@/components/ui/select';
-import { SyncSummary, GoogleCalendar } from '@/types/shift';
-import { GoogleCalendarService } from '@/lib/google-calendar';
-import { CreateCalendarDialog } from '@/components/calendar/create-calendar-dialog';
-import { PlusCircle, Edit3, Trash2, AlertTriangle, Info, Calendar, Plus, RefreshCw } from 'lucide-react';
-import { Alert, AlertDescription } from '@/components/ui/alert';
-import { getErrorMessage } from '@/lib/getErrorMessage';
-import { toast } from 'sonner';
+} from "@/components/ui/select";
+import { SyncSummary, GoogleCalendar } from "@/types/shift";
+import { GoogleCalendarService } from "@/lib/google-calendar";
+import { CreateCalendarDialog } from "@/components/calendar/create-calendar-dialog";
+import {
+  PlusCircle,
+  Edit3,
+  Trash2,
+  AlertTriangle,
+  Info,
+  Calendar,
+  Plus,
+  RefreshCw,
+} from "lucide-react";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import { getErrorMessage } from "@/lib/getErrorMessage";
+import { toast } from "sonner";
 
-const STORAGE_KEY_SELECTED_CALENDAR = 'selected_calendar_id';
+const STORAGE_KEY_SELECTED_CALENDAR = "selected_calendar_id";
 
 interface SyncConfirmationModalProps {
   open: boolean;
@@ -50,7 +59,9 @@ export function SyncConfirmationModal({
 
   // Calendar state
   const [calendars, setCalendars] = useState<GoogleCalendar[]>([]);
-  const [selectedCalendarId, setSelectedCalendarId] = useState<string | null>(initialCalendarId || null);
+  const [selectedCalendarId, setSelectedCalendarId] = useState<string | null>(
+    initialCalendarId || null,
+  );
   const [calendarsLoading, setCalendarsLoading] = useState(false);
   const [calendarsError, setCalendarsError] = useState<string | null>(null);
   const [showCreateDialog, setShowCreateDialog] = useState(false);
@@ -74,7 +85,7 @@ export function SyncConfirmationModal({
   useEffect(() => {
     if (open && !initialCalendarId && calendars.length > 0) {
       const storedId = localStorage.getItem(STORAGE_KEY_SELECTED_CALENDAR);
-      if (storedId && calendars.some(c => c.id === storedId)) {
+      if (storedId && calendars.some((c) => c.id === storedId)) {
         setSelectedCalendarId(storedId);
       }
     }
@@ -93,11 +104,11 @@ export function SyncConfirmationModal({
       // If no calendar selected but we have a stored preference
       if (!selectedCalendarId) {
         const storedId = localStorage.getItem(STORAGE_KEY_SELECTED_CALENDAR);
-        if (storedId && calendarList.some(c => c.id === storedId)) {
+        if (storedId && calendarList.some((c) => c.id === storedId)) {
           setSelectedCalendarId(storedId);
         } else {
           // Auto-select primary
-          const primary = calendarList.find(cal => cal.primary);
+          const primary = calendarList.find((cal) => cal.primary);
           if (primary) {
             setSelectedCalendarId(primary.id);
           }
@@ -107,9 +118,9 @@ export function SyncConfirmationModal({
       const errorMessage = getErrorMessage(err);
 
       if (
-        errorMessage.includes('401') ||
-        errorMessage.toLowerCase().includes('unauthorized') ||
-        errorMessage.toLowerCase().includes('invalid credentials')
+        errorMessage.includes("401") ||
+        errorMessage.toLowerCase().includes("unauthorized") ||
+        errorMessage.toLowerCase().includes("invalid credentials")
       ) {
         onTokenExpired?.();
         return;
@@ -126,15 +137,23 @@ export function SyncConfirmationModal({
     localStorage.setItem(STORAGE_KEY_SELECTED_CALENDAR, id);
   };
 
-  const handleCreateCalendar = async (name: string, timeZone: string, description?: string) => {
+  const handleCreateCalendar = async (
+    name: string,
+    timeZone: string,
+    description?: string,
+  ) => {
     if (!accessToken) return;
 
     try {
       setCreatingCalendar(true);
       const service = new GoogleCalendarService(accessToken);
-      const newCalendar = await service.createCalendar(name, timeZone, description);
+      const newCalendar = await service.createCalendar(
+        name,
+        timeZone,
+        description,
+      );
 
-      toast.success(`Calendar "${newCalendar.summary}" created successfully!`);
+      toast.success(`Calendário "${newCalendar.summary}" criado com sucesso!`);
 
       // Refresh calendars and select the new one
       await fetchCalendars();
@@ -143,7 +162,7 @@ export function SyncConfirmationModal({
       setShowCreateDialog(false);
     } catch (err: unknown) {
       const errorMessage = getErrorMessage(err);
-      toast.error('Failed to create calendar: ' + errorMessage);
+      toast.error("Falha ao criar calendário: " + errorMessage);
     } finally {
       setCreatingCalendar(false);
     }
@@ -155,7 +174,7 @@ export function SyncConfirmationModal({
     }
   };
 
-  const selectedCalendar = calendars.find(c => c.id === selectedCalendarId);
+  const selectedCalendar = calendars.find((c) => c.id === selectedCalendarId);
   const canSync = selectedCalendarId && !calendarsLoading && !loading;
 
   return (
@@ -163,9 +182,11 @@ export function SyncConfirmationModal({
       <Dialog open={open} onOpenChange={onClose}>
         <DialogContent className="sm:max-w-lg max-h-[90vh] overflow-y-auto">
           <DialogHeader>
-            <DialogTitle className="text-lg sm:text-xl font-bold">Confirm Synchronization</DialogTitle>
+            <DialogTitle className="text-lg sm:text-xl font-bold">
+              Confirmar Sincronização
+            </DialogTitle>
             <DialogDescription className="text-xs sm:text-sm">
-              Review the changes and select the calendar to sync to
+              Reveja as alterações e selecione o calendário para sincronizar
             </DialogDescription>
           </DialogHeader>
 
@@ -175,7 +196,7 @@ export function SyncConfirmationModal({
               <div className="flex items-center justify-between">
                 <label className="text-xs sm:text-sm font-semibold flex items-center gap-2">
                   <Calendar className="w-3 h-3 sm:w-4 sm:h-4" />
-                  Target Calendar
+                  Calendário de Destino
                 </label>
                 <Button
                   variant="ghost"
@@ -184,7 +205,9 @@ export function SyncConfirmationModal({
                   disabled={calendarsLoading}
                   className="h-7 sm:h-8 px-2"
                 >
-                  <RefreshCw className={`w-3 h-3 sm:w-4 sm:h-4 ${calendarsLoading ? 'animate-spin' : ''}`} />
+                  <RefreshCw
+                    className={`w-3 h-3 sm:w-4 sm:h-4 ${calendarsLoading ? "animate-spin" : ""}`}
+                  />
                 </Button>
               </div>
 
@@ -192,8 +215,13 @@ export function SyncConfirmationModal({
                 <Alert variant="destructive">
                   <AlertDescription className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-2 text-xs sm:text-sm">
                     <span>{calendarsError}</span>
-                    <Button variant="outline" size="sm" onClick={fetchCalendars} className="w-full sm:w-auto">
-                      Retry
+                    <Button
+                      variant="outline"
+                      size="sm"
+                      onClick={fetchCalendars}
+                      className="w-full sm:w-auto"
+                    >
+                      Tentar novamente
                     </Button>
                   </AlertDescription>
                 </Alert>
@@ -207,7 +235,11 @@ export function SyncConfirmationModal({
                 >
                   <SelectTrigger className="flex-1 h-10 sm:h-11 text-xs sm:text-sm">
                     <SelectValue
-                      placeholder={calendarsLoading ? 'Loading calendars...' : 'Select a calendar'}
+                      placeholder={
+                        calendarsLoading
+                          ? "A carregar calendários..."
+                          : "Selecione um calendário"
+                      }
                     />
                   </SelectTrigger>
                   <SelectContent>
@@ -217,12 +249,18 @@ export function SyncConfirmationModal({
                           {calendar.backgroundColor && (
                             <div
                               className="w-3 h-3 rounded-full flex-shrink-0"
-                              style={{ backgroundColor: calendar.backgroundColor }}
+                              style={{
+                                backgroundColor: calendar.backgroundColor,
+                              }}
                             />
                           )}
-                          <span className="truncate text-xs sm:text-sm">{calendar.summary}</span>
+                          <span className="truncate text-xs sm:text-sm">
+                            {calendar.summary}
+                          </span>
                           {calendar.primary && (
-                            <span className="text-xs text-muted-foreground">(Primary)</span>
+                            <span className="text-xs text-muted-foreground">
+                              (Principal)
+                            </span>
                           )}
                         </div>
                       </SelectItem>
@@ -235,10 +273,10 @@ export function SyncConfirmationModal({
                   onClick={() => setShowCreateDialog(true)}
                   disabled={calendarsLoading}
                   className="h-10 sm:h-11 px-3 w-full sm:w-auto"
-                  title="Create new calendar"
+                  title="Criar novo calendário"
                 >
                   <Plus className="w-3 h-3 sm:w-4 sm:h-4" />
-                  <span className="sm:hidden ml-2">Create Calendar</span>
+                  <span className="sm:hidden ml-2">Criar Calendário</span>
                 </Button>
               </div>
 
@@ -249,27 +287,35 @@ export function SyncConfirmationModal({
                     {selectedCalendar.backgroundColor && (
                       <div
                         className="w-6 h-6 sm:w-8 sm:h-8 rounded-lg shadow-sm flex-shrink-0"
-                        style={{ backgroundColor: selectedCalendar.backgroundColor }}
+                        style={{
+                          backgroundColor: selectedCalendar.backgroundColor,
+                        }}
                       />
                     )}
                     <div className="min-w-0 flex-1">
-                      <p className="font-semibold text-xs sm:text-sm truncate">{selectedCalendar.summary}</p>
+                      <p className="font-semibold text-xs sm:text-sm truncate">
+                        {selectedCalendar.summary}
+                      </p>
                       <p className="text-xs text-muted-foreground">
-                        {selectedCalendar.primary ? 'Primary Calendar' : 'Secondary Calendar'}
+                        {selectedCalendar.primary
+                          ? "Calendário Principal"
+                          : "Calendário Secundário"}
                       </p>
                     </div>
                   </div>
                 </div>
               )}
 
-              {!selectedCalendarId && !calendarsLoading && calendars.length > 0 && (
-                <Alert className="bg-amber-50 border-amber-200">
-                  <AlertTriangle className="w-4 h-4 text-amber-600" />
-                  <AlertDescription className="text-xs sm:text-sm text-amber-900">
-                    Please select a calendar to continue
-                  </AlertDescription>
-                </Alert>
-              )}
+              {!selectedCalendarId &&
+                !calendarsLoading &&
+                calendars.length > 0 && (
+                  <Alert className="bg-amber-50 border-amber-200">
+                    <AlertTriangle className="w-4 h-4 text-amber-600" />
+                    <AlertDescription className="text-xs sm:text-sm text-amber-900">
+                      Por favor, selecione um calendário para continuar
+                    </AlertDescription>
+                  </Alert>
+                )}
             </div>
 
             {/* Summary Cards */}
@@ -280,8 +326,12 @@ export function SyncConfirmationModal({
                     <PlusCircle className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />
                   </div>
                 </div>
-                <p className="text-xl sm:text-2xl font-bold text-center text-green-900">{summary.create}</p>
-                <p className="text-xs text-center text-green-700 font-medium mt-1">Create</p>
+                <p className="text-xl sm:text-2xl font-bold text-center text-green-900">
+                  {summary.create}
+                </p>
+                <p className="text-xs text-center text-green-700 font-medium mt-1">
+                  Criar
+                </p>
               </div>
 
               <div className="bg-blue-50 rounded-lg p-3 sm:p-4 border border-blue-200">
@@ -290,8 +340,12 @@ export function SyncConfirmationModal({
                     <Edit3 className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
                   </div>
                 </div>
-                <p className="text-xl sm:text-2xl font-bold text-center text-blue-900">{summary.update}</p>
-                <p className="text-xs text-center text-blue-700 font-medium mt-1">Update</p>
+                <p className="text-xl sm:text-2xl font-bold text-center text-blue-900">
+                  {summary.update}
+                </p>
+                <p className="text-xs text-center text-blue-700 font-medium mt-1">
+                  Atualizar
+                </p>
               </div>
 
               <div className="bg-red-50 rounded-lg p-3 sm:p-4 border border-red-200">
@@ -300,8 +354,12 @@ export function SyncConfirmationModal({
                     <Trash2 className="w-4 h-4 sm:w-5 sm:h-5 text-red-600" />
                   </div>
                 </div>
-                <p className="text-xl sm:text-2xl font-bold text-center text-red-900">{summary.delete}</p>
-                <p className="text-xs text-center text-red-700 font-medium mt-1">Delete</p>
+                <p className="text-xl sm:text-2xl font-bold text-center text-red-900">
+                  {summary.delete}
+                </p>
+                <p className="text-xs text-center text-red-700 font-medium mt-1">
+                  Eliminar
+                </p>
               </div>
             </div>
 
@@ -309,18 +367,25 @@ export function SyncConfirmationModal({
             <Alert className="bg-blue-50 border-blue-200">
               <Info className="w-4 h-4 text-blue-600 flex-shrink-0" />
               <AlertDescription className="text-xs sm:text-sm text-blue-900">
-                <span className="font-semibold">Non-destructive sync:</span> Only shift-related events
-                will be modified. Your other calendar events remain untouched.
+                <span className="font-semibold">
+                  Sincronização não destrutiva:
+                </span>{" "}
+                Apenas eventos relacionados com turnos serão modificados. Os
+                seus outros eventos de calendário permanecem inalterados.
               </AlertDescription>
             </Alert>
 
             {/* Warning for deletions */}
             {summary.delete > 0 && (
-              <Alert variant="destructive" className="bg-amber-50 border-amber-300">
+              <Alert
+                variant="destructive"
+                className="bg-amber-50 border-amber-300"
+              >
                 <AlertTriangle className="w-4 h-4 text-amber-600 flex-shrink-0" />
                 <AlertDescription className="text-xs sm:text-sm text-amber-900">
-                  {summary.delete} shift event{summary.delete !== 1 ? 's' : ''} will be removed from
-                  your calendar.
+                  {summary.delete} evento{summary.delete !== 1 ? "s" : ""} de
+                  turno será{summary.delete !== 1 ? "ão" : ""} removido
+                  {summary.delete !== 1 ? "s" : ""} do seu calendário.
                 </AlertDescription>
               </Alert>
             )}
@@ -328,8 +393,12 @@ export function SyncConfirmationModal({
             {/* Total Changes Summary */}
             <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border border-slate-200">
               <div className="flex items-center justify-between">
-                <span className="font-semibold text-xs sm:text-sm text-slate-900">Total Changes</span>
-                <span className="text-xl sm:text-2xl font-bold text-slate-900">{totalChanges}</span>
+                <span className="font-semibold text-xs sm:text-sm text-slate-900">
+                  Total de Alterações
+                </span>
+                <span className="text-xl sm:text-2xl font-bold text-slate-900">
+                  {totalChanges}
+                </span>
               </div>
             </div>
           </div>
@@ -341,7 +410,7 @@ export function SyncConfirmationModal({
               disabled={loading}
               className="w-full sm:w-auto text-xs sm:text-sm"
             >
-              Cancel
+              Cancelar
             </Button>
             <Button
               onClick={handleConfirm}
@@ -351,10 +420,10 @@ export function SyncConfirmationModal({
               {loading ? (
                 <span className="flex items-center gap-2">
                   <div className="w-3 h-3 sm:w-4 sm:h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                  Syncing...
+                  A sincronizar...
                 </span>
               ) : (
-                `Confirm & Sync ${totalChanges} Change${totalChanges !== 1 ? 's' : ''}`
+                `Confirmar e Sincronizar ${totalChanges} Alteração${totalChanges !== 1 ? "s" : ""}`
               )}
             </Button>
           </DialogFooter>

@@ -11,8 +11,8 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="text-lg font-bold text-slate-900 mb-3">ShiftSync</h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              ShiftSync helps you synchronize work schedules from Excel to
-              Google Calendar, securely and efficiently.
+              O ShiftSync ajuda-o a sincronizar horários de trabalho do Excel
+              para o Google Calendar, de forma segura e eficiente.
             </p>
           </div>
 
@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
                   to="/privacy"
                   className="text-slate-600 hover:text-autisync-gold transition-colors"
                 >
-                  Privacy Policy
+                  Política de Privacidade
                 </Link>
               </li>
               <li>
@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
                   to="/terms"
                   className="text-slate-600 hover:text-autisync-gold transition-colors"
                 >
-                  Terms of Service
+                  Termos de Serviço
                 </Link>
               </li>
               <li>
@@ -43,7 +43,7 @@ const Footer: React.FC = () => {
                   href="/cookies"
                   className="text-slate-600 hover:text-autisync-gold transition-colors"
                 >
-                  Cookie Policy
+                  Política de Cookies
                 </a>
               </li>
               <li>
@@ -51,7 +51,7 @@ const Footer: React.FC = () => {
                   href="/datadeletion"
                   className="text-slate-600 hover:text-autisync-gold transition-colors"
                 >
-                  GDPR & Data Protection
+                  RGPD & Proteção de Dados
                 </a>
               </li>
               <li>
@@ -63,7 +63,7 @@ const Footer: React.FC = () => {
           {/* Contact / Compliance */}
           <div>
             <h4 className="text-sm font-semibold text-slate-900 mb-4 uppercase tracking-wide">
-              Contact & Compliance
+              Contacto & Compliance
             </h4>
             <ul className="space-y-1 text-sm">
               <li>
@@ -79,6 +79,7 @@ const Footer: React.FC = () => {
                   href="https://tally.so/r/J9AjDr"
                   className="text-slate-600 hover:text-autisync-gold transition-colors"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   Feedback
                 </a>
@@ -88,11 +89,12 @@ const Footer: React.FC = () => {
                   href="https://tally.so/r/1A7YOO"
                   className="text-slate-600 hover:text-autisync-gold transition-colors"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  Bug Reports
+                  Reportar Erros
                 </a>
               </li>
-              <li className="text-slate-500">EU GDPR compliant</li>
+              <li className="text-slate-500">Em Conformidade com RGPD da UE</li>
             </ul>
           </div>
         </div>
@@ -100,16 +102,16 @@ const Footer: React.FC = () => {
         {/* Bottom bar */}
         <div className="mt-12 pt-6 border-t border-slate-200 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
           <span>
-            © {new Date().getFullYear()} Autisync. All rights reserved.
+            © {new Date().getFullYear()} Autisync. Todos os direitos reservados.
           </span>
-          <span className="text-xs text-autisync-gold/70">
-            Version Beta 1.0
-          </span>
+          <span className="text-xs text-autisync-gold/70">Versão Beta 1.0</span>
           <span>
             {" "}
             <div className="flex items-center gap-2">
               <span className="w-2 h-2 bg-[#B98B2F] rounded-full animate-pulse" />
-              <span className="text-[#1C1C1C]/40">All systems operational</span>
+              <span className="text-[#1C1C1C]/40">
+                Todos os Sistemas Operacionais
+              </span>
             </div>
           </span>
         </div>

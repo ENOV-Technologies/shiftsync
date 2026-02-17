@@ -4,10 +4,10 @@ import {
   DialogDescription,
   DialogHeader,
   DialogTitle,
-} from '@/components/ui/dialog';
-import { Button } from '@/components/ui/button';
-import { CheckCircle2, Calendar, ArrowRight } from 'lucide-react';
-import { SyncSummary } from '@/types/shift';
+} from "@/components/ui/dialog";
+import { Button } from "@/components/ui/button";
+import { CheckCircle2, Calendar, ArrowRight } from "lucide-react";
+import { SyncSummary } from "@/types/shift";
 
 interface SuccessModalProps {
   open: boolean;
@@ -33,9 +33,11 @@ export function SuccessModal({
               <CheckCircle2 className="w-8 h-8 sm:w-10 sm:h-10 text-green-600" />
             </div>
           </div>
-          <DialogTitle className="text-center text-xl sm:text-2xl">Successfully Synced!</DialogTitle>
+          <DialogTitle className="text-center text-xl sm:text-2xl">
+            Sincronizado com Sucesso!
+          </DialogTitle>
           <DialogDescription className="text-center text-sm sm:text-base pt-2">
-            Your shifts have been synchronized to your calendar
+            Os seus turnos foram sincronizados com o seu calendário
           </DialogDescription>
         </DialogHeader>
 
@@ -48,8 +50,12 @@ export function SuccessModal({
                   <Calendar className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600" />
                 </div>
                 <div className="min-w-0 flex-1">
-                  <p className="text-xs text-muted-foreground">Synced to</p>
-                  <p className="font-semibold text-xs sm:text-sm truncate">{calendarName}</p>
+                  <p className="text-xs text-muted-foreground">
+                    Sincronizado com
+                  </p>
+                  <p className="font-semibold text-xs sm:text-sm truncate">
+                    {calendarName}
+                  </p>
                 </div>
               </div>
             </div>
@@ -58,27 +64,40 @@ export function SuccessModal({
           {/* Summary Stats */}
           <div className="grid grid-cols-3 gap-2 sm:gap-3">
             <div className="text-center p-2 sm:p-3 bg-green-50 rounded-lg border border-green-200">
-              <p className="text-xl sm:text-2xl font-bold text-green-900">{summary.create}</p>
-              <p className="text-xs text-green-700">Created</p>
+              <p className="text-xl sm:text-2xl font-bold text-green-900">
+                {summary.create}
+              </p>
+              <p className="text-xs text-green-700">Criados</p>
             </div>
             <div className="text-center p-2 sm:p-3 bg-blue-50 rounded-lg border border-blue-200">
-              <p className="text-xl sm:text-2xl font-bold text-blue-900">{summary.update}</p>
-              <p className="text-xs text-blue-700">Updated</p>
+              <p className="text-xl sm:text-2xl font-bold text-blue-900">
+                {summary.update}
+              </p>
+              <p className="text-xs text-blue-700">Atualizados</p>
             </div>
             <div className="text-center p-2 sm:p-3 bg-red-50 rounded-lg border border-red-200">
-              <p className="text-xl sm:text-2xl font-bold text-red-900">{summary.delete}</p>
-              <p className="text-xs text-red-700">Deleted</p>
+              <p className="text-xl sm:text-2xl font-bold text-red-900">
+                {summary.delete}
+              </p>
+              <p className="text-xs text-red-700">Eliminados</p>
             </div>
           </div>
 
           {/* Action Buttons */}
           <div className="space-y-2 pt-2">
-            <Button onClick={onNewSync} className="w-full h-10 sm:h-12 font-semibold text-sm sm:text-base">
+            <Button
+              onClick={onNewSync}
+              className="w-full h-10 sm:h-12 font-semibold text-sm sm:text-base"
+            >
               <ArrowRight className="w-3 h-3 sm:w-4 sm:h-4 mr-2" />
-              Sync Another File
+              Sincronizar Outro Ficheiro
             </Button>
-            <Button onClick={onClose} variant="outline" className="w-full h-10 sm:h-auto text-sm sm:text-base">
-              Back to Dashboard
+            <Button
+              onClick={onClose}
+              variant="outline"
+              className="w-full h-10 sm:h-auto text-sm sm:text-base"
+            >
+              Voltar ao Painel
             </Button>
           </div>
         </div>

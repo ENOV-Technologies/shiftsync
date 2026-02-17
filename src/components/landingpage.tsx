@@ -163,14 +163,14 @@ const Landing = () => {
                 onClick={() => scrollToSection("features")}
                 className="hover:text-autisync-black transition-colors cursor-pointer"
               >
-                Features
+                Funcionalidades
               </motion.button>
               <motion.button
                 whileHover={{ y: -2 }}
                 onClick={() => scrollToSection("pricing")}
                 className="hover:text-autisync-black transition-colors cursor-pointer"
               >
-                Pricing
+                Preços
               </motion.button>
             </motion.div>
 
@@ -180,10 +180,10 @@ const Landing = () => {
               transition={{ delay: 0.4, duration: 0.6 }}
             >
               <Link
-                to="/home"
+                to="/login"
                 className="px-5 py-2 rounded-full bg-autisync-gold text-white text-sm font-medium hover:opacity-90 transition-opacity"
               >
-                Login
+                Acesso antecipado
               </Link>
             </motion.div>
           </div>
@@ -226,32 +226,32 @@ const Landing = () => {
                   variants={itemVariants}
                   className="inline-block mb-4 px-4 py-1 text-sm rounded-full bg-autisync-gold text-white"
                 >
-                  Now in beta
+                  Agora em beta
                 </motion.span>
 
                 <motion.h1
                   variants={itemVariants}
                   className="text-4xl md:text-6xl font-bold text-white leading-tight mb-6"
                 >
-                  Your schedule.
+                  O seu horário.
                   <br />
-                  Always with you.
+                  Sempre consigo.
                 </motion.h1>
 
                 <motion.p
                   variants={itemVariants}
                   className="text-lg md:text-xl text-white/90 max-w-md mb-8 leading-relaxed"
                 >
-                  ShiftSync turns your messy roster into a clear plan—
-                  automatically.
+                  O ShiftSync transforma a sua escala confusa num plano claro—
+                  automaticamente.
                 </motion.p>
 
                 <motion.div variants={itemVariants}>
                   <Link
-                    to="/home"
+                    to="/login"
                     className="inline-flex items-center gap-2 px-8 py-4 rounded-full bg-autisync-gold text-white text-base font-semibold hover:opacity-90 transition-opacity shadow-lg"
                   >
-                    Get early access
+                    Acesso antecipado
                     <motion.span
                       animate={{ x: [0, 5, 0] }}
                       transition={{ duration: 1.5, repeat: Infinity }}
@@ -273,16 +273,16 @@ const Landing = () => {
           {/* LEFT CONTENT */}
           <ScrollReveal variant={slideInLeft}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              Managing shifts
+              Gerir turnos não
               <br />
-              shouldn&apos;t be extra
+              devia ser trabalho
               <br />
-              work.
+              extra.
             </h2>
 
             <p className="text-lg md:text-xl text-autisync-black/70 max-w-lg mb-10 leading-relaxed">
-              Screenshots, spreadsheets, group chats—your roster lives in ten
-              places. That&apos;s how mistakes happen.
+              Capturas de ecrã, folhas de cálculo, chats de grupo—a sua escala
+              vive em dez sítios. É assim que os erros acontecem.
             </p>
 
             {/* STAT CARD */}
@@ -302,9 +302,11 @@ const Landing = () => {
                 ⏱
               </motion.div>
               <div>
-                <p className="font-semibold text-base">73% of shift workers</p>
+                <p className="font-semibold text-base">
+                  73% dos trabalhadores por turnos
+                </p>
                 <p className="text-sm text-autisync-black/60 leading-relaxed">
-                  have been late due to schedule confusion
+                  já chegaram atrasados devido a confusão com horários
                 </p>
               </div>
             </motion.div>
@@ -331,7 +333,7 @@ const Landing = () => {
                 className="absolute bottom-6 left-6 right-6 text-white"
               >
                 <p className="text-sm uppercase tracking-wide text-autisync-gold mb-4">
-                  Common frustrations
+                  Frustrações comuns
                 </p>
                 <motion.ul
                   variants={containerVariants}
@@ -341,10 +343,10 @@ const Landing = () => {
                   className="space-y-3 text-sm"
                 >
                   {[
-                    "📸 Screenshots get lost in your gallery.",
-                    "🗓 Manual updates = outdated calendars.",
-                    "❓ You're never sure which version is real.",
-                    "👨‍👩‍👧 Family & friends don't know when you're free.",
+                    "📸 As capturas de ecrã perdem-se na galeria.",
+                    "🗓 Atualizações manuais = calendários desatualizados.",
+                    "❓ Nunca sabe qual é a versão correta.",
+                    "👨‍👩‍👧 Família e amigos não sabem quando está livre.",
                   ].map((item, i) => (
                     <motion.li key={i} variants={itemVariants}>
                       {item}
@@ -363,16 +365,16 @@ const Landing = () => {
           {/* LEFT CONTENT */}
           <ScrollReveal variant={slideInLeft}>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 leading-tight">
-              One place. Always
+              Um lugar. Sempre
               <br />
-              updated. Zero
+              atualizado. Sem
               <br />
-              work.
+              esforço.
             </h2>
 
             <p className="text-lg md:text-xl text-autisync-black/70 max-w-lg mb-10 leading-relaxed">
-              ShiftSync reads your roster and builds your calendar—complete with
-              swaps, reminders, and shareable updates.
+              O ShiftSync lê a sua escala e cria o seu calendário—completo com
+              trocas, lembretes e atualizações partilháveis.
             </p>
 
             <motion.ul
@@ -382,23 +384,25 @@ const Landing = () => {
               viewport={{ once: true }}
               className="space-y-4"
             >
-              {["Automatic sync", "Real-time updates", "Share with anyone"].map(
-                (item, i) => (
-                  <motion.li
-                    key={item}
-                    variants={itemVariants}
-                    whileHover={{ x: 5 }}
-                    className="flex items-center gap-3"
-                  >
-                    <span className="h-6 w-6 flex items-center justify-center rounded-full bg-autisync-gold/20 text-autisync-gold text-sm">
-                      ✓
-                    </span>
-                    <span className="text-autisync-black text-base font-medium">
-                      {item}
-                    </span>
-                  </motion.li>
-                ),
-              )}
+              {[
+                "Sincronização automática",
+                "Atualizações em tempo real",
+                "Partilhe com qualquer pessoa",
+              ].map((item, i) => (
+                <motion.li
+                  key={item}
+                  variants={itemVariants}
+                  whileHover={{ x: 5 }}
+                  className="flex items-center gap-3"
+                >
+                  <span className="h-6 w-6 flex items-center justify-center rounded-full bg-autisync-gold/20 text-autisync-gold text-sm">
+                    ✓
+                  </span>
+                  <span className="text-autisync-black text-base font-medium">
+                    {item}
+                  </span>
+                </motion.li>
+              ))}
             </motion.ul>
           </ScrollReveal>
 
@@ -420,9 +424,9 @@ const Landing = () => {
                 >
                   🔔
                 </motion.span>
-                <span className="font-medium">Shift change</span>
+                <span className="font-medium">Mudança de turno</span>
                 <span className="text-autisync-black/60">
-                  Tue shift moved to 14:00
+                  Turno de terça movido para as 14:00
                 </span>
               </motion.div>
 
@@ -435,11 +439,11 @@ const Landing = () => {
                 className="grid grid-cols-[80px_1fr_1fr] gap-y-4 text-sm"
               >
                 {[
-                  ["6 AM", "Morning Shift", "Morning Shift"],
-                  ["9 AM", "—", "—"],
-                  ["12 PM", "Early Shift", "Afternoon Shift"],
-                  ["3 PM", "Afternoon Shift", "Morning Shift"],
-                  ["6 PM", "Afternoon Shift", "Afternoon Shift"],
+                  ["6h", "Turno Manhã", "Turno Manhã"],
+                  ["9h", "—", "—"],
+                  ["12h", "Turno Cedo", "Turno Tarde"],
+                  ["15h", "Turno Tarde", "Turno Manhã"],
+                  ["18h", "Turno Tarde", "Turno Tarde"],
                 ].map(([time, a, b], i) => (
                   <motion.div
                     key={time}
@@ -476,13 +480,13 @@ const Landing = () => {
           {/* Section header */}
           <ScrollReveal>
             <h2 className="text-4xl md:text-5xl text-center font-bold leading-tight mb-4">
-              Built for
+              Criado para
               <br />
-              shift workers.
+              trabalhadores por turnos.
             </h2>
 
             <p className="text-center text-lg text-autisync-black/60 mb-14">
-              Everything you need to stop worrying about your schedule.
+              Tudo o que precisa para deixar de se preocupar com o seu horário.
             </p>
           </ScrollReveal>
 
@@ -496,38 +500,38 @@ const Landing = () => {
           >
             {[
               {
-                title: "Instant Access",
-                desc: "View your roster in seconds, anywhere.",
+                title: "Acesso Instantâneo",
+                desc: "Veja a sua escala em segundos, em qualquer lugar.",
                 img: "/images/feature_instant.jpg",
                 icon: "⚡",
               },
               {
-                title: "Auto-Updates",
-                desc: "Changes sync in real time. No manual edits.",
+                title: "Atualizações Automáticas",
+                desc: "As alterações sincronizam em tempo real. Sem edições manuais.",
                 img: "/images/feature_auto.jpg",
                 icon: "🔄",
               },
               {
-                title: "Always With You",
-                desc: "Works offline. Your schedule is always available.",
+                title: "Sempre Consigo",
+                desc: "Funciona offline. O seu horário está sempre disponível.",
                 img: "/images/feature_offline.jpg",
                 icon: "📱",
               },
               {
-                title: "Easy Sharing",
-                desc: "Share with family and teammates in one tap.",
+                title: "Partilha Fácil",
+                desc: "Partilhe com família e colegas num toque.",
                 img: "/images/feature_sharing.jpg",
                 icon: "🔗",
               },
               {
-                title: "Smart Reminders",
-                desc: "Get notified before shifts and last-minute swaps.",
+                title: "Lembretes Inteligentes",
+                desc: "Seja notificado antes dos turnos e trocas de última hora.",
                 img: "/images/feature_reminders.jpg",
                 icon: "🔔",
               },
               {
-                title: "Zero Confusion",
-                desc: "One source of truth. No more lost screenshots.",
+                title: "Zero Confusão",
+                desc: "Uma única fonte de verdade. Sem capturas de ecrã perdidas.",
                 img: "/images/feature_zero.jpg",
                 icon: "✔️",
               },
@@ -592,18 +596,18 @@ const Landing = () => {
             {[
               {
                 step: "1",
-                title: "Sign In Securely",
-                desc: "Authenticate using Google OAuth with enterprise-grade security.",
+                title: "Inicie Sessão com Segurança",
+                desc: "Autentique-se usando Google OAuth com segurança de nível empresarial.",
               },
               {
                 step: "2",
-                title: "Upload Schedule File",
-                desc: "Upload file to be inserted into your Calendar",
+                title: "Carregue o Ficheiro de Horário",
+                desc: "Carregue o ficheiro para ser inserido no seu Calendário",
               },
               {
                 step: "3",
-                title: "Sync & Be Punctual",
-                desc: "Select Calendar to create/update - Live a good life",
+                title: "Sincronize e Seja Pontual",
+                desc: "Selecione o Calendário para criar/atualizar - Viva uma boa vida",
               },
             ].map((s, i) => (
               <motion.div
@@ -637,11 +641,11 @@ const Landing = () => {
           {/* LEFT CONTENT */}
           <ScrollReveal variant={slideInLeft}>
             <h2 className="text-4xl md:text-5xl font-bold mb-4">
-              Simple pricing.
+              Preços simples.
             </h2>
 
             <p className="text-lg md:text-xl text-autisync-black/70 mb-10 leading-relaxed">
-              Start free. Upgrade only when you need more.
+              Comece grátis. Atualize apenas quando precisar de mais.
             </p>
 
             <motion.ul
@@ -652,11 +656,11 @@ const Landing = () => {
               className="space-y-4"
             >
               {[
-                "Unlimited schedule sync",
-                "Real-time updates",
-                "Smart reminders",
-                "Share with family",
-                "Offline access",
+                "Sincronização ilimitada de horários",
+                "Atualizações em tempo real",
+                "Lembretes inteligentes",
+                "Partilhe com a família",
+                "Acesso offline",
               ].map((item) => (
                 <motion.li
                   key={item}
@@ -705,9 +709,11 @@ const Landing = () => {
                   className="absolute top-6 left-6 bg-white rounded-full px-6 py-3 shadow-md cursor-pointer"
                 >
                   <p className="text-autisync-gold font-bold text-lg leading-none">
-                    Free
+                    Grátis
                   </p>
-                  <p className="text-sm text-autisync-black/60">During beta</p>
+                  <p className="text-sm text-autisync-black/60">
+                    Durante a beta
+                  </p>
                 </motion.div>
 
                 {/* CTA */}
@@ -718,10 +724,10 @@ const Landing = () => {
                   transition={{ delay: 0.4, duration: 0.5 }}
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
-                  href="/home"
+                  href="/signup"
                   className="absolute top-6 right-6 bg-autisync-gold text-white px-5 py-2 rounded-full text-sm font-medium hover:opacity-90 transition"
                 >
-                  Get started →
+                  Começar →
                 </motion.a>
               </motion.div>
 
@@ -733,7 +739,7 @@ const Landing = () => {
                 transition={{ delay: 0.5 }}
                 className="text-center text-xs text-autisync-black/50 mt-4"
               >
-                No credit card required.
+                Não é necessário cartão de crédito.
               </motion.p>
             </div>
           </ScrollReveal>
@@ -744,17 +750,17 @@ const Landing = () => {
       <section className="py-24 px-6 text-center">
         <ScrollReveal>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to stop worrying about your schedule?
+            Pronto para deixar de se preocupar com o seu horário?
           </h2>
           <p className="text-lg md:text-xl text-autisync-black/70 mb-8 leading-relaxed">
-            Join the beta and get free access for life.
+            Junte-se à beta e obtenha acesso gratuito para sempre.
           </p>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
             <Link
               to="/home"
               className="inline-block px-8 py-4 bg-autisync-gold text-white text-base font-semibold rounded-xl shadow-lg hover:shadow-xl transition-shadow"
             >
-              Get Started Now
+              Começar Agora
             </Link>
           </motion.div>
         </ScrollReveal>

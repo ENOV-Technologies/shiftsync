@@ -18,7 +18,7 @@ const Terms = () => {
             className="mb-6 hover:bg-white/50"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back
+            Voltar
           </Button>
 
           <Card className="shadow-2xl border-0">
@@ -26,21 +26,21 @@ const Terms = () => {
               <main className="max-w-4xl mx-auto px-6 py-16">
                 <div className="mb-16">
                   <div className="inline-block px-4 py-2 bg-autisync-gold/10 text-autisync-gold rounded-full text-sm font-medium mb-6">
-                    Last Updated: February 11, 2026
+                    Última Atualização: 11 de Fevereiro de 2026
                   </div>
                   <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-                    Terms of Service
+                    Termos de Serviço
                   </h1>
                   <p className="text-xl text-slate-600 leading-relaxed">
-                    These Terms of Service govern your use of ShiftSync. By
-                    accessing or using our service, you agree to be bound by
-                    these terms. Please read them carefully.
+                    Estes Termos de Serviço regem a sua utilização do ShiftSync.
+                    Ao aceder ou utilizar o nosso serviço, concorda em ficar
+                    vinculado por estes termos. Por favor, leia-os atentamente.
                   </p>
                 </div>
 
                 <div className="bg-white rounded-2xl border border-slate-200 p-8 mb-12 shadow-sm">
                   <h2 className="text-2xl font-bold text-slate-900 mb-6">
-                    Table of Contents
+                    Índice
                   </h2>
                   <nav className="grid md:grid-cols-2 gap-4">
                     <a
@@ -48,84 +48,84 @@ const Terms = () => {
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      1. Acceptance of Terms
+                      1. Aceitação dos Termos
                     </a>
                     <a
                       href="#description"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      2. Service Description
+                      2. Descrição do Serviço
                     </a>
                     <a
                       href="#eligibility"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      3. Eligibility
+                      3. Elegibilidade
                     </a>
                     <a
                       href="#account"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      4. Account & Authentication
+                      4. Conta e Autenticação
                     </a>
                     <a
                       href="#usage"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      5. Acceptable Use
+                      5. Uso Aceitável
                     </a>
                     <a
                       href="#intellectual-property"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      6. Intellectual Property
+                      6. Propriedade Intelectual
                     </a>
                     <a
                       href="#user-content"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      7. User Content
+                      7. Conteúdo do Utilizador
                     </a>
                     <a
                       href="#disclaimers"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      8. Disclaimers
+                      8. Isenções de Responsabilidade
                     </a>
                     <a
                       href="#limitation"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      9. Limitation of Liability
+                      9. Limitação de Responsabilidade
                     </a>
                     <a
                       href="#indemnification"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      10. Indemnification
+                      10. Indemnização
                     </a>
                     <a
                       href="#termination"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      11. Termination
+                      11. Rescisão
                     </a>
                     <a
                       href="#governing-law"
                       className="text-autisync-gold/80 hover:text-autisync-gold flex items-center gap-2 group"
                     >
                       <span className="w-1.5 h-1.5 bg-autisync-gold rounded-full group-hover:scale-150 transition-transform"></span>
-                      12. Governing Law
+                      12. Lei Aplicável
                     </a>
                   </nav>
                 </div>
@@ -134,37 +134,39 @@ const Terms = () => {
                   <section id="acceptance" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        1. Acceptance of Terms
+                        1. Aceitação dos Termos
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <p>
-                          By accessing or using ShiftSync (the "Service"),
-                          available at{" "}
+                          Ao aceder ou utilizar o ShiftSync (o "Serviço"),
+                          disponível em{" "}
                           <a
                             href="https://shiftsync.autisync.com"
                             className="text-autisync-gold/70 hover:text-autisync-gold underline"
                           >
                             shiftsync.autisync.com
                           </a>
-                          , you agree to be bound by these Terms of Service
-                          ("Terms"). If you do not agree to these Terms, you
-                          must not access or use the Service.
+                          , concorda em ficar vinculado por estes Termos de
+                          Serviço ("Termos"). Se não concordar com estes Termos,
+                          não deve aceder ou utilizar o Serviço.
                         </p>
                         <p>
-                          These Terms constitute a legally binding agreement
-                          between you ("User" or "you") and Autisync ("Company",
-                          "we", "us", or "our"), the operator of ShiftSync.
+                          Estes Termos constituem um acordo legalmente
+                          vinculativo entre si ("Utilizador" ou "você") e a
+                          Autisync ("Empresa", "nós", "nos" ou "nosso"),
+                          operadora do ShiftSync.
                         </p>
                         <div className="bg-autisync-gold/10 border-l-4 border-autisync-gold/70 p-6 rounded-r-xl">
                           <p className="font-semibold text-autisync-gold mb-2">
-                            Important Notice
+                            Aviso Importante
                           </p>
                           <p className="text-sm text-slate-800">
-                            We reserve the right to update or modify these Terms
-                            at any time. Continued use of the Service after
-                            changes constitutes acceptance of the modified
-                            Terms. We will notify users of material changes via
-                            email or prominent website notice.
+                            Reservamos o direito de atualizar ou modificar estes
+                            Termos a qualquer momento. A utilização continuada
+                            do Serviço após alterações constitui aceitação dos
+                            Termos modificados. Notificaremos os utilizadores de
+                            alterações materiais via email ou aviso proeminente
+                            no website.
                           </p>
                         </div>
                       </div>
@@ -174,12 +176,12 @@ const Terms = () => {
                   <section id="description" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        2. Service Description
+                        2. Descrição do Serviço
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <p>
-                          ShiftSync is a web-based application that enables
-                          users to:
+                          O ShiftSync é uma aplicação web que permite aos
+                          utilizadores:
                         </p>
                         <div className="grid md:grid-cols-2 gap-4 my-6">
                           <div className="bg-white border border-autisync-gold/20 rounded-xl p-5">
@@ -199,10 +201,11 @@ const Terms = () => {
                               </svg>
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2">
-                              Upload Schedules
+                              Carregar Horários
                             </h3>
                             <p className="text-sm text-slate-600">
-                              Upload work schedules in Excel (.xlsx) format
+                              Carregar horários de trabalho em formato Excel
+                              (.xlsx)
                             </p>
                           </div>
                           <div className="bg-white border border-autisync-gold/20 rounded-xl p-5">
@@ -222,11 +225,11 @@ const Terms = () => {
                               </svg>
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2">
-                              Automatic Sync
+                              Sincronização Automática
                             </h3>
                             <p className="text-sm text-slate-600">
-                              Synchronize shifts to Google Calendar
-                              automatically
+                              Sincronizar turnos com o Google Calendar
+                              automaticamente
                             </p>
                           </div>
                           <div className="bg-white border border-autisync-gold/20 rounded-xl p-5">
@@ -246,10 +249,11 @@ const Terms = () => {
                               </svg>
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2">
-                              Manage Preferences
+                              Gerir Preferências
                             </h3>
                             <p className="text-sm text-slate-600">
-                              Configure calendar selection and timezone settings
+                              Configurar seleção de calendário e definições de
+                              fuso horário
                             </p>
                           </div>
                           <div className="bg-white border border-autisync-gold/20 rounded-xl p-5">
@@ -275,27 +279,29 @@ const Terms = () => {
                               </svg>
                             </div>
                             <h3 className="font-bold text-slate-900 mb-2">
-                              Preview Changes
+                              Pré-visualizar Alterações
                             </h3>
                             <p className="text-sm text-slate-600">
-                              Review all shifts before syncing to calendar
+                              Rever todos os turnos antes de sincronizar com o
+                              calendário
                             </p>
                           </div>
                         </div>
                         <p>
-                          The Service integrates with Google Calendar via the
-                          Google Calendar API and requires users to authenticate
-                          using Google OAuth 2.0.
+                          O Serviço integra-se com o Google Calendar através da
+                          Google Calendar API e requer que os utilizadores se
+                          autentiquem usando Google OAuth 2.0.
                         </p>
                         <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl">
                           <p className="font-semibold text-amber-900 mb-2">
-                            Service Availability
+                            Disponibilidade do Serviço
                           </p>
                           <p className="text-sm text-amber-800">
-                            We strive to maintain 99.9% uptime, but we do not
-                            guarantee uninterrupted access. The Service may be
-                            temporarily unavailable for maintenance, updates, or
-                            due to circumstances beyond our control.
+                            Esforçamo-nos por manter 99,9% de uptime, mas não
+                            garantimos acesso ininterrupto. O Serviço pode estar
+                            temporariamente indisponível para manutenção,
+                            atualizações ou devido a circunstâncias fora do
+                            nosso controlo.
                           </p>
                         </div>
                       </div>
@@ -305,10 +311,10 @@ const Terms = () => {
                   <section id="eligibility" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        3. Eligibility
+                        3. Elegibilidade
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-                        <p>To use ShiftSync, you must:</p>
+                        <p>Para utilizar o ShiftSync, deve:</p>
                         <div className="bg-white border border-slate-200 rounded-xl p-6 my-6">
                           <ul className="space-y-3 list-none pl-0">
                             <li className="flex items-start gap-3">
@@ -326,8 +332,8 @@ const Terms = () => {
                                 ></path>
                               </svg>
                               <span>
-                                Be at least <strong>18 years old</strong> or the
-                                age of majority in your jurisdiction
+                                Ter pelo menos <strong>18 anos</strong> ou a
+                                idade de maioridade na sua jurisdição
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
@@ -345,8 +351,8 @@ const Terms = () => {
                                 ></path>
                               </svg>
                               <span>
-                                Have the legal capacity to enter into a binding
-                                agreement
+                                Ter capacidade legal para celebrar um acordo
+                                vinculativo
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
@@ -364,8 +370,8 @@ const Terms = () => {
                                 ></path>
                               </svg>
                               <span>
-                                Have a valid <strong>Google account</strong>{" "}
-                                with access to Google Calendar
+                                Ter uma <strong>conta Google</strong> válida com
+                                acesso ao Google Calendar
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
@@ -383,8 +389,8 @@ const Terms = () => {
                                 ></path>
                               </svg>
                               <span>
-                                Not be prohibited from using the Service under
-                                applicable laws
+                                Não estar proibido de utilizar o Serviço ao
+                                abrigo das leis aplicáveis
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
@@ -402,16 +408,16 @@ const Terms = () => {
                                 ></path>
                               </svg>
                               <span>
-                                Not have been previously banned or suspended
-                                from the Service
+                                Não ter sido anteriormente banido ou suspenso do
+                                Serviço
                               </span>
                             </li>
                           </ul>
                         </div>
                         <p>
-                          By using the Service, you represent and warrant that
-                          you meet all eligibility requirements. If you do not
-                          meet these requirements, you must not access or use
+                          Ao utilizar o Serviço, declara e garante que cumpre
+                          todos os requisitos de elegibilidade. Se não cumprir
+                          estes requisitos, não deve aceder ou utilizar o
                           ShiftSync.
                         </p>
                       </div>
@@ -421,66 +427,67 @@ const Terms = () => {
                   <section id="account" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        4. Account and Authentication
+                        4. Conta e Autenticação
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          4.1 Google OAuth Authentication
+                          4.1 Autenticação Google OAuth
                         </h3>
                         <p>
-                          ShiftSync uses Google OAuth 2.0 for authentication. By
-                          connecting your Google account, you authorize us to
-                          access your Google Calendar for the sole purpose of
-                          synchronizing work shifts.
+                          O ShiftSync utiliza Google OAuth 2.0 para
+                          autenticação. Ao conectar a sua conta Google,
+                          autoriza-nos a aceder ao seu Google Calendar para o
+                          único propósito de sincronizar turnos de trabalho.
                         </p>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          4.2 Account Security
+                          4.2 Segurança da Conta
                         </h3>
-                        <p>You are responsible for:</p>
+                        <p>É responsável por:</p>
                         <ul className="space-y-2 list-none pl-0 my-4">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Maintaining the security of your Google account
-                              credentials
+                              Manter a segurança das credenciais da sua conta
+                              Google
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              All activities that occur under your authenticated
-                              session
+                              Todas as atividades que ocorram sob a sua sessão
+                              autenticada
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Notifying us immediately of any unauthorized
-                              access or security breach
+                              Notificar-nos imediatamente de qualquer acesso não
+                              autorizado ou violação de segurança
                             </span>
                           </li>
                         </ul>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          4.3 Account Termination by User
+                          4.3 Rescisão da Conta pelo Utilizador
                         </h3>
                         <p>
-                          You may disconnect your Google account or delete your
-                          ShiftSync account at any time through the account
-                          settings. Upon disconnection or deletion, we will
-                          immediately stop syncing to your calendar and delete
-                          your data in accordance with our Privacy Policy.
+                          Pode desconectar a sua conta Google ou eliminar a sua
+                          conta ShiftSync a qualquer momento através das
+                          definições de conta. Após desconexão ou eliminação,
+                          iremos parar imediatamente de sincronizar com o seu
+                          calendário e eliminar os seus dados de acordo com a
+                          nossa Política de Privacidade.
                         </p>
 
                         <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
                           <p className="font-semibold text-blue-900 mb-2">
-                            Revoking Access
+                            Revogar Acesso
                           </p>
                           <p className="text-sm text-blue-800">
-                            You can revoke ShiftSync's access to your Google
-                            Calendar at any time through your Google Account
-                            settings at{" "}
+                            Pode revogar o acesso do ShiftSync ao seu Google
+                            Calendar a qualquer momento através das definições
+                            da sua Conta Google em{" "}
                             <a
                               href="https://myaccount.google.com/permissions"
                               className="underline"
@@ -497,40 +504,40 @@ const Terms = () => {
                   <section id="usage" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        5. Acceptable Use Policy
+                        5. Política de Uso Aceitável
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
-                        <p>When using ShiftSync, you agree to:</p>
+                        <p>Ao utilizar o ShiftSync, concorda em:</p>
 
                         <div className="bg-emerald-50 border border-emerald-200 rounded-xl p-6 my-6">
                           <h3 className="text-lg font-bold text-emerald-900 mb-3">
-                            ✓ Permitted Uses
+                            ✓ Usos Permitidos
                           </h3>
                           <ul className="space-y-2 list-none pl-0">
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Use the Service only for lawful purposes
+                                Utilizar o Serviço apenas para fins lícitos
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Upload only your own work schedules or schedules
-                                you are authorized to manage
+                                Carregar apenas os seus próprios horários de
+                                trabalho ou horários que está autorizado a gerir
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Comply with all applicable laws and regulations
+                                Cumprir todas as leis e regulamentos aplicáveis
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-emerald-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Respect the intellectual property rights of
-                                others
+                                Respeitar os direitos de propriedade intelectual
+                                de terceiros
                               </span>
                             </li>
                           </ul>
@@ -538,69 +545,69 @@ const Terms = () => {
 
                         <div className="bg-red-50 border border-red-200 rounded-xl p-6 my-6">
                           <h3 className="text-lg font-bold text-red-900 mb-3">
-                            ✗ Prohibited Activities
+                            ✗ Atividades Proibidas
                           </h3>
-                          <p className="text-sm text-red-800 mb-3">
-                            You must NOT:
-                          </p>
+                          <p className="text-sm text-red-800 mb-3">NÃO deve:</p>
                           <ul className="space-y-2 list-none pl-0">
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Attempt to reverse engineer, decompile, or
-                                disassemble the Service
+                                Tentar fazer engenharia reversa, decompilar ou
+                                desmontar o Serviço
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Use automated systems (bots, scrapers) to access
-                                the Service
+                                Utilizar sistemas automatizados (bots, scrapers)
+                                para aceder ao Serviço
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Upload malicious code, viruses, or harmful
-                                content
+                                Carregar código malicioso, vírus ou conteúdo
+                                prejudicial
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Interfere with or disrupt the Service or its
-                                servers
+                                Interferir ou perturbar o Serviço ou os seus
+                                servidores
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Attempt to gain unauthorized access to any part
-                                of the Service
+                                Tentar obter acesso não autorizado a qualquer
+                                parte do Serviço
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Use the Service to transmit spam or unsolicited
-                                messages
+                                Utilizar o Serviço para transmitir spam ou
+                                mensagens não solicitadas
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Violate any applicable laws or regulations
+                                Violar quaisquer leis ou regulamentos aplicáveis
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
-                              <span>Impersonate any person or entity</span>
+                              <span>
+                                Fazer-se passar por qualquer pessoa ou entidade
+                              </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Sell, rent, or commercialize access to the
-                                Service
+                                Vender, alugar ou comercializar o acesso ao
+                                Serviço
                               </span>
                             </li>
                           </ul>
@@ -608,13 +615,13 @@ const Terms = () => {
 
                         <div className="bg-slate-100 border border-slate-300 rounded-xl p-6">
                           <p className="font-semibold text-slate-900 mb-2">
-                            Enforcement
+                            Aplicação
                           </p>
                           <p className="text-sm text-slate-700">
-                            We reserve the right to investigate and take
-                            appropriate legal action against anyone who violates
-                            this Acceptable Use Policy, including suspending or
-                            terminating accounts without notice.
+                            Reservamos o direito de investigar e tomar ação
+                            legal apropriada contra quem violar esta Política de
+                            Uso Aceitável, incluindo suspender ou terminar
+                            contas sem aviso prévio.
                           </p>
                         </div>
                       </div>
@@ -624,61 +631,62 @@ const Terms = () => {
                   <section id="intellectual-property" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        6. Intellectual Property Rights
+                        6. Direitos de Propriedade Intelectual
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          6.1 Our Intellectual Property
+                          6.1 Nossa Propriedade Intelectual
                         </h3>
                         <p>
-                          All content, features, functionality, source code,
-                          design, graphics, user interface, and trademarks
-                          associated with ShiftSync are owned by Autisync and
-                          protected by international copyright, trademark, and
-                          other intellectual property laws.
+                          Todo o conteúdo, funcionalidades, código fonte,
+                          design, gráficos, interface do utilizador e marcas
+                          comerciais associados ao ShiftSync são propriedade da
+                          Autisync e protegidos pelas leis internacionais de
+                          direitos de autor, marcas comerciais e outras leis de
+                          propriedade intelectual.
                         </p>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          6.2 Limited License
+                          6.2 Licença Limitada
                         </h3>
                         <p>
-                          We grant you a limited, non-exclusive,
-                          non-transferable, revocable license to access and use
-                          ShiftSync for personal, non-commercial purposes,
-                          subject to these Terms.
+                          Concedemos-lhe uma licença limitada, não exclusiva,
+                          não transferível e revogável para aceder e utilizar o
+                          ShiftSync para fins pessoais e não comerciais, sujeita
+                          a estes Termos.
                         </p>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          6.3 Restrictions
+                          6.3 Restrições
                         </h3>
-                        <p>You may not:</p>
+                        <p>Não pode:</p>
                         <ul className="space-y-2 list-none pl-0 my-4">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Copy, modify, or create derivative works of the
-                              Service
+                              Copiar, modificar ou criar obras derivadas do
+                              Serviço
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Reproduce, distribute, or publicly display any
-                              part of the Service
+                              Reproduzir, distribuir ou exibir publicamente
+                              qualquer parte do Serviço
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Remove or alter any copyright, trademark, or
-                              proprietary notices
+                              Remover ou alterar quaisquer avisos de direitos de
+                              autor, marcas comerciais ou avisos de propriedade
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Use our trademarks or branding without written
-                              permission
+                              Utilizar as nossas marcas comerciais ou identidade
+                              visual sem autorização por escrito
                             </span>
                           </li>
                         </ul>
@@ -689,64 +697,67 @@ const Terms = () => {
                   <section id="user-content" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        7. User Content and Data
+                        7. Conteúdo e Dados do Utilizador
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          7.1 Your Content Ownership
+                          7.1 Propriedade do Seu Conteúdo
                         </h3>
                         <p>
-                          You retain all ownership rights to the Excel files and
-                          schedule data you upload to ShiftSync. We do not claim
-                          any ownership over your content.
+                          Mantém todos os direitos de propriedade sobre os
+                          ficheiros Excel e dados de horários que carrega para o
+                          ShiftSync. Não reivindicamos qualquer propriedade
+                          sobre o seu conteúdo.
                         </p>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          7.2 License to Process Your Content
+                          7.2 Licença para Processar o Seu Conteúdo
                         </h3>
                         <p>
-                          By uploading files to ShiftSync, you grant us a
-                          limited license to process, store temporarily, and
-                          synchronize your schedule data with Google Calendar
-                          solely for the purpose of providing the Service.
+                          Ao carregar ficheiros para o ShiftSync, concede-nos
+                          uma licença limitada para processar, armazenar
+                          temporariamente e sincronizar os dados do seu horário
+                          com o Google Calendar exclusivamente para o propósito
+                          de fornecer o Serviço.
                         </p>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          7.3 Content Responsibility
+                          7.3 Responsabilidade pelo Conteúdo
                         </h3>
-                        <p>You are solely responsible for:</p>
+                        <p>É o único responsável por:</p>
                         <ul className="space-y-2 list-none pl-0 my-4">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              The accuracy and legality of the content you
-                              upload
+                              A precisão e legalidade do conteúdo que carrega
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Ensuring you have the right to upload and sync the
-                              schedule data
+                              Garantir que tem o direito de carregar e
+                              sincronizar os dados do horário
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Maintaining backups of your original Excel files
+                              Manter backups dos seus ficheiros Excel originais
                             </span>
                           </li>
                         </ul>
 
                         <div className="bg-amber-50 border-l-4 border-amber-500 p-6 rounded-r-xl my-6">
                           <p className="font-semibold text-amber-900 mb-2">
-                            Data Processing
+                            Processamento de Dados
                           </p>
                           <p className="text-sm text-amber-800">
-                            Uploaded Excel files are processed in memory and not
-                            permanently stored on our servers. Only sync
-                            metadata (last sync time, preferences) is retained.
-                            See our Privacy Policy for details.
+                            Os ficheiros Excel carregados são processados em
+                            memória e não armazenados permanentemente nos nossos
+                            servidores. Apenas metadados de sincronização
+                            (última sincronização, preferências) são retidos.
+                            Consulte a nossa Política de Privacidade para mais
+                            detalhes.
                           </p>
                         </div>
                       </div>
@@ -756,93 +767,95 @@ const Terms = () => {
                   <section id="disclaimers" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        8. Disclaimers and Warranties
+                        8. Isenções de Responsabilidade e Garantias
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <div className="bg-slate-100 border-2 border-slate-300 rounded-xl p-8 my-6">
                           <h3 className="text-xl font-bold text-slate-900 mb-4">
-                            "AS IS" SERVICE
+                            SERVIÇO "TAL COMO ESTÁ"
                           </h3>
                           <p className="text-slate-700 uppercase font-semibold mb-4">
-                            SHIFTSYNC IS PROVIDED ON AN "AS IS" AND "AS
-                            AVAILABLE" BASIS WITHOUT WARRANTIES OF ANY KIND,
-                            EITHER EXPRESS OR IMPLIED.
+                            O SHIFTSYNC É FORNECIDO NUMA BASE "TAL COMO ESTÁ" E
+                            "CONFORME DISPONÍVEL" SEM GARANTIAS DE QUALQUER
+                            TIPO, EXPRESSAS OU IMPLÍCITAS.
                           </p>
                           <p className="text-sm text-slate-700">
-                            To the fullest extent permitted by law, we disclaim
-                            all warranties, including but not limited to:
+                            Na máxima extensão permitida por lei, renunciamos a
+                            todas as garantias, incluindo mas não limitado a:
                           </p>
                           <ul className="space-y-2 list-none pl-0 mt-4">
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Implied warranties of merchantability, fitness
-                                for a particular purpose, and non-infringement
+                                Garantias implícitas de comercialização,
+                                adequação a um propósito particular e não
+                                violação
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Warranties that the Service will be
-                                uninterrupted, error-free, or secure
+                                Garantias de que o Serviço será ininterrupto,
+                                livre de erros ou seguro
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Warranties regarding the accuracy, reliability,
-                                or completeness of results
+                                Garantias quanto à precisão, fiabilidade ou
+                                integridade dos resultados
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-slate-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Warranties that defects will be corrected
+                                Garantias de que defeitos serão corrigidos
                               </span>
                             </li>
                           </ul>
                         </div>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          Third-Party Services
+                          Serviços de Terceiros
                         </h3>
                         <p>
-                          ShiftSync integrates with Google Calendar, a
-                          third-party service. We are not responsible for:
+                          O ShiftSync integra-se com o Google Calendar, um
+                          serviço de terceiros. Não somos responsáveis por:
                         </p>
                         <ul className="space-y-2 list-none pl-0 my-4">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Google's policies, terms of service, or privacy
-                              practices
+                              Políticas da Google, termos de serviço ou práticas
+                              de privacidade
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Availability, functionality, or changes to the
+                              Disponibilidade, funcionalidade ou alterações à
                               Google Calendar API
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Any issues arising from your use of Google
-                              services
+                              Quaisquer questões decorrentes da sua utilização
+                              dos serviços Google
                             </span>
                           </li>
                         </ul>
 
                         <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-6">
                           <p className="font-semibold text-red-900 mb-2">
-                            No Professional Advice
+                            Nenhum Conselho Profissional
                           </p>
                           <p className="text-sm text-red-800">
-                            ShiftSync is a productivity tool and does not
-                            provide professional, legal, or employment advice.
-                            You are responsible for ensuring compliance with
-                            your employment contract and applicable labor laws.
+                            O ShiftSync é uma ferramenta de produtividade e não
+                            fornece conselhos profissionais, legais ou de
+                            emprego. É responsável por garantir a conformidade
+                            com o seu contrato de trabalho e leis laborais
+                            aplicáveis.
                           </p>
                         </div>
                       </div>
@@ -852,78 +865,81 @@ const Terms = () => {
                   <section id="limitation" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        9. Limitation of Liability
+                        9. Limitação de Responsabilidade
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <div className="bg-red-100 border-2 border-red-300 rounded-xl p-8 my-6">
                           <p className="text-red-900 uppercase font-bold mb-4">
-                            TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW:
+                            NA MÁXIMA EXTENSÃO PERMITIDA PELA LEI APLICÁVEL:
                           </p>
                           <p className="text-sm text-red-900">
-                            Autisync and its officers, directors, employees,
-                            agents, and affiliates shall not be liable for any
-                            indirect, incidental, special, consequential, or
-                            punitive damages, including but not limited to:
+                            A Autisync e os seus administradores, diretores,
+                            empregados, agentes e afiliados não serão
+                            responsáveis por quaisquer danos indiretos,
+                            incidentais, especiais, consequenciais ou punitivos,
+                            incluindo mas não limitado a:
                           </p>
                           <ul className="space-y-2 list-none pl-0 mt-4">
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Loss of profits, revenue, data, or use
+                                Perda de lucros, receitas, dados ou uso
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Business interruption or lost opportunities
+                                Interrupção de negócios ou oportunidades
+                                perdidas
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
-                              <span>Personal injury or emotional distress</span>
+                              <span>Lesões pessoais ou angústia emocional</span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Errors or inaccuracies in schedule
-                                synchronization
+                                Erros ou imprecisões na sincronização de
+                                horários
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-600 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Unauthorized access to or alteration of your
-                                data
+                                Acesso não autorizado aos seus dados ou
+                                alteração dos mesmos
                               </span>
                             </li>
                           </ul>
                           <p className="text-sm text-red-900 mt-4">
-                            This limitation applies regardless of the legal
-                            theory (contract, tort, negligence, strict
-                            liability, or otherwise) and even if we have been
-                            advised of the possibility of such damages.
+                            Esta limitação aplica-se independentemente da teoria
+                            legal (contrato, ato ilícito, negligência,
+                            responsabilidade objetiva ou outra) e mesmo que
+                            tenhamos sido avisados da possibilidade de tais
+                            danos.
                           </p>
                         </div>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          Maximum Liability Cap
+                          Limite Máximo de Responsabilidade
                         </h3>
                         <p>
-                          In no event shall our total aggregate liability to you
-                          exceed the amount you paid to use ShiftSync in the 12
-                          months preceding the claim, or €100 (whichever is
-                          greater).
+                          Em nenhum caso a nossa responsabilidade total agregada
+                          para consigo excederá o montante que pagou para
+                          utilizar o ShiftSync nos 12 meses anteriores à
+                          reclamação, ou €100 (o que for maior).
                         </p>
 
                         <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
                           <p className="font-semibold text-blue-900 mb-2">
-                            Jurisdictional Variations
+                            Variações Jurisdicionais
                           </p>
                           <p className="text-sm text-blue-800">
-                            Some jurisdictions do not allow the exclusion or
-                            limitation of certain damages. In such
-                            jurisdictions, our liability is limited to the
-                            fullest extent permitted by law.
+                            Algumas jurisdições não permitem a exclusão ou
+                            limitação de certos danos. Nessas jurisdições, a
+                            nossa responsabilidade é limitada na máxima extensão
+                            permitida por lei.
                           </p>
                         </div>
                       </div>
@@ -933,50 +949,53 @@ const Terms = () => {
                   <section id="indemnification" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        10. Indemnification
+                        10. Indemnização
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <p>
-                          You agree to indemnify, defend, and hold harmless
-                          Autisync, its officers, directors, employees, agents,
-                          licensors, and suppliers from and against all claims,
-                          losses, liabilities, expenses, damages, and costs,
-                          including reasonable attorneys' fees, arising from or
-                          related to:
+                          Concorda em indemnizar, defender e isentar de
+                          responsabilidade a Autisync, os seus administradores,
+                          diretores, empregados, agentes, licenciadores e
+                          fornecedores de e contra todas as reclamações, perdas,
+                          responsabilidades, despesas, danos e custos, incluindo
+                          honorários razoáveis de advogados, decorrentes de ou
+                          relacionados com:
                         </p>
                         <div className="bg-white border border-slate-200 rounded-xl p-6 my-6">
                           <ul className="space-y-3 list-none pl-0">
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
-                              <span>Your use or misuse of the Service</span>
-                            </li>
-                            <li className="flex items-start gap-3">
-                              <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
-                              <span>Your violation of these Terms</span>
-                            </li>
-                            <li className="flex items-start gap-3">
-                              <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Your violation of any rights of a third party
+                                A sua utilização ou uso indevido do Serviço
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
-                              <span>Content you upload to the Service</span>
+                              <span>A sua violação destes Termos</span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Your breach of any applicable laws or
-                                regulations
+                                A sua violação de quaisquer direitos de um
+                                terceiro
+                              </span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                              <span>Conteúdo que carrega para o Serviço</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                              <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
+                              <span>
+                                A sua violação de quaisquer leis ou regulamentos
+                                aplicáveis
                               </span>
                             </li>
                           </ul>
                         </div>
                         <p>
-                          This indemnification obligation will survive
-                          termination of these Terms and your use of the
-                          Service.
+                          Esta obrigação de indemnização sobreviverá à rescisão
+                          destes Termos e à sua utilização do Serviço.
                         </p>
                       </div>
                     </div>
@@ -985,110 +1004,111 @@ const Terms = () => {
                   <section id="termination" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        11. Termination and Suspension
+                        11. Rescisão e Suspensão
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          11.1 Termination by You
+                          11.1 Rescisão por Si
                         </h3>
                         <p>
-                          You may terminate your use of ShiftSync at any time
-                          by:
+                          Pode rescindir a sua utilização do ShiftSync a
+                          qualquer momento através de:
                         </p>
                         <ul className="space-y-2 list-none pl-0 my-4">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Disconnecting your Google account from the Service
+                              Desconectar a sua conta Google do Serviço
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Deleting your account through account settings
+                              Eliminar a sua conta através das definições de
+                              conta
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Ceasing all use of the Service</span>
+                            <span>Cessar toda a utilização do Serviço</span>
                           </li>
                         </ul>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          11.2 Termination by Us
+                          11.2 Rescisão por Nós
                         </h3>
                         <p>
-                          We reserve the right to suspend or terminate your
-                          access to ShiftSync at any time, with or without
-                          notice, for any reason, including but not limited to:
+                          Reservamos o direito de suspender ou rescindir o seu
+                          acesso ao ShiftSync a qualquer momento, com ou sem
+                          aviso prévio, por qualquer motivo, incluindo mas não
+                          limitado a:
                         </p>
                         <div className="bg-white border border-slate-200 rounded-xl p-6 my-6">
                           <ul className="space-y-3 list-none pl-0">
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Violation of these Terms or Acceptable Use
-                                Policy
+                                Violação destes Termos ou Política de Uso
+                                Aceitável
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Suspected fraudulent, abusive, or illegal
-                                activity
+                                Atividade fraudulenta, abusiva ou ilegal
+                                suspeita
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Extended periods of inactivity (90+ days)
+                                Períodos prolongados de inatividade (90+ dias)
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Requests from law enforcement or regulatory
-                                authorities
+                                Pedidos das autoridades policiais ou reguladoras
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-red-500 rounded-full mt-2 flex-shrink-0"></span>
-                              <span>Discontinuation of the Service</span>
+                              <span>Descontinuação do Serviço</span>
                             </li>
                           </ul>
                         </div>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          11.3 Effect of Termination
+                          11.3 Efeito da Rescisão
                         </h3>
-                        <p>Upon termination:</p>
+                        <p>Após rescisão:</p>
                         <ul className="space-y-2 list-none pl-0 my-4">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Your right to access and use the Service
-                              immediately ceases
+                              O seu direito de aceder e utilizar o Serviço cessa
+                              imediatamente
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              We will delete your account data in accordance
-                              with our Privacy Policy
+                              Iremos eliminar os dados da sua conta de acordo
+                              com a nossa Política de Privacidade
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Previously synced calendar events will remain in
-                              your Google Calendar
+                              Eventos de calendário previamente sincronizados
+                              permanecerão no seu Google Calendar
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold/70 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Sections of these Terms that by their nature
-                              should survive will continue to apply
+                              Secções destes Termos que por sua natureza devam
+                              sobreviver continuarão a aplicar-se
                             </span>
                           </li>
                         </ul>
@@ -1099,56 +1119,57 @@ const Terms = () => {
                   <section id="governing-law" className="scroll-mt-24">
                     <div className="accent-border pl-6">
                       <h2 className="text-3xl font-bold text-slate-900 mb-4">
-                        12. Governing Law and Dispute Resolution
+                        12. Lei Aplicável e Resolução de Litígios
                       </h2>
                       <div className="prose prose-slate max-w-none text-slate-700 leading-relaxed space-y-4">
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          12.1 Governing Law
+                          12.1 Lei Aplicável
                         </h3>
                         <p>
-                          These Terms shall be governed by and construed in
-                          accordance with the laws of Angola, without regard to
-                          its conflict of law provisions.
+                          Estes Termos serão regidos e interpretados de acordo
+                          com as leis de Angola, sem consideração aos seus
+                          conflitos de disposições legais.
                         </p>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          12.2 Jurisdiction
+                          12.2 Jurisdição
                         </h3>
                         <p>
-                          You agree that any legal action or proceeding arising
-                          out of or related to these Terms or your use of
-                          ShiftSync shall be brought exclusively in the courts
-                          located in Luanda, Angola. You consent to the personal
-                          jurisdiction of such courts.
+                          Concorda que qualquer ação legal ou processo
+                          decorrente de ou relacionado com estes Termos ou a sua
+                          utilização do ShiftSync será apresentado
+                          exclusivamente nos tribunais localizados em Luanda,
+                          Angola. Consente na jurisdição pessoal desses
+                          tribunais.
                         </p>
 
                         <h3 className="text-xl font-bold text-slate-900 mt-6">
-                          12.3 EU User Rights
+                          12.3 Direitos dos Utilizadores da UE
                         </h3>
                         <p>
-                          If you are a consumer residing in the European Union,
-                          you retain the benefit of mandatory provisions of the
-                          consumer protection law in your country of residence,
-                          and nothing in these Terms affects your rights as a
-                          consumer under EU law.
+                          Se for um consumidor residente na União Europeia,
+                          mantém o benefício das disposições obrigatórias da lei
+                          de proteção do consumidor no seu país de residência, e
+                          nada nestes Termos afeta os seus direitos como
+                          consumidor ao abrigo da lei da UE.
                         </p>
 
                         <div className="bg-autisync-gold/10 border-l-4 border-autisync-gold/70 p-6 rounded-r-xl my-6">
                           <p className="font-semibold text-autisync-gold mb-2">
-                            Dispute Resolution Process
+                            Processo de Resolução de Litígios
                           </p>
                           <p className="text-sm text-autisync-black/90">
-                            Before initiating any legal proceedings, we
-                            encourage you to contact us at{" "}
+                            Antes de iniciar quaisquer processos legais,
+                            encorajamos-o a contactar-nos em{" "}
                             <a
                               href="mailto:support@autisync.com"
                               className="underline"
                             >
                               support@autisync.com
                             </a>{" "}
-                            to attempt to resolve the dispute informally. We are
-                            committed to working with users to address concerns
-                            in good faith.
+                            para tentar resolver o litígio informalmente.
+                            Estamos comprometidos em trabalhar com os
+                            utilizadores para resolver preocupações de boa fé.
                           </p>
                         </div>
                       </div>
@@ -1158,77 +1179,79 @@ const Terms = () => {
                   <section className="mt-16 space-y-8">
                     <div className="bg-white border border-slate-200 rounded-2xl p-8">
                       <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                        13. Miscellaneous Provisions
+                        13. Disposições Diversas
                       </h2>
 
                       <div className="space-y-6">
                         <div>
                           <h3 className="text-lg font-bold text-slate-900 mb-2">
-                            13.1 Entire Agreement
+                            13.1 Acordo Integral
                           </h3>
                           <p className="text-slate-700">
-                            These Terms, together with our Privacy Policy and
-                            Cookie Policy, constitute the entire agreement
-                            between you and Autisync regarding the Service.
+                            Estes Termos, juntamente com a nossa Política de
+                            Privacidade e Política de Cookies, constituem o
+                            acordo integral entre si e a Autisync relativamente
+                            ao Serviço.
                           </p>
                         </div>
 
                         <div>
                           <h3 className="text-lg font-bold text-slate-900 mb-2">
-                            13.2 Severability
+                            13.2 Divisibilidade
                           </h3>
                           <p className="text-slate-700">
-                            If any provision of these Terms is found to be
-                            invalid or unenforceable, the remaining provisions
-                            will remain in full force and effect.
+                            Se qualquer disposição destes Termos for considerada
+                            inválida ou inexequível, as disposições restantes
+                            permanecerão em pleno vigor e efeito.
                           </p>
                         </div>
 
                         <div>
                           <h3 className="text-lg font-bold text-slate-900 mb-2">
-                            13.3 Waiver
+                            13.3 Renúncia
                           </h3>
                           <p className="text-slate-700">
-                            Our failure to enforce any right or provision of
-                            these Terms will not constitute a waiver of that
-                            right or provision.
+                            A nossa falha em fazer cumprir qualquer direito ou
+                            disposição de estes Termos não constituirá uma
+                            renúncia a esse direito ou disposição.
                           </p>
                         </div>
 
                         <div>
                           <h3 className="text-lg font-bold text-slate-900 mb-2">
-                            13.4 Assignment
+                            13.4 Cessão
                           </h3>
                           <p className="text-slate-700">
-                            You may not assign or transfer these Terms without
-                            our prior written consent. We may assign these Terms
-                            without restriction.
+                            Não pode ceder ou transferir estes Termos sem o
+                            nosso consentimento prévio por escrito. Podemos
+                            ceder estes Termos sem restrições.
                           </p>
                         </div>
 
                         <div>
                           <h3 className="text-lg font-bold text-slate-900 mb-2">
-                            13.5 Force Majeure
+                            13.5 Força Maior
                           </h3>
                           <p className="text-slate-700">
-                            We shall not be liable for any delay or failure to
-                            perform resulting from causes outside our reasonable
-                            control, including but not limited to acts of God,
-                            war, terrorism, natural disasters, or internet
-                            service provider failures.
+                            Não seremos responsáveis por qualquer atraso ou
+                            falha no desempenho resultante de causas fora do
+                            nosso controlo razoável, incluindo mas não limitado
+                            a atos de Deus, guerra, terrorismo, desastres
+                            naturais ou falhas de fornecedores de serviços de
+                            internet.
                           </p>
                         </div>
 
                         <div>
                           <h3 className="text-lg font-bold text-slate-900 mb-2">
-                            13.6 Modifications to the Service
+                            13.6 Modificações ao Serviço
                           </h3>
                           <p className="text-slate-700">
-                            We reserve the right to modify, suspend, or
-                            discontinue any aspect of the Service at any time,
-                            with or without notice. We will not be liable to you
-                            or any third party for any modification, suspension,
-                            or discontinuation.
+                            Reservamos o direito de modificar, suspender ou
+                            descontinuar qualquer aspecto do Serviço a qualquer
+                            momento, com ou sem aviso prévio. Não seremos
+                            responsáveis perante si ou qualquer terceiro por
+                            qualquer modificação, suspensão ou descontinuação.
                           </p>
                         </div>
                       </div>
@@ -1253,12 +1276,12 @@ const Terms = () => {
                         </div>
                         <div className="flex-1">
                           <h2 className="text-2xl font-bold text-slate-900 mb-4">
-                            Questions About These Terms?
+                            Questões Sobre Estes Termos?
                           </h2>
                           <p className="text-slate-700 mb-4">
-                            If you have any questions, concerns, or need
-                            clarification regarding these Terms of Service,
-                            please contact us:
+                            Se tiver alguma questão, preocupação ou necessitar
+                            de esclarecimentos relativamente a estes Termos de
+                            Serviço, por favor contacte-nos:
                           </p>
                           <div className="space-y-2">
                             <div className="flex items-center gap-3">
@@ -1318,9 +1341,9 @@ const Terms = () => {
               </main>
               <div className="bg-blue-50 rounded-xl p-4 border border-blue-200 mt-8">
                 <p className="text-sm text-blue-900">
-                  <strong>Important:</strong> By using Excel Shift Sync, you
-                  acknowledge that you have read, understood, and agree to be
-                  bound by these Terms of Service.
+                  <strong>Importante:</strong> Ao utilizar o Excel Shift Sync,
+                  reconhece que leu, compreendeu e concorda em ficar vinculado
+                  por estes Termos de Serviço.
                 </p>
               </div>
             </CardContent>

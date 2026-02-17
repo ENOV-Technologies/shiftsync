@@ -24,7 +24,7 @@ export function DashboardHeader({ email, onLogout }: DashboardHeaderProps) {
             </div>
             <div className="min-w-0 flex-1">
               <CardTitle className="text-base sm:text-lg">
-                Welcome back!
+                Seja bem-vindo!
               </CardTitle>
               <CardDescription className="text-sm sm:text-base truncate">
                 {email}
@@ -39,7 +39,7 @@ export function DashboardHeader({ email, onLogout }: DashboardHeaderProps) {
               className="gap-1 sm:gap-2 flex-1 sm:flex-initial"
             >
               <History className="w-3 h-3 sm:w-4 sm:h-4" />
-              <span className="hidden xs:inline">History</span>
+              <span className="hidden xs:inline">Histórico</span>
             </Button>
             <Button
               variant="outline"
@@ -47,7 +47,7 @@ export function DashboardHeader({ email, onLogout }: DashboardHeaderProps) {
               className="gap-1 sm:gap-2 flex-1 sm:flex-initial"
             >
               <Settings className="w-3 h-3 sm:w-4 sm:h-4" />
-              <span className="hidden xs:inline">Settings</span>
+              <span className="hidden xs:inline">Configurações</span>
             </Button>
             <Button
               variant="outline"
@@ -56,7 +56,7 @@ export function DashboardHeader({ email, onLogout }: DashboardHeaderProps) {
               className="gap-1 sm:gap-2 flex-1 sm:flex-initial"
             >
               <LogOut className="w-3 h-3 sm:w-4 sm:h-4" />
-              <span className="hidden xs:inline">Logout</span>
+              <span className="hidden xs:inline">Sair</span>
             </Button>
           </div>
         </div>

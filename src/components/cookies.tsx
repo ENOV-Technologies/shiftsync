@@ -22,22 +22,23 @@ const Cookies = () => {
             className="mb-6 hover:bg-white/50"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back
+            Voltar
           </Button>
 
           <Card className="shadow-2xl border-0">
             <CardHeader className="space-y-2 p-6 sm:p-8">
               <div className="mb-6">
                 <div className="inline-block px-4 py-2 bg-autisync-black text-autisync-gold rounded-full text-sm font-medium mb-6">
-                  Last Updated: {POLICY_LAST_UPDATED}
+                  Última Atualização: {POLICY_LAST_UPDATED}
                 </div>
                 <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-                  Cookie Policy
+                  Política de Cookies
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed">
-                  This Cookie Policy explains how <strong>ShiftSync</strong>{" "}
-                  uses cookies and similar technologies. We believe in
-                  transparency and minimal data collection.
+                  Esta Política de Cookies explica como o{" "}
+                  <strong>ShiftSync</strong> utiliza cookies e tecnologias
+                  similares. Acreditamos na transparência e na recolha mínima de
+                  dados.
                 </p>
               </div>
             </CardHeader>
@@ -46,75 +47,77 @@ const Cookies = () => {
               {/* Summary */}
               <section className="bg-emerald-50 border border-emerald-300 rounded-xl p-6">
                 <h2 className="text-xl font-semibold text-slate-900 mb-2">
-                  The Short Version
+                  A Versão Resumida
                 </h2>
                 <p className="leading-relaxed">
-                  <strong>ShiftSync uses minimal cookies.</strong> We only use
-                  essential cookies required for authentication, security, and
-                  basic preferences. We do <strong>not</strong> use by default
-                  advertising, analytics, or tracking cookies.
+                  <strong>O ShiftSync utiliza cookies mínimos.</strong> Apenas
+                  usamos cookies essenciais necessários para autenticação,
+                  segurança e preferências básicas. Não utilizamos por padrão
+                  cookies de publicidade, análise ou rastreamento.
                 </p>
               </section>
 
               {/* Section 1 */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  1. What Are Cookies?
+                  1. O que são Cookies?
                 </h2>
                 <p className="leading-relaxed">
-                  Cookies are small text files stored on your device when you
-                  visit a website. They help websites remember information such
-                  as login state, preferences, and security settings.
+                  Cookies são pequenos ficheiros de texto armazenados no seu
+                  dispositivo quando visita um website. Ajudam os websites a
+                  lembrar informações como estado de início de sessão,
+                  preferências e definições de segurança.
                 </p>
               </section>
 
               {/* Section 2 */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  2. Cookies We Use
+                  2. Cookies que Utilizamos
                 </h2>
                 <p className="leading-relaxed mb-4">
-                  ShiftSync uses only <strong>essential cookies</strong> that
-                  are strictly necessary for the Service to function.
+                  O ShiftSync utiliza apenas <strong>cookies essenciais</strong>{" "}
+                  que são estritamente necessários para o funcionamento do
+                  Serviço.
                 </p>
 
                 <div className="overflow-x-auto">
                   <table className="w-full text-sm border border-slate-200 rounded-lg">
                     <thead className="bg-slate-100">
                       <tr>
-                        <th className="text-left p-3">Cookie Name</th>
-                        <th className="text-left p-3">Purpose</th>
-                        <th className="text-left p-3">Duration</th>
+                        <th className="text-left p-3">Nome do Cookie</th>
+                        <th className="text-left p-3">Finalidade</th>
+                        <th className="text-left p-3">Duração</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr className="border-t">
                         <td className="p-3 font-mono">auth_session</td>
                         <td className="p-3">
-                          Maintains your logged-in state after Google OAuth
+                          Mantém o seu estado de sessão após o Google OAuth
                         </td>
-                        <td className="p-3">30 days</td>
+                        <td className="p-3">30 dias</td>
                       </tr>
                       <tr className="border-t">
                         <td className="p-3 font-mono">csrf_token</td>
                         <td className="p-3">
-                          Prevents cross-site request forgery attacks
+                          Previne ataques de falsificação de pedidos entre sites
                         </td>
-                        <td className="p-3">Session</td>
+                        <td className="p-3">Sessão</td>
                       </tr>
                       <tr className="border-t">
                         <td className="p-3 font-mono">user_prefs</td>
                         <td className="p-3">
-                          Stores timezone and calendar preferences
+                          Armazena preferências de fuso horário e calendário
                         </td>
-                        <td className="p-3">1 year</td>
+                        <td className="p-3">1 ano</td>
                       </tr>
                       <tr className="border-t">
                         <td className="p-3 font-mono">cookie_consent</td>
                         <td className="p-3">
-                          Records acknowledgement of this policy
+                          Regista o reconhecimento desta política
                         </td>
-                        <td className="p-3">1 year</td>
+                        <td className="p-3">1 ano</td>
                       </tr>
                     </tbody>
                   </table>
@@ -124,36 +127,36 @@ const Cookies = () => {
               {/* Section 3 */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  3. Cookies We Do NOT Use
+                  3. Cookies que NÃO Utilizamos
                 </h2>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Advertising or marketing cookies</li>
-                  <li>Analytics or usage tracking cookies</li>
-                  <li>Social media tracking cookies</li>
-                  <li>Third-party behavioral tracking</li>
+                  <li>Cookies de publicidade ou marketing</li>
+                  <li>Cookies de análise ou rastreamento de uso</li>
+                  <li>Cookies de rastreamento de redes sociais</li>
+                  <li>Rastreamento comportamental de terceiros</li>
                 </ul>
               </section>
 
               {/* Section 4 */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  4. Third-Party Cookies
+                  4. Cookies de Terceiros
                 </h2>
                 <p className="leading-relaxed">
-                  When you authenticate using Google OAuth, Google may set
-                  cookies as part of its authentication process. These cookies
-                  are controlled by Google and governed by Google’s own privacy
-                  and cookie policies.
+                  Quando se autentica usando Google OAuth, a Google pode definir
+                  cookies como parte do seu processo de autenticação. Estes
+                  cookies são controlados pela Google e regidos pelas políticas
+                  de privacidade e cookies da própria Google.
                 </p>
                 <p className="mt-2">
-                  Learn more:{" "}
+                  Saiba mais:{" "}
                   <a
                     href="https://policies.google.com/technologies/cookies"
                     className="text-autisync-gold hover:underline"
                     target="_blank"
                     rel="noreferrer"
                   >
-                    Google Cookie Policy
+                    Política de Cookies da Google
                   </a>
                 </p>
               </section>
@@ -161,35 +164,35 @@ const Cookies = () => {
               {/* Section 5 */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  5. How to Manage Cookies
+                  5. Como Gerir Cookies
                 </h2>
                 <p className="leading-relaxed">
-                  You can control cookies through your browser settings.
-                  Disabling essential cookies will prevent ShiftSync from
-                  functioning correctly.
+                  Pode controlar os cookies através das definições do seu
+                  navegador. Desativar cookies essenciais impedirá o
+                  funcionamento correto do ShiftSync.
                 </p>
               </section>
 
               {/* Section 6 */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  6. Updates to This Policy
+                  6. Atualizações a Esta Política
                 </h2>
                 <p className="leading-relaxed">
-                  We may update this Cookie Policy from time to time. Changes
-                  will be reflected by updating the “Last updated” date on this
-                  page.
+                  Podemos atualizar esta Política de Cookies ocasionalmente. As
+                  alterações serão refletidas atualizando a data "Última
+                  atualização" nesta página.
                 </p>
               </section>
 
               {/* Contact */}
               <section className="bg-autisync-gold/10 border border-autisync-gold/40 rounded-xl p-6">
                 <h2 className="text-xl font-semibold text-slate-900 mb-2">
-                  Questions?
+                  Questões?
                 </h2>
                 <p>
-                  If you have any questions about this Cookie Policy, contact us
-                  at{" "}
+                  Se tiver alguma questão sobre esta Política de Cookies,
+                  contacte-nos em{" "}
                   <a
                     href="mailto:support@autisync.com"
                     className="text-autisync-gold font-medium hover:underline"

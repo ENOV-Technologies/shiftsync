@@ -18,7 +18,7 @@ const Privacy = () => {
             className="mb-6 hover:bg-white/50"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back
+            Voltar
           </Button>
 
           <Card className="shadow-2xl border-0">
@@ -29,36 +29,36 @@ const Privacy = () => {
                 {/* Hero */}
                 <section className="mb-16">
                   <div className="inline-block px-4 py-2 bg-autisync-gold/10 text-autisync-gold rounded-full text-sm font-medium mb-6">
-                    Last Updated: June 23, 2025
+                    Última Atualização: 23 de Junho de 2025
                   </div>
 
                   <h1 className="text-5xl md:text-6xl font-bold text-autisync-black mb-6 leading-tight">
-                    Privacy Policy
+                    Política de Privacidade
                   </h1>
 
                   <p className="text-xl text-slate-600 leading-relaxed">
-                    Your privacy matters to us. This policy explains how
-                    ShiftSync collects, uses, and protects your personal
-                    information in compliance with GDPR and international data
-                    protection standards.
+                    A sua privacidade é importante para nós. Esta política
+                    explica como o ShiftSync recolhe, utiliza e protege a sua
+                    informação pessoal em conformidade com o RGPD e os padrões
+                    internacionais de proteção de dados.
                   </p>
                 </section>
                 {/* Introduction */}
                 <section id="introduction" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      1. Introduction
+                      1. Introdução
                     </h2>
 
                     <div className="prose prose-slate max-w-none text-autisync-black/60">
                       <p>
-                        Welcome to ShiftSync, a service provided by Autisync.
-                        ShiftSync helps synchronize Excel work schedules to
-                        Google Calendar.
+                        Bem-vindo ao ShiftSync, um serviço prestado pela
+                        Autisync. O ShiftSync ajuda a sincronizar horários de
+                        trabalho do Excel para o Google Calendar.
                       </p>
                       <p>
-                        By using ShiftSync, you agree to the collection and use
-                        of information in accordance with this policy.
+                        Ao utilizar o ShiftSync, concorda com a recolha e
+                        utilização de informação de acordo com esta política.
                       </p>
                     </div>
                   </div>
@@ -67,7 +67,7 @@ const Privacy = () => {
                 <section id="data-controller" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      2. Data Controller
+                      2. Responsável pelo Tratamento de Dados
                     </h2>
                     <div className="bg-slate-50 border border-autisync-gold/30 rounded-xl p-6 space-y-2">
                       <p className="text-autisync-black font-semibold">
@@ -85,10 +85,10 @@ const Privacy = () => {
                       </p>
                     </div>
                     <p className="mt-4 text-autisync-black/60 leading-relaxed">
-                      Autisync is the data controller responsible for your
-                      personal information. If you have any questions or
-                      concerns about how we handle your data, please contact us
-                      using the information above.
+                      A Autisync é o responsável pelo tratamento responsável
+                      pela sua informação pessoal. Se tiver alguma questão ou
+                      preocupação sobre como tratamos os seus dados, por favor
+                      contacte-nos utilizando a informação acima.
                     </p>
                   </div>
                 </section>
@@ -96,37 +96,37 @@ const Privacy = () => {
                 <section id="data-collection" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      3. Data We Collect
+                      3. Dados que Recolhemos
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        We collect and process only the minimum data necessary
-                        to provide our service:
+                        Recolhemos e processamos apenas os dados mínimos
+                        necessários para fornecer o nosso serviço:
                       </p>
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-6">
                         <h3 className="text-xl font-bold text-autisync-black mb-4">
-                          3.1 Authentication Data
+                          3.1 Dados de Autenticação
                         </h3>
                         <ul className="space-y-2 list-none pl-0">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Google account email address (used for
-                              authentication)
+                              Endereço de email da conta Google (utilizado para
+                              autenticação)
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Google profile information (name, profile picture
-                              if available)
+                              Informações do perfil Google (nome, foto de perfil
+                              se disponível)
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              OAuth access and refresh tokens (encrypted)
+                              Tokens de acesso e atualização OAuth (encriptados)
                             </span>
                           </li>
                         </ul>
@@ -134,50 +134,51 @@ const Privacy = () => {
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-6">
                         <h3 className="text-xl font-bold text-autisync-black mb-4">
-                          3.2 Schedule Data
+                          3.2 Dados de Horários
                         </h3>
                         <ul className="space-y-2 list-none pl-0">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Excel files you upload (processed in memory, not
-                              permanently stored)
+                              Ficheiros Excel que carrega (processados em
+                              memória, não armazenados permanentemente)
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Shift information extracted from your schedules
-                              (dates, times, shift types)
+                              Informação de turnos extraída dos seus horários
+                              (datas, horas, tipos de turno)
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Last synchronization timestamp</span>
+                            <span>Última data de sincronização</span>
                           </li>
                         </ul>
                       </div>
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-6">
                         <h3 className="text-xl font-bold text-autisync-black mb-4">
-                          3.3 Preference Data
+                          3.3 Dados de Preferências
                         </h3>
                         <ul className="space-y-2 list-none pl-0">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Selected Google Calendar ID</span>
+                            <span>ID do Google Calendar selecionado</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Timezone preference (default: Europe/Lisbon)
+                              Preferência de fuso horário (padrão:
+                              Europa/Lisboa)
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Shift type handling preferences (how to treat OFF,
-                              VAC, LOA)
+                              Preferências de tratamento de tipos de turno (como
+                              tratar OFF, FÉR, LOA)
                             </span>
                           </li>
                         </ul>
@@ -185,31 +186,31 @@ const Privacy = () => {
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-6">
                         <h3 className="text-xl font-bold text-autisync-black mb-4">
-                          3.4 Technical Data
+                          3.4 Dados Técnicos
                         </h3>
                         <ul className="space-y-2 list-none pl-0">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              IP address (for security and fraud prevention)
+                              Endereço IP (para segurança e prevenção de fraude)
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
-                            <span>Browser type and version</span>
+                            <span>Tipo e versão do navegador</span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Device information (operating system, screen
-                              resolution)
+                              Informações do dispositivo (sistema operativo,
+                              resolução do ecrã)
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              Error logs (anonymized, containing no personal
-                              information)
+                              Registos de erros (anonimizados, não contendo
+                              informação pessoal)
                             </span>
                           </li>
                         </ul>
@@ -221,12 +222,12 @@ const Privacy = () => {
                 <section id="how-we-use" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      4. How We Use Your Data
+                      4. Como Utilizamos os Seus Dados
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        We use your personal information exclusively for the
-                        following purposes:
+                        Utilizamos a sua informação pessoal exclusivamente para
+                        os seguintes fins:
                       </p>
 
                       <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -247,11 +248,11 @@ const Privacy = () => {
                             </svg>
                           </div>
                           <h3 className="text-lg font-bold text-autisync-black mb-2">
-                            Service Provision
+                            Prestação de Serviço
                           </h3>
                           <p className="text-sm text-autisync-black/60">
-                            Authenticate you via Google OAuth and sync your work
-                            shifts to Google Calendar
+                            Autenticá-lo via Google OAuth e sincronizar os seus
+                            turnos de trabalho com o Google Calendar
                           </p>
                         </div>
 
@@ -272,11 +273,11 @@ const Privacy = () => {
                             </svg>
                           </div>
                           <h3 className="text-lg font-bold text-autisync-black mb-2">
-                            Preference Management
+                            Gestão de Preferências
                           </h3>
                           <p className="text-sm text-autisync-black/60">
-                            Remember your calendar selection, timezone, and sync
-                            preferences
+                            Lembrar a sua seleção de calendário, fuso horário e
+                            preferências de sincronização
                           </p>
                         </div>
 
@@ -297,11 +298,11 @@ const Privacy = () => {
                             </svg>
                           </div>
                           <h3 className="text-lg font-bold text-autisync-black mb-2">
-                            Security & Fraud Prevention
+                            Segurança e Prevenção de Fraude
                           </h3>
                           <p className="text-sm text-autisync-black/60">
-                            Detect and prevent unauthorized access and potential
-                            security threats
+                            Detetar e prevenir acesso não autorizado e
+                            potenciais ameaças de segurança
                           </p>
                         </div>
 
@@ -328,11 +329,11 @@ const Privacy = () => {
                             </svg>
                           </div>
                           <h3 className="text-lg font-bold text-autisync-black mb-2">
-                            Service Improvement
+                            Melhoria do Serviço
                           </h3>
                           <p className="text-sm text-autisync-black/60">
-                            Improve our service through anonymized error logging
-                            and performance monitoring
+                            Melhorar o nosso serviço através de registo de erros
+                            anonimizado e monitorização de desempenho
                           </p>
                         </div>
                       </div>
@@ -354,13 +355,13 @@ const Privacy = () => {
                           </svg>
                           <div>
                             <p className="font-semibold text-amber-900 mb-1">
-                              Important Note
+                              Nota Importante
                             </p>
                             <p className="text-sm text-amber-800">
-                              We do NOT use your data for marketing,
-                              advertising, or any purpose unrelated to providing
-                              the ShiftSync service. We do NOT sell or rent your
-                              personal information to third parties.
+                              NÃO utilizamos os seus dados para marketing,
+                              publicidade, ou qualquer fim não relacionado com a
+                              prestação do serviço ShiftSync. NÃO vendemos ou
+                              alugamos a sua informação pessoal a terceiros.
                             </p>
                           </div>
                         </div>
@@ -369,24 +370,30 @@ const Privacy = () => {
                   </div>
                 </section>
 
-                <section id="google-api-compliance" className="scroll-mt-24 mb-6">
+                <section
+                  id="google-api-compliance"
+                  className="scroll-mt-24 mb-6"
+                >
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      5. Google API Services User Data Policy Compliance
+                      5. Conformidade com a Política de Dados do Utilizador dos
+                      Serviços Google API
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        ShiftSync's use and transfer to any other app of
-                        information received from Google APIs will adhere to the{" "}
+                        A utilização do ShiftSync e a transferência para
+                        qualquer outra aplicação de informação recebida das APIs
+                        Google irá respeitar a{" "}
                         <a
-                          href="https://developers.google.com/terms/api-services-user-data-policy"
+                          href="https://developers.google.com/terms/api-services-user-data-policy "
                           target="_blank"
                           rel="noopener noreferrer"
                           className="text-autisync-gold/80 hover:text-autisync-gold underline font-medium"
                         >
-                          Google API Services User Data Policy
+                          Política de Dados do Utilizador dos Serviços Google
+                          API
                         </a>
-                        , including the Limited Use requirements.
+                        , incluindo os requisitos de Utilização Limitada.
                       </p>
 
                       <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
@@ -406,16 +413,17 @@ const Privacy = () => {
                           </svg>
                           <div>
                             <p className="font-semibold text-blue-900 mb-2">
-                              How ShiftSync Uses Google Data
+                              Como o ShiftSync Utiliza os Dados Google
                             </p>
                             <p className="text-sm text-blue-800">
-                              ShiftSync uses Google OAuth and Google Calendar API
-                              to create calendar events on behalf of the user. We
-                              do not store Google Calendar data on our servers.
-                              Access tokens are stored locally in the user's
-                              browser and are not shared with third parties.
-                              ShiftSync does not use Google user data for
-                              advertising.
+                              O ShiftSync utiliza o Google OAuth e a Google
+                              Calendar API para criar eventos de calendário em
+                              nome do utilizador. Não armazenamos dados do
+                              Google Calendar nos nossos servidores. Os tokens
+                              de acesso são armazenados localmente no navegador
+                              do utilizador e não são partilhados com terceiros.
+                              O ShiftSync não utiliza dados do utilizador Google
+                              para publicidade.
                             </p>
                           </div>
                         </div>
@@ -424,51 +432,52 @@ const Privacy = () => {
                       <div className="space-y-3 my-6">
                         <div className="bg-white border border-autisync-gold/30 rounded-xl p-6">
                           <h3 className="text-lg font-bold text-autisync-black mb-3">
-                            Limited Use Disclosure
+                            Divulgação de Utilização Limitada
                           </h3>
                           <ul className="space-y-2 list-none pl-0">
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                We only request the minimum OAuth scopes necessary
-                                to provide our service (calendar events
-                                management)
+                                Apenas solicitamos os âmbitos OAuth mínimos
+                                necessários para fornecer o nosso serviço
+                                (gestão de eventos de calendário)
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                We do not use Google user data to serve
-                                advertisements
+                                Não utilizamos dados do utilizador Google para
+                                servir anúncios
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                We do not sell or transfer Google user data to
-                                third parties
+                                Não vendemos ou transferimos dados do utilizador
+                                Google para terceiros
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                We do not use Google user data for purposes
-                                unrelated to providing or improving ShiftSync's
-                                calendar synchronization features
+                                Não utilizamos dados do utilizador Google para
+                                fins não relacionados com a prestação ou
+                                melhoria das funcionalidades de sincronização de
+                                calendário do ShiftSync
                               </span>
                             </li>
                             <li className="flex items-start gap-3">
                               <span className="w-2 h-2 bg-emerald-500 rounded-full mt-2 flex-shrink-0"></span>
                               <span>
-                                Users can revoke ShiftSync's access at any time
-                                via{" "}
+                                Os utilizadores podem revogar o acesso do
+                                ShiftSync a qualquer momento através das{" "}
                                 <a
-                                  href="https://myaccount.google.com/permissions"
+                                  href="https://myaccount.google.com/permissions "
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="text-autisync-gold/80 hover:text-autisync-gold underline"
                                 >
-                                  Google Account Permissions
+                                  Permissões da Conta Google
                                 </a>
                               </span>
                             </li>
@@ -478,7 +487,7 @@ const Privacy = () => {
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-6">
                         <h3 className="text-lg font-bold text-autisync-black mb-3">
-                          Google OAuth Scopes Used
+                          Âmbitos Google OAuth Utilizados
                         </h3>
                         <div className="space-y-3">
                           <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
@@ -486,7 +495,7 @@ const Privacy = () => {
                               openid
                             </span>
                             <span className="text-autisync-black/60 text-sm">
-                              User authentication
+                              Autenticação do utilizador
                             </span>
                           </div>
                           <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
@@ -494,7 +503,7 @@ const Privacy = () => {
                               email
                             </span>
                             <span className="text-autisync-black/60 text-sm">
-                              Display your email
+                              Mostrar o seu email
                             </span>
                           </div>
                           <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
@@ -502,7 +511,7 @@ const Privacy = () => {
                               profile
                             </span>
                             <span className="text-autisync-black/60 text-sm">
-                              Display your name and photo
+                              Mostrar o seu nome e foto
                             </span>
                           </div>
                           <div className="flex justify-between items-center">
@@ -510,7 +519,7 @@ const Privacy = () => {
                               calendar.events
                             </span>
                             <span className="text-autisync-black/60 text-sm">
-                              Create and manage shift events
+                              Criar e gerir eventos de turnos
                             </span>
                           </div>
                         </div>
@@ -522,52 +531,52 @@ const Privacy = () => {
                 <section id="legal-basis" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      6. Legal Basis for Processing (GDPR)
+                      6. Base Legal para o Tratamento (RGPD)
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        Under GDPR, we process your personal data based on the
-                        following legal grounds:
+                        Ao abrigo do RGPD, processamos os seus dados pessoais
+                        com base nos seguintes fundamentos legais:
                       </p>
 
                       <div className="space-y-4 my-6">
                         <div className="bg-white border-l-4 border-red-500 rounded-r-xl p-6">
                           <h3 className="text-lg font-bold text-autisync-black mb-2">
-                            Consent (Article 6(1)(a) GDPR)
+                            Consentimento (Artigo 6(1)(a) RGPD)
                           </h3>
                           <p className="text-autisync-black/60">
-                            You provide explicit consent when you authorize
-                            ShiftSync to access your Google Calendar through
-                            OAuth 2.0 authentication.
+                            O utilizador fornece consentimento explícito quando
+                            autoriza o ShiftSync a aceder ao seu Google Calendar
+                            através da autenticação OAuth 2.0.
                           </p>
                         </div>
 
                         <div className="bg-white border-l-4 border-purple-500 rounded-r-xl p-6">
                           <h3 className="text-lg font-bold text-autisync-black mb-2">
-                            Contract Performance (Article 6(1)(b) GDPR)
+                            Execução de Contrato (Artigo 6(1)(b) RGPD)
                           </h3>
                           <p className="text-autisync-black/60">
-                            Processing is necessary to provide the calendar
-                            synchronization service you have requested.
+                            O tratamento é necessário para fornecer o serviço de
+                            sincronização de calendário que solicitou.
                           </p>
                         </div>
 
                         <div className="bg-white border-l-4 border-indigo-500 rounded-r-xl p-6">
                           <h3 className="text-lg font-bold text-autisync-black mb-2">
-                            Legitimate Interests (Article 6(1)(f) GDPR)
+                            Interesses Legítimos (Artigo 6(1)(f) RGPD)
                           </h3>
                           <p className="text-autisync-black/60">
-                            We have a legitimate interest in preventing fraud,
-                            ensuring security, and improving our service
-                            quality.
+                            Temos um interesse legítimo em prevenir fraude,
+                            garantir segurança e melhorar a qualidade do nosso
+                            serviço.
                           </p>
                         </div>
                       </div>
 
                       <p className="font-medium text-autisync-black">
-                        You have the right to withdraw your consent at any time
-                        by disconnecting your Google account from ShiftSync or
-                        deleting your account entirely.
+                        Tem o direito de retirar o seu consentimento a qualquer
+                        momento desconectando a sua conta Google do ShiftSync ou
+                        eliminando a sua conta completamente.
                       </p>
                     </div>
                   </div>
@@ -576,12 +585,12 @@ const Privacy = () => {
                 <section id="data-sharing" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      7. Data Sharing and Third Parties
+                      7. Partilha de Dados e Terceiros
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        We are committed to data minimization and privacy.
-                        Here's how we handle data sharing:
+                        Estamos comprometidos com a minimização de dados e
+                        privacidade. Eis como tratamos a partilha de dados:
                       </p>
 
                       <div className="bg-emerald-50 border-l-4 border-emerald-500 p-6 rounded-r-xl my-6">
@@ -601,23 +610,24 @@ const Privacy = () => {
                           </svg>
                           <div>
                             <p className="font-semibold text-emerald-900 mb-1">
-                              Zero Third-Party Data Sharing
+                              Zero Partilha de Dados com Terceiros
                             </p>
                             <p className="text-sm text-emerald-800">
-                              We do NOT share, sell, rent, or trade your
-                              personal information with any third parties for
-                              marketing or commercial purposes.
+                              NÃO partilhamos, vendemos, alugamos ou
+                              comercializamos a sua informação pessoal com
+                              quaisquer terceiros para fins de marketing ou
+                              comerciais.
                             </p>
                           </div>
                         </div>
                       </div>
 
                       <h3 className="text-xl font-bold text-autisync-black mt-6 mb-3">
-                        Limited Service Providers
+                        Prestadores de Serviço Limitados
                       </h3>
                       <p>
-                        We only share data with essential service providers who
-                        help us operate ShiftSync:
+                        Apenas partilhamos dados com prestadores de serviço
+                        essenciais que nos ajudam a operar o ShiftSync:
                       </p>
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-4">
@@ -628,26 +638,26 @@ const Privacy = () => {
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Purpose:</strong> OAuth authentication and
-                              Google Calendar API access
+                              <strong>Finalidade:</strong> Autenticação OAuth e
+                              acesso à Google Calendar API
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Data Shared:</strong> Google account
-                              information, calendar events
+                              <strong>Dados Partilhados:</strong> Informação da
+                              conta Google, eventos de calendário
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Privacy Policy:</strong>{" "}
+                              <strong>Política de Privacidade:</strong>{" "}
                               <a
-                                href="https://policies.google.com/privacy"
+                                href="https://policies.google.com/privacy "
                                 className="text-autisync-gold/80 hover:text-autisync-gold underline"
                               >
-                                Google Privacy Policy
+                                Política de Privacidade Google
                               </a>
                             </span>
                           </li>
@@ -656,51 +666,52 @@ const Privacy = () => {
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-4">
                         <h4 className="font-bold text-autisync-black mb-3">
-                          Vercel Inc. (Hosting) & Cloudflare Inc. (CDN/DNS)
+                          Vercel Inc. (Alojamento) & Cloudflare Inc. (CDN/DNS)
                         </h4>
                         <ul className="space-y-2 list-none pl-0">
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Purpose:</strong> Secure hosting, content
-                              delivery, and DNS management
+                              <strong>Finalidade:</strong> Alojamento seguro,
+                              entrega de conteúdo e gestão de DNS
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Data Shared:</strong> HTTP request metadata
-                              (IP address, user agent), encrypted authentication
-                              tokens, user preferences
+                              <strong>Dados Partilhados:</strong> Metadados de
+                              pedidos HTTP (endereço IP, user agent), tokens de
+                              autenticação encriptados, preferências do
+                              utilizador
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Location:</strong> Global edge network with
-                              GDPR-compliant data processing agreements
+                              <strong>Localização:</strong> Rede global de edge
+                              com acordos de tratamento de dados conforme o RGPD
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
                             <span className="w-2 h-2 bg-slate-400 rounded-full mt-2 flex-shrink-0"></span>
                             <span>
-                              <strong>Privacy Policies:</strong>{" "}
+                              <strong>Políticas de Privacidade:</strong>{" "}
                               <a
-                                href="https://vercel.com/legal/privacy-policy"
+                                href="https://vercel.com/legal/privacy-policy "
                                 className="text-autisync-gold/80 hover:text-autisync-gold underline"
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                Vercel Privacy Policy
+                                Política de Privacidade Vercel
                               </a>
                               {" | "}
                               <a
-                                href="https://www.cloudflare.com/privacypolicy/"
+                                href="https://www.cloudflare.com/privacypolicy/ "
                                 className="text-autisync-gold/80 hover:text-autisync-gold underline"
                                 target="_blank"
                                 rel="noopener noreferrer"
                               >
-                                Cloudflare Privacy Policy
+                                Política de Privacidade Cloudflare
                               </a>
                             </span>
                           </li>
@@ -708,31 +719,31 @@ const Privacy = () => {
                       </div>
 
                       <h3 className="text-xl font-bold text-autisync-black mt-6 mb-3">
-                        Legal Obligations
+                        Obrigações Legais
                       </h3>
                       <p>
-                        We may disclose your information only when required by
-                        law, such as:
+                        Podemos divulgar a sua informação apenas quando exigido
+                        por lei, como por exemplo:
                       </p>
                       <ul className="space-y-2 list-none pl-0 mt-3">
                         <li className="flex items-start gap-3">
                           <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                           <span>
-                            In response to valid legal processes (court orders,
-                            subpoenas)
+                            Em resposta a processos legais válidos (ordens
+                            judiciais, intimações)
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                           <span>
-                            To protect our legal rights or defend against legal
-                            claims
+                            Para proteger os nossos direitos legais ou defender
+                            contra ações legais
                           </span>
                         </li>
                         <li className="flex items-start gap-3">
                           <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                           <span>
-                            To prevent harm to individuals or property
+                            Para prevenir danos a indivíduos ou propriedade
                           </span>
                         </li>
                       </ul>
@@ -743,98 +754,99 @@ const Privacy = () => {
                 <section id="data-retention" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      8. Data Retention
+                      8. Retenção de Dados
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        We retain your personal information only for as long as
-                        necessary to provide our service:
+                        Retemos a sua informação pessoal apenas pelo tempo
+                        necessário para fornecer o nosso serviço:
                       </p>
 
                       <div className="grid md:grid-cols-3 gap-4 my-6">
                         <div className="bg-white border border-autisync-gold/30 rounded-xl p-6">
                           <div className="text-3xl font-bold text-autisync-black mb-2">
-                            Active Account
+                            Conta Ativa
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Data retained while your account is active and in
-                            use
+                            Dados retidos enquanto a sua conta estiver ativa e
+                            em utilização
                           </p>
                         </div>
 
                         <div className="bg-white border border-autisync-gold/30 rounded-xl p-6">
                           <div className="text-3xl font-bold text-autisync-black mb-2">
-                            90 Days
+                            90 Dias
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Inactive accounts automatically deleted after 90
-                            days of no activity
+                            Contas inativas automaticamente eliminadas após 90
+                            dias sem atividade
                           </p>
                         </div>
 
                         <div className="bg-white border border-autisync-gold/30 rounded-xl p-6">
                           <div className="text-3xl font-bold text-autisync-black mb-2">
-                            Immediate
+                            Imediato
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Data deleted immediately upon account deletion
-                            request
+                            Dados eliminados imediatamente após pedido de
+                            eliminação de conta
                           </p>
                         </div>
                       </div>
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-6">
                         <h3 className="text-lg font-bold text-autisync-black mb-3">
-                          Retention Periods by Data Type:
+                          Períodos de Retenção por Tipo de Dados:
                         </h3>
                         <div className="space-y-3">
                           <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
                             <span className="text-autisync-black">
-                              Authentication tokens
+                              Tokens de autenticação
                             </span>
                             <span className="text-autisync-gold/80 font-semibold">
-                              Until revoked or account deleted
+                              Até revogação ou eliminação de conta
                             </span>
                           </div>
                           <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
                             <span className="text-autisync-black">
-                              User preferences
+                              Preferências do utilizador
                             </span>
                             <span className="text-autisync-gold/80 font-semibold">
-                              Until account deleted
+                              Até eliminação de conta
                             </span>
                           </div>
                           <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
                             <span className="text-autisync-black">
-                              Uploaded Excel files
+                              Ficheiros Excel carregados
                             </span>
                             <span className="text-autisync-gold/80 font-semibold">
-                              Not stored (processed in memory only)
+                              Não armazenados (processados apenas em memória)
                             </span>
                           </div>
                           <div className="flex justify-between items-center pb-3 border-b border-autisync-gold/30">
                             <span className="text-autisync-black">
-                              Error logs
+                              Registos de erros
                             </span>
                             <span className="text-autisync-gold/80 font-semibold">
-                              30 days (anonymized)
+                              30 dias (anonimizados)
                             </span>
                           </div>
                           <div className="flex justify-between items-center">
                             <span className="text-autisync-black">
-                              Sync history metadata
+                              Metadados de histórico de sincronização
                             </span>
                             <span className="text-autisync-gold/80 font-semibold">
-                              Until account deleted
+                              Até eliminação de conta
                             </span>
                           </div>
                         </div>
                       </div>
 
                       <p className="font-medium text-autisync-black">
-                        After deletion, some data may remain in backup systems
-                        for up to 30 days before permanent deletion. Anonymized
-                        analytics data may be retained indefinitely.
+                        Após eliminação, alguns dados podem permanecer em
+                        sistemas de backup por até 30 dias antes da eliminação
+                        permanente. Dados analíticos anonimizados podem ser
+                        retidos indefinidamente.
                       </p>
                     </div>
                   </div>
@@ -843,12 +855,12 @@ const Privacy = () => {
                 <section id="your-rights" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      9. Your Rights Under GDPR
+                      9. Os Seus Direitos ao abrigo do RGPD
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        As a data subject under GDPR, you have the following
-                        rights:
+                        Como titular dos dados ao abrigo do RGPD, tem os
+                        seguintes direitos:
                       </p>
 
                       <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -876,12 +888,12 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Right of Access
+                              Direito de Acesso
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Request a copy of all personal data we hold about
-                            you
+                            Solicitar uma cópia de todos os dados pessoais que
+                            detemos sobre si
                           </p>
                         </div>
 
@@ -903,12 +915,11 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Right to Rectification
+                              Direito de Retificação
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Correct inaccurate or incomplete personal
-                            information
+                            Corrigir informação pessoal inexata ou incompleta
                           </p>
                         </div>
 
@@ -930,12 +941,12 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Right to Erasure
+                              Direito ao Esquecimento
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Request deletion of your personal data ("right to be
-                            forgotten")
+                            Solicitar a eliminação dos seus dados pessoais
+                            ("direito a ser esquecido")
                           </p>
                         </div>
 
@@ -957,12 +968,12 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Right to Restrict Processing
+                              Direito à Limitação do Tratamento
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Limit how we process your data in certain
-                            circumstances
+                            Limitar como processamos os seus dados em
+                            determinadas circunstâncias
                           </p>
                         </div>
 
@@ -984,12 +995,12 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Right to Data Portability
+                              Direito à Portabilidade de Dados
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Receive your data in a structured, machine-readable
-                            format
+                            Receber os seus dados num formato estruturado e
+                            legível por máquina
                           </p>
                         </div>
 
@@ -1011,21 +1022,23 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Right to Object
+                              Direito de Oposição
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Object to processing based on legitimate interests
+                            Opor-se ao tratamento baseado em interesses
+                            legítimos
                           </p>
                         </div>
                       </div>
 
                       <div className="bg-red-50 border-l-4 border-red-500 p-6 rounded-r-xl my-6">
                         <h3 className="text-lg font-bold text-autisync-black mb-3">
-                          How to Exercise Your Rights
+                          Como Exercer os Seus Direitos
                         </h3>
                         <p className="text-autisync-black/60 mb-3">
-                          To exercise any of these rights, please contact us at:
+                          Para exercer qualquer destes direitos, por favor
+                          contacte-nos em:
                         </p>
                         <div className="flex items-center gap-2 text-autisync-gold/80 font-semibold">
                           <svg
@@ -1049,20 +1062,21 @@ const Privacy = () => {
                           </a>
                         </div>
                         <p className="text-sm text-slate-600 mt-3">
-                          We will respond to your request within 30 days as
-                          required by GDPR.
+                          Responderemos ao seu pedido no prazo de 30 dias
+                          conforme exigido pelo RGPD.
                         </p>
                       </div>
 
                       <div className="bg-slate-100 border border-slate-300 rounded-xl p-6 my-6">
                         <h3 className="text-lg font-bold text-autisync-black mb-3">
-                          Right to Lodge a Complaint
+                          Direito de Apresentar Reclamação
                         </h3>
                         <p className="text-autisync-black/60">
-                          If you believe we have not handled your personal data
-                          properly, you have the right to lodge a complaint with
-                          your local data protection authority or with the
-                          Angolan data protection supervisory authority.
+                          Se acredita que não tratámos os seus dados pessoais
+                          adequadamente, tem o direito de apresentar uma
+                          reclamação junto da autoridade de proteção de dados
+                          local ou junto da autoridade de supervisão angolana de
+                          proteção de dados.
                         </p>
                       </div>
                     </div>
@@ -1072,12 +1086,12 @@ const Privacy = () => {
                 <section id="security" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      10. Security Measures
+                      10. Medidas de Segurança
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        We implement industry-standard security measures to
-                        protect your personal information:
+                        Implementamos medidas de segurança de nível industrial
+                        para proteger a sua informação pessoal:
                       </p>
 
                       <div className="grid md:grid-cols-2 gap-4 my-6">
@@ -1099,12 +1113,12 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Encryption at Rest
+                              Encriptação em Repouso
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            All sensitive data, including OAuth tokens, is
-                            encrypted using AES-256 encryption
+                            Todos os dados sensíveis, incluindo tokens OAuth,
+                            são encriptados utilizando encriptação AES-256
                           </p>
                         </div>
 
@@ -1126,12 +1140,12 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              HTTPS Everywhere
+                              HTTPS em Todo o Lado
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            All data transmitted between your browser and our
-                            servers uses TLS 1.3 encryption
+                            Todos os dados transmitidos entre o seu navegador e
+                            os nossos servidores utilizam encriptação TLS 1.3
                           </p>
                         </div>
 
@@ -1157,8 +1171,8 @@ const Privacy = () => {
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Industry-standard authentication protocol, no
-                            passwords stored on our servers
+                            Protocolo de autenticação de nível industrial, sem
+                            palavras-passe armazenadas nos nossos servidores
                           </p>
                         </div>
 
@@ -1180,12 +1194,12 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Secure Infrastructure
+                              Infraestrutura Segura
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Hosted on EU-compliant servers with regular security
-                            audits and updates
+                            Alojado em servidores conforme a UE com auditorias
+                            de segurança e atualizações regulares
                           </p>
                         </div>
 
@@ -1213,12 +1227,12 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Access Controls
+                              Controlos de Acesso
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Strict internal access policies, logging, and
-                            monitoring of all data access
+                            Políticas internas rigorosas de acesso, registo e
+                            monitorização de todo o acesso a dados
                           </p>
                         </div>
 
@@ -1240,11 +1254,12 @@ const Privacy = () => {
                               </svg>
                             </div>
                             <h3 className="text-lg font-bold text-autisync-black">
-                              Regular Backups
+                              Backups Regulares
                             </h3>
                           </div>
                           <p className="text-sm text-autisync-black/60">
-                            Encrypted backups with secure deletion after 30 days
+                            Backups encriptados com eliminação segura após 30
+                            dias
                           </p>
                         </div>
                       </div>
@@ -1266,13 +1281,13 @@ const Privacy = () => {
                           </svg>
                           <div>
                             <p className="font-semibold text-red-900 mb-1">
-                              Data Breach Notification
+                              Notificação de Violação de Dados
                             </p>
                             <p className="text-sm text-red-800">
-                              In the unlikely event of a data breach, we will
-                              notify affected users within 72 hours and report
-                              to the relevant supervisory authorities as
-                              required by GDPR.
+                              No improvável caso de uma violação de dados,
+                              notificaremos os utilizadores afetados no prazo de
+                              72 horas e reportaremos às autoridades de
+                              supervisão relevantes conforme exigido pelo RGPD.
                             </p>
                           </div>
                         </div>
@@ -1284,37 +1299,39 @@ const Privacy = () => {
                 <section id="international" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      11. International Data Transfers
+                      11. Transferências Internacionais de Dados
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        Your personal data is primarily stored and processed
-                        within the European Union to ensure GDPR compliance.
+                        Os seus dados pessoais são principalmente armazenados e
+                        processados dentro da União Europeia para garantir
+                        conformidade com o RGPD.
                       </p>
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-6">
                         <h3 className="text-lg font-bold text-autisync-black mb-3">
-                          Google Services (USA)
+                          Serviços Google (EUA)
                         </h3>
                         <p className="text-autisync-black/60 mb-3">
-                          When you authenticate with Google OAuth and access
-                          Google Calendar, your data is transmitted to Google
-                          LLC (United States). This transfer is necessary to
-                          provide the core functionality of ShiftSync.
+                          Quando se autentica com o Google OAuth e acede ao
+                          Google Calendar, os seus dados são transmitidos para a
+                          Google LLC (Estados Unidos). Esta transferência é
+                          necessária para fornecer a funcionalidade central do
+                          ShiftSync.
                         </p>
                         <div className="bg-blue-50 border-l-4 border-blue-500 p-4 rounded-r-lg">
                           <p className="text-sm text-blue-900">
-                            <strong>Legal Basis:</strong> Google LLC complies
-                            with the EU-U.S. Data Privacy Framework and has
-                            implemented Standard Contractual Clauses (SCCs)
-                            approved by the European Commission.
+                            <strong>Base Legal:</strong> A Google LLC está em
+                            conformidade com o Quadro de Privacidade de Dados
+                            UE-EUA e implementou Cláusulas Contratuais Tipo
+                            (CCT) aprovadas pela Comissão Europeia.
                           </p>
                         </div>
                       </div>
 
                       <div className="bg-white border border-autisync-gold/30 rounded-xl p-6 my-6">
                         <h3 className="text-lg font-bold text-autisync-black mb-3">
-                          Safeguards for International Transfers
+                          Salvaguardas para Transferências Internacionais
                         </h3>
                         <ul className="space-y-2 list-none pl-0">
                           <li className="flex items-start gap-3">
@@ -1332,8 +1349,8 @@ const Privacy = () => {
                               ></path>
                             </svg>
                             <span>
-                              Standard Contractual Clauses with all third-party
-                              processors
+                              Cláusulas Contratuais Tipo com todos os
+                              processadores terceiros
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
@@ -1351,7 +1368,8 @@ const Privacy = () => {
                               ></path>
                             </svg>
                             <span>
-                              End-to-end encryption for data in transit
+                              Encriptação de ponta a ponta para dados em
+                              trânsito
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
@@ -1369,8 +1387,8 @@ const Privacy = () => {
                               ></path>
                             </svg>
                             <span>
-                              Regular compliance audits of third-party
-                              processors
+                              Auditorias de conformidade regulares de
+                              processadores terceiros
                             </span>
                           </li>
                           <li className="flex items-start gap-3">
@@ -1388,7 +1406,8 @@ const Privacy = () => {
                               ></path>
                             </svg>
                             <span>
-                              Transparency about all data transfer locations
+                              Transparência sobre todas as localizações de
+                              transferência de dados
                             </span>
                           </li>
                         </ul>
@@ -1400,18 +1419,18 @@ const Privacy = () => {
                 <section id="cookies" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      12. Cookies and Tracking Technologies
+                      12. Cookies e Tecnologias de Rastreamento
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        ShiftSync uses minimal cookies necessary for
-                        functionality. For detailed information, please review
-                        our{" "}
+                        O ShiftSync utiliza cookies mínimos necessários para a
+                        funcionalidade. Para informação detalhada, por favor
+                        consulte a nossa{" "}
                         <a
                           href="/cookies"
                           className="text-autisync-gold/80 hover:text-autisync-gold underline font-medium"
                         >
-                          Cookie Policy
+                          Política de Cookies
                         </a>
                         .
                       </p>
@@ -1419,7 +1438,7 @@ const Privacy = () => {
                       <div className="bg-white border border-autisync-gold/30 rounded-xl overflow-hidden my-6">
                         <div className="bg-gradient-to-r from-autisync-gold/60 to-autisync-black/60 px-6 py-4">
                           <h3 className="text-lg font-bold text-white">
-                            Cookie Summary
+                            Resumo de Cookies
                           </h3>
                         </div>
                         <div className="p-6 space-y-4">
@@ -1441,14 +1460,14 @@ const Privacy = () => {
                             </div>
                             <div className="flex-1">
                               <h4 className="font-bold text-autisync-black mb-1">
-                                Essential Cookies
+                                Cookies Essenciais
                               </h4>
                               <p className="text-sm text-autisync-black/60 mb-2">
-                                Required for authentication and session
-                                management. Cannot be disabled.
+                                Necessários para autenticação e gestão de
+                                sessão. Não podem ser desativados.
                               </p>
                               <span className="inline-block px-3 py-1 bg-green-100 text-green-800 text-xs rounded-full">
-                                Always Active
+                                Sempre Ativos
                               </span>
                             </div>
                           </div>
@@ -1471,14 +1490,14 @@ const Privacy = () => {
                             </div>
                             <div className="flex-1">
                               <h4 className="font-bold text-autisync-black mb-1">
-                                Analytics & Marketing Cookies
+                                Cookies Analíticos e de Marketing
                               </h4>
                               <p className="text-sm text-autisync-black/60 mb-2">
-                                We do NOT use analytics, advertising, or
-                                tracking cookies.
+                                NÃO utilizamos cookies analíticos, publicitários
+                                ou de rastreamento.
                               </p>
                               <span className="inline-block px-3 py-1 bg-slate-100 text-autisync-black/80 text-xs rounded-full">
-                                Not Used
+                                Não Utilizados
                               </span>
                             </div>
                           </div>
@@ -1491,13 +1510,13 @@ const Privacy = () => {
                 <section id="contact" className="scroll-mt-24 mb-6">
                   <div className="accent-border pl-6">
                     <h2 className="text-3xl font-bold text-autisync-black mb-4">
-                      13. Contact Information
+                      13. Informação de Contacto
                     </h2>
                     <div className="prose prose-slate max-w-none text-autisync-black/60 leading-relaxed space-y-4">
                       <p>
-                        If you have any questions, concerns, or requests
-                        regarding this Privacy Policy or our data practices,
-                        please contact us:
+                        Se tiver alguma questão, preocupação ou pedido
+                        relativamente a esta Política de Privacidade ou às
+                        nossas práticas de dados, por favor contacte-nos:
                       </p>
 
                       <div className="bg-gradient-to-br from-autisync-gold/10 to-autisync-goldsoft border-1 border-autisync-gold/30 rounded-2xl p-8 my-6">
@@ -1519,7 +1538,7 @@ const Privacy = () => {
                           </div>
                           <div className="flex-1">
                             <h3 className="text-2xl font-bold text-autisync-black mb-4">
-                              Autisync Data Protection Office
+                              Gabinete de Proteção de Dados da Autisync
                             </h3>
                             <div className="space-y-3">
                               <div className="flex items-center gap-3">
@@ -1579,12 +1598,13 @@ const Privacy = () => {
 
                       <div className="bg-blue-50 border-l-4 border-blue-500 p-6 rounded-r-xl my-6">
                         <h3 className="text-lg font-bold text-blue-900 mb-2">
-                          Response Time
+                          Tempo de Resposta
                         </h3>
                         <p className="text-sm text-blue-800">
-                          We aim to respond to all privacy-related inquiries
-                          within 5 business days and will fully address your
-                          request within 30 days as required by GDPR.
+                          Pretendemos responder a todas as questões relacionadas
+                          com privacidade no prazo de 5 dias úteis e trataremos
+                          completamente o seu pedido no prazo de 30 dias
+                          conforme exigido pelo RGPD.
                         </p>
                       </div>
                     </div>
@@ -1593,45 +1613,47 @@ const Privacy = () => {
 
                 <section className="mt-16 bg-slate-100 border border-slate-300 rounded-2xl p-8">
                   <h2 className="text-2xl font-bold text-autisync-black mb-4">
-                    Changes to This Privacy Policy
+                    Alterações a Esta Política de Privacidade
                   </h2>
                   <p className="text-autisync-black/60 leading-relaxed mb-4">
-                    We may update this Privacy Policy from time to time to
-                    reflect changes in our practices, legal requirements, or
-                    service improvements. We will notify you of any material
-                    changes by:
+                    Podemos atualizar esta Política de Privacidade
+                    ocasionalmente para refletir alterações nas nossas práticas,
+                    requisitos legais ou melhorias no serviço. Notificá-lo-emos
+                    de quaisquer alterações materiais através de:
                   </p>
                   <ul className="space-y-2 list-none pl-0 mb-4">
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                       <span>
-                        Posting the updated policy on this page with a new "Last
-                        Updated" date
+                        Publicação da política atualizada nesta página com uma
+                        nova data de "Última Atualização"
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
                       <span>
-                        Sending an email notification to registered users for
-                        significant changes
+                        Envio de uma notificação por email aos utilizadores
+                        registados para alterações significativas
                       </span>
                     </li>
                     <li className="flex items-start gap-3">
                       <span className="w-2 h-2 bg-autisync-gold rounded-full mt-2 flex-shrink-0"></span>
-                      <span>Displaying a prominent notice on our website</span>
+                      <span>
+                        Exibição de um aviso proeminente no nosso website
+                      </span>
                     </li>
                   </ul>
                   <p className="text-autisync-black/60 leading-relaxed">
-                    Your continued use of ShiftSync after changes to this policy
-                    constitutes acceptance of the updated terms.
+                    A sua utilização continuada do ShiftSync após alterações a
+                    esta política constitui aceitação dos termos atualizados.
                   </p>
                 </section>
               </main>
               <div className="bg-blue-50 rounded-xl p-4 border border-blue-200 mt-8">
                 <p className="text-sm text-blue-900">
-                  <strong>Important:</strong> By using Excel Shift Sync, you
-                  acknowledge that you have read, understood, and agree to be
-                  bound by these Privacy Policy.
+                  <strong>Importante:</strong> Ao utilizar o Excel Shift Sync,
+                  reconhece que leu, compreendeu e concorda em ficar vinculado
+                  por esta Política de Privacidade.
                 </p>
               </div>
             </CardContent>

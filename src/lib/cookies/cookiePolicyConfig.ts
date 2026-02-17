@@ -1,8 +1,12 @@
 export const POLICY_ROUTE = "/cookies";
-export const POLICY_LAST_UPDATED = "February 11, 2026";
+export const POLICY_LAST_UPDATED = "11 de Fevereiro de 2026";
 export const CONSENT_VERSION = "1.0";
 
-export type CookieCategoryKey = "necessary" | "analytics" | "functional" | "marketing";
+export type CookieCategoryKey =
+  | "necessary"
+  | "analytics"
+  | "functional"
+  | "marketing";
 
 export interface CookieCategoryConfig {
   key: CookieCategoryKey;
@@ -15,38 +19,38 @@ export interface CookieCategoryConfig {
 export const cookieCategories: CookieCategoryConfig[] = [
   {
     key: "necessary",
-    title: "Necessary",
+    title: "Necessários",
     required: true,
     descriptionShort:
-      "Essential cookies for authentication, security, and basic functionality. These cannot be disabled.",
+      "Cookies essenciais para autenticação, segurança e funcionalidade básica. Estes não podem ser desativados.",
     descriptionLong:
-      "Includes auth_session (login state), csrf_token (security), user_prefs (timezone/calendar preferences), and cookie_consent (policy acknowledgement).",
+      "Inclui auth_session (estado de sessão), csrf_token (segurança), user_prefs (preferências de fuso horário/calendário) e cookie_consent (reconhecimento da política).",
   },
   {
     key: "analytics",
-    title: "Analytics",
+    title: "Analíticos",
     required: false,
     descriptionShort:
-      "Anonymous usage analytics to help us improve ShiftSync. Powered by Vercel Analytics.",
+      "Análises de utilização anónimas para nos ajudar a melhorar o ShiftSync. Desenvolvido pela Vercel Analytics.",
     descriptionLong:
-      "We use Vercel Analytics to collect anonymous, aggregated usage data. No personal data is tracked or shared with advertisers.",
+      "Utilizamos a Vercel Analytics para recolher dados de utilização anónimos e agregados. Nenhum dado pessoal é rastreado ou partilhado com anunciantes.",
   },
   {
     key: "functional",
-    title: "Functional",
+    title: "Funcionais",
     required: false,
     descriptionShort:
-      "Enhanced features and personalisation. Currently not used by ShiftSync.",
+      "Funcionalidades melhoradas e personalização. Atualmente não utilizados pelo ShiftSync.",
     descriptionLong:
-      "Reserved for future features that may enhance your experience, such as remembering UI preferences beyond the essentials.",
+      "Reservado para funcionalidades futuras que possam melhorar a sua experiência, como lembrar preferências de interface para além das essenciais.",
   },
   {
     key: "marketing",
     title: "Marketing",
     required: false,
     descriptionShort:
-      "Advertising and marketing cookies. ShiftSync does not use marketing cookies.",
+      "Cookies de publicidade e marketing. O ShiftSync não utiliza cookies de marketing.",
     descriptionLong:
-      "ShiftSync does not use any advertising, marketing, or third-party tracking cookies.",
+      "O ShiftSync não utiliza quaisquer cookies de publicidade, marketing ou rastreamento de terceiros.",
   },
 ];

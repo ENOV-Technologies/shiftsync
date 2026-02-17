@@ -52,7 +52,8 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
             </div>
 
             <CardDescription className="text-sm sm:text-base">
-              Securely sync your work schedule to Google Calendar
+              Sincronize o seu horário de trabalho com segurança no Google
+              Calendar
             </CardDescription>
           </CardHeader>
 
@@ -63,21 +64,21 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
                 <Eye className="w-4 h-4 sm:w-5 sm:h-5 text-slate-600 mt-0.5 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-xs sm:text-sm text-slate-900 mb-1">
-                    Access Permissions
+                    Permissões de Acesso
                   </h4>
                   <p className="text-xs text-slate-600 leading-relaxed">
-                    This application will request permission to:
+                    Esta aplicação irá solicitar permissão para:
                   </p>
                 </div>
               </div>
               <ul className="space-y-1.5 sm:space-y-2 ml-6 sm:ml-8">
                 <li className="text-xs text-slate-700 flex items-start gap-2">
                   <span className="text-blue-500 mt-0.5 flex-shrink-0">•</span>
-                  <span>View and manage your Google Calendar events</span>
+                  <span>Ver e gerir os seus eventos do Google Calendar</span>
                 </li>
                 <li className="text-xs text-slate-700 flex items-start gap-2">
                   <span className="text-blue-500 mt-0.5 flex-shrink-0">•</span>
-                  <span>Access your basic profile information</span>
+                  <span>Aceder às suas informações básicas de perfil</span>
                 </li>
               </ul>
             </div>
@@ -88,18 +89,19 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
                 <Lock className="w-4 h-4 sm:w-5 sm:h-5 text-blue-600 mt-0.5 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-xs sm:text-sm text-blue-900 mb-1">
-                    GDPR Compliance & Privacy
+                    Conformidade com o RGPD e Privacidade
                   </h4>
                   <p className="text-xs text-blue-800 leading-relaxed">
-                    Your data privacy is our priority. We comply with EU data
-                    protection regulations.
+                    A privacidade dos seus dados é a nossa prioridade. Estamos
+                    em conformidade com as regulamentações de proteção de dados
+                    da UE.
                   </p>
                 </div>
               </div>
               <div className="ml-6 sm:ml-8 space-y-1.5 sm:space-y-2 text-xs text-blue-800">
-                <p>✓ Your data is processed securely</p>
-                <p>✓ No data is stored on external servers</p>
-                <p>✓ You can revoke access at any time</p>
+                <p>✓ Os seus dados são processados de forma segura</p>
+                <p>✓ Nenhum dado é armazenado em servidores externos</p>
+                <p>✓ Pode revogar o acesso a qualquer momento</p>
               </div>
             </div>
 
@@ -116,25 +118,25 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
                   htmlFor="gdpr-consent"
                   className="text-xs sm:text-sm font-medium leading-relaxed cursor-pointer"
                 >
-                  I consent to the processing of my data
+                  Consinto no processamento dos meus dados
                 </Label>
                 <p className="text-xs text-muted-foreground leading-relaxed">
-                  By checking this box, you agree to our data processing
-                  practices and acknowledge that you understand how your data
-                  will be used.{" "}
+                  Ao marcar esta caixa, concorda com as nossas práticas de
+                  processamento de dados e reconhece que compreende como os seus
+                  dados serão utilizados.{" "}
                   <span>
                     <a
                       className="hover:text-autisync-gold underline"
                       href="/privacy"
                     >
-                      Privacy Policy
+                      Política de Privacidade
                     </a>{" "}
-                    and{" "}
+                    e{" "}
                     <a
                       href="/terms"
                       className="hover:text-autisync-gold underline"
                     >
-                      Terms of Service
+                      Termos de Serviço
                     </a>
                   </span>
                 </p>
@@ -151,16 +153,16 @@ export function AuthCard({ onSignIn, loading }: AuthCardProps) {
               {loading ? (
                 <span className="flex items-center gap-2">
                   <div className="w-3 h-3 sm:w-4 sm:h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                  Connecting...
+                  A conectar...
                 </span>
               ) : (
-                "Sign in with Google"
+                "Iniciar sessão com Google"
               )}
             </Button>
 
             <p className="text-xs text-center text-muted-foreground px-2 sm:px-4">
-              Your authentication is handled securely by Google. We never see
-              your password.
+              A sua autenticação é tratada de forma segura pela Google. Nunca
+              vemos a sua palavra-passe.
             </p>
           </CardContent>
         </Card>

@@ -20,7 +20,8 @@ import {
 } from "@/lib/cookies/cookiePolicyConfig";
 
 const CookiePreferencesDialog: React.FC = () => {
-  const { consent, showPreferences, setShowPreferences, savePreferences } = useConsent();
+  const { consent, showPreferences, setShowPreferences, savePreferences } =
+    useConsent();
 
   const [draft, setDraft] = useState<Record<CookieCategoryKey, boolean>>({
     necessary: true,
@@ -57,15 +58,16 @@ const CookiePreferencesDialog: React.FC = () => {
     <Dialog open={showPreferences} onOpenChange={setShowPreferences}>
       <DialogContent className="sm:max-w-lg">
         <DialogHeader>
-          <DialogTitle className="text-lg">Cookie Preferences</DialogTitle>
+          <DialogTitle className="text-lg">Preferências de Cookies</DialogTitle>
           <DialogDescription className="text-sm text-slate-500">
-            Choose which cookies you allow. Necessary cookies cannot be disabled.{" "}
+            Escolha quais os cookies que permite. Os cookies necessários não
+            podem ser desativados.{" "}
             <Link
               to={POLICY_ROUTE}
               className="text-autisync-gold font-medium hover:underline"
               onClick={() => setShowPreferences(false)}
             >
-              Read full Cookie Policy
+              Ler Política de Cookies completa
             </Link>
           </DialogDescription>
         </DialogHeader>
@@ -85,8 +87,11 @@ const CookiePreferencesDialog: React.FC = () => {
                     {cat.title}
                   </Label>
                   {cat.required && (
-                    <Badge variant="secondary" className="text-[10px] px-1.5 py-0">
-                      Always on
+                    <Badge
+                      variant="secondary"
+                      className="text-[10px] px-1.5 py-0"
+                    >
+                      Sempre ativo
                     </Badge>
                   )}
                 </div>
@@ -107,13 +112,13 @@ const CookiePreferencesDialog: React.FC = () => {
 
         <DialogFooter className="gap-2 sm:gap-0">
           <Button variant="outline" onClick={() => setShowPreferences(false)}>
-            Cancel
+            Cancelar
           </Button>
           <Button
             onClick={handleSave}
             className="bg-autisync-black hover:bg-autisync-black/90 text-autisync-gold"
           >
-            Save preferences
+            Guardar preferências
           </Button>
         </DialogFooter>
       </DialogContent>

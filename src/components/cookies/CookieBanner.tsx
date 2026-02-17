@@ -6,7 +6,8 @@ import { useConsent } from "@/lib/cookies/ConsentContext";
 import { POLICY_ROUTE } from "@/lib/cookies/cookiePolicyConfig";
 
 const CookieBanner: React.FC = () => {
-  const { showBanner, acceptAll, rejectNonEssential, setShowPreferences } = useConsent();
+  const { showBanner, acceptAll, rejectNonEssential, setShowPreferences } =
+    useConsent();
 
   if (!showBanner) return null;
 
@@ -20,28 +21,32 @@ const CookieBanner: React.FC = () => {
 
           <div className="flex-1 space-y-3">
             <h3 className="text-base font-semibold text-slate-900">
-              We value your privacy
+              Valorizamos a sua privacidade
             </h3>
             <p className="text-sm text-slate-600 leading-relaxed">
-              ShiftSync uses essential cookies for authentication and security.
-              We also use anonymous analytics (Vercel Analytics) to improve the
-              app — only if you agree. No advertising or tracking cookies are
-              used.{" "}
+              O ShiftSync utiliza cookies essenciais para autenticação e
+              segurança. Também utilizamos análises anónimas (Vercel Analytics)
+              para melhorar a aplicação — apenas se concordar. Não são
+              utilizados cookies de publicidade ou rastreamento.{" "}
               <Link
                 to={POLICY_ROUTE}
                 className="text-autisync-gold font-medium hover:underline"
               >
-                Read our Cookie Policy
+                Leia a nossa Política de Cookies
               </Link>
               .
             </p>
 
             <div className="flex flex-wrap gap-2 pt-1">
-              <Button onClick={acceptAll} size="sm" className="bg-autisync-black hover:bg-autisync-black/90 text-autisync-gold">
-                Accept all
+              <Button
+                onClick={acceptAll}
+                size="sm"
+                className="bg-autisync-black hover:bg-autisync-black/90 text-autisync-gold"
+              >
+                Aceitar todos
               </Button>
               <Button onClick={rejectNonEssential} variant="outline" size="sm">
-                Reject non-essential
+                Rejeitar não essenciais
               </Button>
               <Button
                 onClick={() => setShowPreferences(true)}
@@ -49,7 +54,7 @@ const CookieBanner: React.FC = () => {
                 size="sm"
                 className="text-slate-500 hover:text-slate-900"
               >
-                Manage preferences
+                Gerir preferências
               </Button>
             </div>
           </div>

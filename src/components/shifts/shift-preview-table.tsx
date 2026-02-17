@@ -1,10 +1,23 @@
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
-import { ShiftData } from '@/types/shift';
-import { CalendarCheck, Edit2 } from 'lucide-react';
-import { format } from 'date-fns';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
+  Table,
+  TableBody,
+  TableCell,
+  TableHead,
+  TableHeader,
+  TableRow,
+} from "@/components/ui/table";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ShiftData } from "@/types/shift";
+import { CalendarCheck, Edit2 } from "lucide-react";
+import { format } from "date-fns";
 
 interface ShiftPreviewTableProps {
   shifts: ShiftData[];
@@ -14,30 +27,35 @@ interface ShiftPreviewTableProps {
 }
 
 const shiftTypeColors = {
-  morning: 'bg-amber-100 text-amber-800 border-amber-300',
-  afternoon: 'bg-blue-100 text-blue-800 border-blue-300',
-  night: 'bg-indigo-100 text-indigo-800 border-indigo-300',
-  off: 'bg-slate-100 text-slate-800 border-slate-300',
-  other: 'bg-purple-100 text-purple-800 border-purple-300',
+  morning: "bg-amber-100 text-amber-800 border-amber-300",
+  afternoon: "bg-blue-100 text-blue-800 border-blue-300",
+  night: "bg-indigo-100 text-indigo-800 border-indigo-300",
+  off: "bg-slate-100 text-slate-800 border-slate-300",
+  other: "bg-purple-100 text-purple-800 border-purple-300",
 };
 
 const shiftTypeLabels = {
-  morning: 'Morning',
-  afternoon: 'Afternoon',
-  night: 'Late',
-  off: 'Off',
-  other: 'Other',
+  morning: "Morning",
+  afternoon: "Afternoon",
+  night: "Late",
+  off: "Off",
+  other: "Other",
 };
 
 // Get day name from date
 function getDayName(date: Date): string {
-  return format(date, 'EEEE');
+  return format(date, "EEEE");
 }
 
-export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: ShiftPreviewTableProps) {
+export function ShiftPreviewTable({
+  shifts,
+  onConfirm,
+  onEdit,
+  employeeName,
+}: ShiftPreviewTableProps) {
   // Check if shifts have extended info (LOB, location)
-  const hasExtendedInfo = shifts.some(s => s.lob || s.location);
-  
+  const hasExtendedInfo = shifts.some((s) => s.lob || s.location);
+
   return (
     <Card className="border-0 shadow-lg">
       <CardHeader className="p-4 sm:p-6">
@@ -55,11 +73,15 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
               )}
             </CardTitle>
             <CardDescription className="mt-1">
-              Review your schedule before syncing ({shifts.length} shifts found)
+              Revise sua agenda antes de sincronizar ({shifts.length} turno/s
+              encontrado)
             </CardDescription>
           </div>
-          <Badge variant="secondary" className="text-sm font-semibold px-3 py-1 self-start sm:self-auto">
-            {shifts.length} {shifts.length === 1 ? 'Shift' : 'Shifts'}
+          <Badge
+            variant="secondary"
+            className="text-sm font-semibold px-3 py-1 self-start sm:self-auto"
+          >
+            {shifts.length} {shifts.length === 1 ? "Shift" : "Shifts"}
           </Badge>
         </div>
       </CardHeader>
@@ -70,38 +92,57 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
             <Table>
               <TableHeader className="bg-slate-50 sticky top-0">
                 <TableRow>
-                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Date</TableHead>
-                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Day</TableHead>
-                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Start</TableHead>
-                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">End</TableHead>
-                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Type</TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">
+                    Date
+                  </TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">
+                    Day
+                  </TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">
+                    Start
+                  </TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">
+                    End
+                  </TableHead>
+                  <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">
+                    Type
+                  </TableHead>
                   {hasExtendedInfo && (
                     <>
-                      <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">LOB</TableHead>
-                      <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">Location</TableHead>
+                      <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">
+                        LOB
+                      </TableHead>
+                      <TableHead className="font-semibold text-xs sm:text-sm whitespace-nowrap">
+                        Location
+                      </TableHead>
                     </>
                   )}
-                  {onEdit && <TableHead className="font-semibold w-16"></TableHead>}
+                  {onEdit && (
+                    <TableHead className="font-semibold w-16"></TableHead>
+                  )}
                 </TableRow>
               </TableHeader>
               <TableBody>
                 {shifts.map((shift) => (
-                  <TableRow key={shift.id} className="hover:bg-slate-50 transition-colors">
+                  <TableRow
+                    key={shift.id}
+                    className="hover:bg-slate-50 transition-colors"
+                  >
                     <TableCell className="whitespace-nowrap font-medium text-xs sm:text-sm">
-                      {format(new Date(shift.date), 'dd/MM/yyyy')}
+                      {format(new Date(shift.date), "dd/MM/yyyy")}
                     </TableCell>
                     <TableCell className="whitespace-nowrap text-muted-foreground text-xs sm:text-sm">
                       {getDayName(new Date(shift.date))}
                     </TableCell>
                     <TableCell className="whitespace-nowrap text-xs sm:text-sm">
-                      {shift.shiftType === 'off' ? (
+                      {shift.shiftType === "off" ? (
                         <span className="text-muted-foreground">—</span>
                       ) : (
                         shift.startTime
                       )}
                     </TableCell>
                     <TableCell className="whitespace-nowrap text-xs sm:text-sm">
-                      {shift.shiftType === 'off' ? (
+                      {shift.shiftType === "off" ? (
                         <span className="text-muted-foreground">—</span>
                       ) : (
                         shift.endTime
@@ -118,10 +159,10 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
                     {hasExtendedInfo && (
                       <>
                         <TableCell className="text-xs sm:text-sm text-muted-foreground">
-                          {shift.lob || '—'}
+                          {shift.lob || "—"}
                         </TableCell>
                         <TableCell className="text-xs sm:text-sm text-muted-foreground">
-                          {shift.location || '—'}
+                          {shift.location || "—"}
                         </TableCell>
                       </>
                     )}
@@ -146,7 +187,9 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
 
         {/* Shift Type Legend */}
         <div className="bg-slate-50 rounded-lg p-3 sm:p-4 border border-slate-200">
-          <p className="text-xs font-semibold text-slate-700 mb-3">Shift Types</p>
+          <p className="text-xs font-semibold text-slate-700 mb-3">
+            Tipos de Turno
+          </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
             {Object.entries(shiftTypeColors).map(([type, colors]) => (
               <div key={type} className="flex items-center gap-2">
@@ -158,8 +201,11 @@ export function ShiftPreviewTable({ shifts, onConfirm, onEdit, employeeName }: S
           </div>
         </div>
 
-        <Button onClick={onConfirm} className="w-full h-10 sm:h-12 text-sm sm:text-base font-semibold shadow-lg">
-          Continue to Sync
+        <Button
+          onClick={onConfirm}
+          className="w-full h-10 sm:h-12 text-sm sm:text-base font-semibold shadow-lg"
+        >
+          Continuar a sincronizar
         </Button>
       </CardContent>
     </Card>

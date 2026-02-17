@@ -17,22 +17,23 @@ const DataDeletion = () => {
             className="mb-6 hover:bg-white/50"
           >
             <ArrowLeft className="w-4 h-4 mr-2" />
-            Back
+            Voltar
           </Button>
 
           <Card className="shadow-2xl border-0">
             <CardHeader className="space-y-2 p-6 sm:p-8">
               <div className="mb-6">
                 <div className="inline-block px-4 py-2 bg-autisync-black text-autisync-gold rounded-full text-sm font-medium mb-6">
-                  Last Updated: February 11, 2026
+                  Última Atualização: 11 de Fevereiro de 2026
                 </div>
                 <h1 className="text-5xl md:text-6xl font-bold text-slate-900 mb-6 leading-tight">
-                  Delete Your Data
+                  Eliminar os Seus Dados
                 </h1>
                 <p className="text-xl text-slate-600 leading-relaxed">
-                  You have the right to delete all your personal data from
-                  <strong> ShiftSync</strong> at any time. This page explains
-                  how to exercise your right to erasure under GDPR (Article 17).
+                  Tem o direito de eliminar todos os seus dados pessoais do
+                  <strong> ShiftSync</strong> a qualquer momento. Esta página
+                  explica como exercer o seu direito ao esquecimento ao abrigo
+                  do RGPD (Artigo 17).
                 </p>
               </div>
             </CardHeader>
@@ -41,20 +42,24 @@ const DataDeletion = () => {
               {/* What gets deleted */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  What Gets Deleted
+                  O que é Eliminado
                 </h2>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Google account email address and profile data</li>
-                  <li>OAuth access and refresh tokens</li>
-                  <li>Account preferences and sync settings</li>
-                  <li>Session data and authentication metadata</li>
-                  <li>Temporary logs and sync metadata (≤ 30 days)</li>
+                  <li>Endereço de email da conta Google e dados de perfil</li>
+                  <li>Tokens de acesso e atualização OAuth</li>
+                  <li>Preferências de conta e definições de sincronização</li>
+                  <li>Dados de sessão e metadados de autenticação</li>
+                  <li>
+                    Registos temporários e metadados de sincronização (≤ 30
+                    dias)
+                  </li>
                 </ul>
 
                 <div className="bg-blue-50 border border-blue-200 rounded-xl p-4 mt-4">
                   <p className="text-sm text-blue-900">
-                    <strong>Important:</strong> Uploaded Excel files are never
-                    stored on our servers. They are processed in memory only.
+                    <strong>Importante:</strong> Os ficheiros Excel carregados
+                    nunca são armazenados nos nossos servidores. São processados
+                    apenas em memória.
                   </p>
                 </div>
               </section>
@@ -62,17 +67,21 @@ const DataDeletion = () => {
               {/* Calendar clarification */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  Google Calendar Events
+                  Eventos do Google Calendar
                 </h2>
                 <p className="leading-relaxed mb-3">
-                  Deleting your ShiftSync account does <strong>not</strong>{" "}
-                  automatically remove events from your Google Calendar.
+                  Eliminar a sua conta ShiftSync <strong>não</strong> remove
+                  automaticamente os eventos do seu Google Calendar.
                 </p>
                 <ul className="list-disc list-inside space-y-2 ml-4">
-                  <li>Previously synced events remain in Google Calendar</li>
-                  <li>You retain full ownership and control of those events</li>
                   <li>
-                    Events created by ShiftSync are identifiable in metadata
+                    Eventos previamente sincronizados permanecem no Google
+                    Calendar
+                  </li>
+                  <li>Mantém a propriedade e controlo total desses eventos</li>
+                  <li>
+                    Eventos criados pelo ShiftSync são identificáveis nos
+                    metadados
                   </li>
                 </ul>
               </section>
@@ -80,20 +89,20 @@ const DataDeletion = () => {
               {/* Deletion timeline */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  Deletion Timeline
+                  Cronograma de Eliminação
                 </h2>
                 <ul className="list-disc list-inside space-y-2 ml-4">
                   <li>
-                    <strong>Immediate:</strong> Account access revoked and
-                    tokens invalidated
+                    <strong>Imediato:</strong> Acesso à conta revogado e tokens
+                    invalidados
                   </li>
                   <li>
-                    <strong>Within 24 hours:</strong> Account data removed from
-                    production systems
+                    <strong>Dentro de 24 horas:</strong> Dados da conta
+                    removidos dos sistemas de produção
                   </li>
                   <li>
-                    <strong>Within 30 days:</strong> Data removed from backups
-                    and permanently erased
+                    <strong>Dentro de 30 dias:</strong> Dados removidos dos
+                    backups e eliminados permanentemente
                   </li>
                 </ul>
               </section>
@@ -101,55 +110,56 @@ const DataDeletion = () => {
               {/* How to delete */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  How to Request Deletion
+                  Como Solicitar a Eliminação
                 </h2>
 
                 <h3 className="font-semibold mt-4 mb-2">
-                  Option 1: Self-Service (Recommended)
+                  Opção 1: Autosserviço (Recomendado)
                 </h3>
                 <ol className="list-decimal list-inside space-y-2 ml-4">
-                  <li>Log in to your ShiftSync account</li>
-                  <li>Go to Settings → Account → Delete Account</li>
-                  <li>Review the deletion summary</li>
-                  <li>Confirm permanent deletion</li>
+                  <li>Inicie sessão na sua conta ShiftSync</li>
+                  <li>Vá a Definições → Conta → Eliminar Conta</li>
+                  <li>Reveja o resumo da eliminação</li>
+                  <li>Confirme a eliminação permanente</li>
                 </ol>
 
                 <h3 className="font-semibold mt-6 mb-2">
-                  Option 2: Email Request
+                  Opção 2: Pedido por Email
                 </h3>
                 <p className="leading-relaxed">
-                  If you cannot access your account, email us at{" "}
+                  Se não conseguir aceder à sua conta, envie-nos um email para{" "}
                   <a
                     href="mailto:support@autisync.com"
                     className="text-autisync-gold hover:underline font-medium"
                   >
                     support@autisync.com
                   </a>{" "}
-                  with the subject:
+                  com o assunto:
                 </p>
                 <p className="mt-2 italic text-sm">
-                  “Data Deletion Request – ShiftSync”
+                  "Pedido de Eliminação de Dados – ShiftSync"
                 </p>
               </section>
 
               {/* Warning */}
               <div className="bg-red-50 border border-red-200 rounded-xl p-4">
                 <p className="text-sm text-red-900">
-                  <strong>Warning:</strong> Data deletion is permanent and
-                  irreversible. Please export any information you need before
-                  proceeding.
+                  <strong>Aviso:</strong> A eliminação de dados é permanente e
+                  irreversível. Por favor, exporte qualquer informação de que
+                  necessite antes de prosseguir.
                 </p>
               </div>
 
               {/* Compliance */}
               <section>
                 <h2 className="text-xl font-semibold text-slate-900 mb-3">
-                  GDPR Compliance
+                  Conformidade com o RGPD
                 </h2>
                 <p className="leading-relaxed">
-                  This process fully complies with GDPR Article 17 (Right to
-                  Erasure). No personally identifiable data is retained after
-                  completion of the deletion process.
+                  Este processo está totalmente em conformidade com o Artigo 17
+                  do RGPD (Direito ao Esquecimento). Nenhum dado pessoal
+                  identificável é retido após a conclusão do processo de
+                  eliminação.
                 </p>
               </section>
             </CardContent>

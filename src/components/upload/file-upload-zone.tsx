@@ -1,37 +1,66 @@
-import { useCallback, useState } from 'react';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Upload, FileSpreadsheet, X, CheckCircle2, AlertCircle, Users } from 'lucide-react';
-import { Progress } from '@/components/ui/progress';
-import { parseExcelFile, validateExcelFile } from '@/lib/excel-parser';
-import { ShiftData, ParsedScheduleResult } from '@/types/shift';
-import { Alert, AlertDescription } from '@/components/ui/alert';
-import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select';
-import { getErrorMessage } from '@/lib/getErrorMessage';
+import { useCallback, useState } from "react";
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
+import {
+  Upload,
+  FileSpreadsheet,
+  X,
+  CheckCircle2,
+  AlertCircle,
+  Users,
+} from "lucide-react";
+import { Progress } from "@/components/ui/progress";
+import { parseExcelFile, validateExcelFile } from "@/lib/excel-parser";
+import { ShiftData, ParsedScheduleResult } from "@/types/shift";
+import { Alert, AlertDescription } from "@/components/ui/alert";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select";
+import { getErrorMessage } from "@/lib/getErrorMessage";
 
 interface FileUploadZoneProps {
   onFileProcessed: (shifts: ShiftData[], employeeName?: string) => void;
   disabled?: boolean;
 }
 
-export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProps) {
+export function FileUploadZone({
+  onFileProcessed,
+  disabled,
+}: FileUploadZoneProps) {
   const [isDragging, setIsDragging] = useState(false);
   const [file, setFile] = useState<File | null>(null);
   const [uploading, setUploading] = useState(false);
   const [progress, setProgress] = useState(0);
   const [error, setError] = useState<string | null>(null);
   const [success, setSuccess] = useState(false);
-  
-  // Employee selection state
-  const [parsedResult, setParsedResult] = useState<ParsedScheduleResult | null>(null);
-  const [selectedEmployeeId, setSelectedEmployeeId] = useState<string | null>(null);
 
-  const handleDragOver = useCallback((e: React.DragEvent) => {
-    e.preventDefault();
-    if (!disabled) {
-      setIsDragging(true);
-    }
-  }, [disabled]);
+  // Employee selection state
+  const [parsedResult, setParsedResult] = useState<ParsedScheduleResult | null>(
+    null,
+  );
+  const [selectedEmployeeId, setSelectedEmployeeId] = useState<string | null>(
+    null,
+  );
+
+  const handleDragOver = useCallback(
+    (e: React.DragEvent) => {
+      e.preventDefault();
+      if (!disabled) {
+        setIsDragging(true);
+      }
+    },
+    [disabled],
+  );
 
   const handleDragLeave = useCallback((e: React.DragEvent) => {
     e.preventDefault();
@@ -50,7 +79,7 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
         await processFile(droppedFile);
       }
     },
-    [disabled]
+    [disabled],
   );
 
   const handleFileSelect = async (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -65,11 +94,11 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
     setSuccess(false);
     setParsedResult(null);
     setSelectedEmployeeId(null);
-    
+
     // Validate file
     const validation = validateExcelFile(selectedFile);
     if (!validation.valid) {
-      setError(validation.error || 'Invalid file');
+      setError(validation.error || "Ficheiro inválido");
       return;
     }
 
@@ -91,12 +120,12 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
 
       // Parse Excel file
       const result = await parseExcelFile(selectedFile);
-      
+
       clearInterval(progressInterval);
       setProgress(100);
       setSuccess(true);
       setParsedResult(result);
-      
+
       // If only one employee, auto-select and proceed
       if (result.employees.length === 1) {
         const employee = result.employees[0];
@@ -116,9 +145,11 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
 
   const handleEmployeeSelect = (employeeId: string) => {
     setSelectedEmployeeId(employeeId);
-    
+
     if (parsedResult) {
-      const employee = parsedResult.employees.find(e => e.employeeId === employeeId);
+      const employee = parsedResult.employees.find(
+        (e) => e.employeeId === employeeId,
+      );
       if (employee) {
         onFileProcessed(employee.shifts, employee.employeeName);
       }
@@ -135,19 +166,18 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
   };
 
   // Show employee selector if multiple employees found
-  const showEmployeeSelector = parsedResult && 
-    parsedResult.employees.length > 1 && 
-    !selectedEmployeeId;
+  const showEmployeeSelector =
+    parsedResult && parsedResult.employees.length > 1 && !selectedEmployeeId;
 
   return (
     <Card className="border-0 shadow-lg">
       <CardHeader className="p-4 sm:p-6">
         <CardTitle className="flex items-center gap-2 text-base sm:text-lg">
           <FileSpreadsheet className="w-4 h-4 sm:w-5 sm:h-5" />
-          Upload Schedule
+          Carregar Horário
         </CardTitle>
         <CardDescription className="text-sm">
-          Upload your Excel shift schedule file (.xlsx or .xls)
+          Carregue o seu ficheiro de horário de turnos Excel (.xlsx ou .xls)
         </CardDescription>
       </CardHeader>
 
@@ -156,7 +186,8 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
           <Alert>
             <AlertCircle className="w-4 h-4" />
             <AlertDescription className="text-xs sm:text-sm">
-              Please select a calendar first before uploading your schedule.
+              Por favor, selecione primeiro um calendário antes de carregar o
+              seu horário.
             </AlertDescription>
           </Alert>
         )}
@@ -164,7 +195,9 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
         {error && (
           <Alert variant="destructive">
             <AlertCircle className="w-4 h-4" />
-            <AlertDescription className="text-xs sm:text-sm">{error}</AlertDescription>
+            <AlertDescription className="text-xs sm:text-sm">
+              {error}
+            </AlertDescription>
           </Alert>
         )}
 
@@ -175,11 +208,12 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
             onDrop={handleDrop}
             className={`
               relative border-2 border-dashed rounded-xl p-6 sm:p-8 transition-all
-              ${isDragging
-                ? 'border-primary bg-primary/5 scale-[1.02]'
-                : 'border-slate-300 bg-slate-50 hover:border-primary/50 hover:bg-slate-100'
+              ${
+                isDragging
+                  ? "border-primary bg-primary/5 scale-[1.02]"
+                  : "border-slate-300 bg-slate-50 hover:border-primary/50 hover:bg-slate-100"
               }
-              ${disabled ? 'opacity-50 cursor-not-allowed' : 'cursor-pointer'}
+              ${disabled ? "opacity-50 cursor-not-allowed" : "cursor-pointer"}
             `}
           >
             <input
@@ -196,16 +230,20 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
               </div>
               <div>
                 <p className="font-semibold text-sm sm:text-base text-slate-900 mb-1">
-                  {isDragging ? 'Drop file here' : 'Drag & drop your Excel file'}
+                  {isDragging
+                    ? "Solte o ficheiro aqui"
+                    : "Arraste e solte o seu ficheiro Excel"}
                 </p>
                 <p className="text-xs sm:text-sm text-muted-foreground">
-                  or click to browse
+                  ou clique para navegar
                 </p>
               </div>
               <div className="text-xs text-muted-foreground space-y-1">
-                <p>Supported formats: .xlsx, .xls</p>
-                <p>Maximum file size: 5MB</p>
-                <p className="text-primary/80">Supports Concentrix schedule format</p>
+                <p>Formatos suportados: .xlsx, .xls</p>
+                <p>Tamanho máximo do ficheiro: 5MB</p>
+                <p className="text-primary/80">
+                  Suporta formato de horário Concentrix
+                </p>
               </div>
             </div>
           </div>
@@ -218,7 +256,9 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
                     <FileSpreadsheet className="w-4 h-4 sm:w-5 sm:h-5 text-green-600" />
                   </div>
                   <div className="flex-1 min-w-0">
-                    <p className="font-semibold text-xs sm:text-sm truncate">{file.name}</p>
+                    <p className="font-semibold text-xs sm:text-sm truncate">
+                      {file.name}
+                    </p>
                     <p className="text-xs text-muted-foreground">
                       {(file.size / 1024).toFixed(2)} KB
                     </p>
@@ -239,7 +279,9 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
               {uploading && (
                 <div className="mt-4 space-y-2">
                   <div className="flex items-center justify-between text-xs">
-                    <span className="text-muted-foreground">Processing...</span>
+                    <span className="text-muted-foreground">
+                      A processar...
+                    </span>
                     <span className="font-semibold">{progress}%</span>
                   </div>
                   <Progress value={progress} className="h-2" />
@@ -249,7 +291,9 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
               {success && !showEmployeeSelector && (
                 <div className="mt-4 flex items-center gap-2 text-xs sm:text-sm text-green-600">
                   <CheckCircle2 className="w-4 h-4" />
-                  <span className="font-semibold">File processed successfully!</span>
+                  <span className="font-semibold">
+                    Ficheiro processado com sucesso!
+                  </span>
                 </div>
               )}
             </div>
@@ -260,24 +304,30 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
                 <div className="flex items-center gap-2 text-blue-800">
                   <Users className="w-4 h-4" />
                   <span className="font-semibold text-xs sm:text-sm">
-                    Multiple employees found ({parsedResult.employees.length})
+                    Vários colaboradores encontrados (
+                    {parsedResult.employees.length})
                   </span>
                 </div>
                 <p className="text-xs text-blue-700">
-                  Select the employee whose schedule you want to sync:
+                  Selecione o colaborador cujo horário pretende sincronizar:
                 </p>
                 <Select onValueChange={handleEmployeeSelect}>
                   <SelectTrigger className="bg-white h-10 sm:h-auto">
-                    <SelectValue placeholder="Select an employee..." />
+                    <SelectValue placeholder="Selecione um colaborador..." />
                   </SelectTrigger>
                   <SelectContent>
                     {parsedResult.employees.map((employee) => (
-                      <SelectItem key={employee.employeeId} value={employee.employeeId}>
+                      <SelectItem
+                        key={employee.employeeId}
+                        value={employee.employeeId}
+                      >
                         <div className="flex flex-col">
-                          <span className="font-medium text-xs sm:text-sm">{employee.employeeName}</span>
+                          <span className="font-medium text-xs sm:text-sm">
+                            {employee.employeeName}
+                          </span>
                           {employee.lob && (
                             <span className="text-xs text-muted-foreground">
-                              {employee.lob} • {employee.shifts.length} shifts
+                              {employee.lob} • {employee.shifts.length} turnos
                             </span>
                           )}
                         </div>
@@ -294,7 +344,7 @@ export function FileUploadZone({ onFileProcessed, disabled }: FileUploadZoneProp
               className="w-full h-10 sm:h-auto text-sm sm:text-base"
               disabled={uploading}
             >
-              Upload Different File
+              Carregar Ficheiro Diferente
             </Button>
           </div>
         )}

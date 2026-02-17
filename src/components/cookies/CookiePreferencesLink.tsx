@@ -12,7 +12,7 @@ const CookiePreferencesLink: React.FC = () => {
       className="inline-flex items-center gap-1.5 text-slate-600 hover:text-autisync-gold transition-colors text-sm"
     >
       <Cookie className="h-3.5 w-3.5" />
-      Cookie Preferences
+      Preferencias de Cookie
     </button>
   );
 };
